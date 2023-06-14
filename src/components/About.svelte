@@ -1,7 +1,7 @@
 <section class="about">
-    <div class="line"></div>
+    <!-- <div class="line"></div> -->
     <div class="text-wrapper">
-    <h3>About</h3>
+    <!-- <h3>About</h3> -->
   <p>
     As a creative individual, I am constantly seeking new ways to express my
     passion. Whether it's graphic design, photography, or web development, I
@@ -49,8 +49,8 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
     }
 
     p {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: 200;
-        max-width: 50%;
+        max-width: 80%;
     }
 </style>

@@ -5,6 +5,15 @@
   import About from "../components/About.svelte";
   import ProjectOne from "../components/ProjectOne.svelte";
   import BigImage from "../components/BigImage.svelte";
+  import Cases from "../components/Cases.svelte";
+  import Marquee from "../components/Marquee.svelte";
+  import Footer from "../components/Footer.svelte";
+
+
+
+  import Contact from "../components/Contact.svelte";
+
+
 
 
 
@@ -15,7 +24,15 @@
 <FirstContent />
 <About />
 <BigImage />
-<ProjectOne />
+<Cases />
+<Marquee />
+<Contact />
+<Footer />
+
+
+
+
+<!-- <ProjectOne /> -->
 
 
 <style>
@@ -23,7 +40,7 @@
 
 :global(:root) {
     --flashWhite: #E9ECEB;
-    --gunMetal: #0f1011;
+    --gunMetal: #11110f;
     --justBlue: #774ff0;
     --bitterSweet: #FE5F55;
     --webLavender: #bed0fa;
@@ -38,6 +55,7 @@
   :global(body) {
     background-color: var(--gunMetal);
     font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
   }
   
   :global(section) {

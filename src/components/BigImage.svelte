@@ -12,10 +12,10 @@ onMount(() => {
     scrollTrigger: {
         trigger: '.big-image',
         scrub: 1,
-        start: 'top',
-        end: 'top+=500'
+        start: 'top-=700',
+        end: 'top+=0'
     },
-    y: -100,
+    y: -300,
     '--progress': 1
 });
 });
@@ -36,8 +36,8 @@ onMount(() => {
 
     img {
         object-fit: cover;
-        height: 60%;
-        width: 70%;
-        clip-path: inset(0 calc((1 - var(--progress)) * 20%) 0 calc((1 - var(--progress)) * 30%));
+        height: 60vh;
+        width: 100%;
+        clip-path: inset(0 calc((1 - var(--progress)) * 20%) 0 calc((1 - var(--progress)) * 20%) round 1em);
     }
 </style>
