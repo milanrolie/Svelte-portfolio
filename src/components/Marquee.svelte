@@ -9,7 +9,7 @@
     gsap.to("#legends-marquee", {
       scrollTrigger: {
         trigger: "#legends-marquee",
-        scrub: 1,
+        scrub: 8,
         start: "top-=1000",
         end: "bottom+=1000",
       },
@@ -31,11 +31,13 @@
     height: max-content;
     padding: 0;
     overflow-x: hidden;
+    z-index: -1;
   }
 
   .sticky-marquee {
-    height: 50vh;
-    background-color: rgb(103, 103, 103);
+    height: 100vh;
+    padding-top: 4em;
+    /* background-color: rgb(103, 103, 103); */
     z-index: -1;
     --x: 0;
     max-width: 100vw;

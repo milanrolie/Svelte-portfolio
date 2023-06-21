@@ -8,13 +8,7 @@
   import Cases from "../components/Cases.svelte";
   import Marquee from "../components/Marquee.svelte";
   import Footer from "../components/Footer.svelte";
-
-
-
   import Contact from "../components/Contact.svelte";
-
-
-
 
 
 </script>
@@ -25,12 +19,9 @@
 <About />
 <BigImage />
 <Cases />
-<Marquee />
 <Contact />
+<Marquee />
 <Footer />
-
-
-
 
 <!-- <ProjectOne /> -->
 
@@ -40,11 +31,20 @@
 
 :global(:root) {
     --flashWhite: #E9ECEB;
+    --gunMetal: #dadada;
+    --justBlue: #774ff0;
+    --bitterSweet: #FE5F55;
+    --webLavender: #bed0fa;
+    --dark: #252525;
+}
+
+/* :global(:root) {
+    --flashWhite: #E9ECEB;
     --gunMetal: #11110f;
     --justBlue: #774ff0;
     --bitterSweet: #FE5F55;
     --webLavender: #bed0fa;
-}
+} */
 
   :global(*) {
     box-sizing: border-box;
@@ -63,7 +63,7 @@
   }
 
   :global(h1) {
-    color: var(--flashWhite);
+    color: var(--bitterSweet);
     text-transform: uppercase;
     font-size: 6vw;
     font-weight: 300;
@@ -80,7 +80,7 @@
   }
 
   :global(p) {
-    color: var(--flashWhite);
+    color: var(--dark);
   }
   
 </style>

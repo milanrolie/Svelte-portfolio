@@ -1,25 +1,34 @@
 
 <script>
-//     import { gsap } from "gsap";
-// 	import { onMount } from "svelte";
+    import { gsap } from "gsap";
+	import { onMount } from "svelte";
 
 
-// onMount(() => {
-//     gsap.from(".gsap", {
-//     x: 200, 
-//     duration: 1});
-// });
+onMount(() => {
+    gsap.from(".gsap", {
+    y: -200, 
+    stagger: .3,
+    duration: 1
+});
+
+gsap.to(".hello", {
+    y: 0,
+    delay: .8, 
+    duration: 1
+});
+
+});
 
 </script>
 
-<nav class="gsap">
-<h2 class="logo-text">Studio Rolie</h2>
-    <ul>
+<nav>
+<h2 class="logo-text gsap">Studio Rolie</h2>
+    <ul class="gsap">
         <li>About</li>
         <li>my Work</li>
         <li>Contact</li>
     </ul>
-    <button>Say Hello</button>
+    <button class="hello"> Say Hello</button>
 </nav>
 
 <style>
@@ -40,11 +49,12 @@
 
     li{
         list-style-type: none;
-        color: var(--flashWhite);
+        color: var(--dark);
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 200;
     }
+
 
     li:hover {
         color: var(--webLavender);
@@ -52,7 +62,7 @@
     }
 
     .logo-text {
-        color: var(--flashWhite);
+        color: var(--dark);
         text-transform: uppercase;
         font-weight: 600;
         cursor: pointer;
@@ -66,9 +76,10 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         border: none;
-        transition: .2s;
+        transition: opacity .2s;
         cursor: pointer;
         height: max-content;
+        transform: translateY(-200px);
     }
 
     button:hover {

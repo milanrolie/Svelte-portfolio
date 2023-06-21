@@ -18,8 +18,8 @@
         50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
-        alt="test"
+      src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+      alt="test"
       />
     </div>
     <div class="project">
@@ -104,7 +104,7 @@
 
   h3 {
     font-size: 3em;
-    color: var(--flashWhite);
+    color: var(--dark);
     font-weight: 300;
   }
 
@@ -175,14 +175,21 @@
     cursor: pointer;
     z-index: 1;
   }
-
+/* 
   img:hover {
-    transform: scale(1.06);
   }
-
+  
   .view-project:hover {
     opacity: 1;
   }
+   */
+  .project:hover img {
+    transform: scale(1.06);
+  }
+  
+  .project:hover .view-project {
 
+    opacity: 1;
+  }
 
 </style>
