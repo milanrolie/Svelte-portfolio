@@ -18,7 +18,7 @@
         50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
       </p>
       <img
-      src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+      src="https://images.unsplash.com/photo-1562118506-b7271445f4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
       alt="test"
       />
     </div>
@@ -36,7 +36,7 @@
         50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
       </p>
       <img
-        src="https://images.unsplash.com/photo-1587938745570-681161dcfe17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=983&q=80"
+        src="src/assets/markk.png"
         alt="test"
       />
     </div>
@@ -96,7 +96,6 @@
 
 <style>
 
-
   .projects-intro {
     margin-bottom: 5%;
     margin-left: 20%;
@@ -152,6 +151,7 @@
     opacity: 0;
     height: 100%;
     transition: .2s;
+    cursor: pointer;
   }
 
   @keyframes projectMarquee {

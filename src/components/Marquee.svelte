@@ -41,11 +41,12 @@
     z-index: -1;
     --x: 0;
     max-width: 100vw;
+    overflow: hidden;
   }
 
   #legends-marquee {
     display: block;
-    font-size: 7em;
+    font-size: 7vw;
     color: var(--bitterSweet);
     text-transform: uppercase;
     letter-spacing: 10px;

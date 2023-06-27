@@ -1,20 +1,33 @@
 
 <script>
     import { gsap } from "gsap";
-	import { onMount } from "svelte";
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+ 	import { onMount } from "svelte";
+
+    gsap.registerPlugin(ScrollTrigger)
 
 
 onMount(() => {
     gsap.from(".gsap", {
     y: -200, 
-    stagger: .3,
+    delay: 1.5,
+    stagger: 0,
     duration: 1
 });
 
 gsap.to(".hello", {
     y: 0,
-    delay: .8, 
+    delay: 1.5, 
     duration: 1
+});
+
+gsap.to("nav", {
+    scrollTrigger: {
+        trigger: 'nav',
+        scrub: 1,
+        start: 'top top',
+    },
+    y: -100,
 });
 
 });

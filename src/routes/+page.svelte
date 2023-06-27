@@ -52,6 +52,10 @@
     padding: 0;
   }
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   :global(body) {
     background-color: var(--gunMetal);
     font-family: 'Outfit', sans-serif;

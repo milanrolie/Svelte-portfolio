@@ -2,69 +2,32 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
+
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
     gsap.to(".words", {
-      y: 0,
-      stagger: .3,
+      scrollTrigger: {
+        trigger: ".hero-wrapper",
+        // pin: true,
+        scrub: 1,
+        start: "top+=20",
+        end: "center+=200",
+        // markers: true,
+      },
+      y: -150,
+      // x: 20,
+      // stagger: .2,
+    });    
+
+    gsap.from(".words", {
+      y: 200,
+      // stagger: .3,
       delay: 1,
-      duration: 1,
+      duration: 1.5,
       ease: "power4.out",
     });
 
-    gsap.to(".words", {
-      scrollTrigger: {
-        trigger: ".hero-wrapper",
-        scrub: 1,
-        start: "top",
-        end: "top+=200",
-        // markers: true,
-      },
-      x: -100,
-      stagger: 0.5,
-      duration: 1,
-      ease: Power2.easeinOut,
-    });
-
-    gsap.to(".developer", {
-      scrollTrigger: {
-        trigger: ".hero-wrapper",
-        scrub: 1,
-        start: "top",
-        end: "top+=200",
-      },
-      x: 50,
-      stagger: 0.5,
-      duration: 1,
-      ease: Power2.easeinOut,
-    });
-
-    gsap.to(".designer", {
-      scrollTrigger: {
-        trigger: ".hero-wrapper",
-        scrub: 1,
-        start: "top",
-        end: "top+=200",
-      },
-      x: -50,
-      stagger: 0.5,
-      duration: 1,
-      ease: Power2.easeinOut,
-    });
-
-    gsap.to(".intro", {
-      scrollTrigger: {
-        trigger: ".hero-wrapper",
-        scrub: 1,
-        start: "top",
-        end: "top+=200",
-      },
-      x: 150,
-      stagger: 0.5,
-      duration: 1,
-      ease: Power2.easeinOut,
-    });
   });
 </script>
 
@@ -74,11 +37,11 @@
     <div class="developer inline-block"><span class="words">developer &</span></div>
     <div class="designer inline-block"><span class="words">designer</span></div>
   </h1>
-  <div class="info-wrapper">
+  <!-- <div class="info-wrapper">
     <p>Milan Rolie</p>
     <p>Based in Utrecht</p>
     <p>The Netherlands</p>
-  </div>
+  </div> -->
 </section>
 
 <style>
@@ -89,24 +52,28 @@
 
   h1 {
     position: absolute;
-    font-size: 9em;
+    font-size: 9vw;
     line-height: 0.8em;
     font-weight: 400;
     top: 30%;
     left: 24%;
   }
 
+  .inline-block {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* background-color: aqua; */
+  }
+
   .creative {
     margin-left: -20%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   .developer {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
   }
 
   .designer {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
   }
 
   .info-wrapper {
@@ -124,7 +91,7 @@
 
   .words {
     display: inline-block;
-    transform: translateY( 200px);
+    /* transform: translateY( 200px); */
   }
 
 

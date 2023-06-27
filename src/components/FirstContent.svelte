@@ -6,75 +6,29 @@
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    gsap.from(".intro-gsap", {
-        y: 500,
+    gsap.to(".intro-gsap", {
+        y: 0,
         stagger: 0.1,
-        delay: 1,
+        delay: 2.5,
         duration: 1,
         ease: "power4.out",
     });
-
-    // gsap.to(".img1", {
-    //   scrollTrigger: {
-    //     trigger: "img1",
-    //     scrub: 1,
-    //     start: "top",
-    //     end: "+=100",
-    //     // markers: true,
-    //   },
-    //   y: -100,
-    // });
 
     const tl = new gsap.timeline({
         scrollTrigger: {
             trigger: ".image-wrapper",
             scrub: 1,
-            start: "top-=500",
+            start: "top-=800",
             end: "bottom+=100",
             // markers: true,
         },
-        stagger: 0.2,
+        stagger: 0.5,
         
     })
 
-    tl.fromTo('.img1', {y: 0}, {y: -500}, "img")
-    .fromTo('.img2', {y: 0}, {y: -500, delay: 0.05},"img")
-    .fromTo('.img3', {y: 0}, {y: -500, delay: 0.1},"img")
-
-    // gsap.fromTo('img1', {
-    //     y: 500
-    // }, {
-    //     y: 300,
-    //     scrollTrigger: {
-    //         trigger: ".img1",
-    //         scrub: 1,
-    //         start: "top",
-    //         end: "bottom+=100",
-    //         markers: true,
-    //     }
-    // })
-
-    // gsap.to(".img2", {
-    //   scrollTrigger: {
-    //     trigger: "img2",
-    //     scrub: 1,
-    //     start: "top",
-    //     end: "+=100",
-    //     // markers: true,
-    //   },
-    //   y: -500,
-    // });
-
-    // gsap.to(".img3", {
-    //   scrollTrigger: {
-    //     trigger: "img3",
-    //     scrub: 1,
-    //     start: "top",
-    //     end: "+=100",
-    //     // markers: true,
-    //   },
-    //   y: -200,
-    // });
+    tl.to('.img1', {y: -400}, "img")
+    .to('.img2', {y: -300, },"img")
+    .to('.img3', {y: -200, },"img")
   });
 </script>
 
@@ -109,6 +63,6 @@
     height: 70vh;
     object-fit: cover;
     border-radius: 1em;
-    /* transform: translateY(-200px); */
+    transform: translateY(300px);
   }
 </style>

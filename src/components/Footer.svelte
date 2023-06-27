@@ -40,7 +40,7 @@
         <div class="right-content">
             <ul class="stagger">
                 <li>Nog iets leuks?</li>
-                <li>Milan</li>
+                <li>Komt nog wel?</li>
             </ul>
         </div>
     </div>
@@ -88,7 +88,7 @@
     .big-mail-text {
         position: relative;
         margin-top: 1em;
-        font-size: 5em;
+        font-size: 6vw;
         color: var(--bitterSweet);
         text-decoration: none;
         display: flex;

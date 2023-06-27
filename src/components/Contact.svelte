@@ -24,7 +24,7 @@
         end: "center",
         pin: ".image-overlay",
       },
-      opacity: 0.3,
+      opacity: 0.5,
     });
 
     gsap.to(".photo-title", {
@@ -46,7 +46,7 @@
   <div class="photography">
       <div class="image-overlay" />
     <img class="image"
-      src="https://images.unsplash.com/photo-1629774631753-88f827bf6447?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      src="src/assets/aarhus.jpg"
       alt=""
     />
     <div class="clip"> 
@@ -61,7 +61,6 @@
     width: 100%;
     padding: 0;
     margin-bottom: 0%;
-
   }
   
   .photography {
@@ -104,7 +103,7 @@
   h2 {
     position: absolute;
     top: 45%;
-    font-size: 9em;
+    font-size: 9vw;
     line-height: .8em;
     font-weight: 400;
     text-align: center;

@@ -15,7 +15,7 @@ onMount(() => {
         start: 'top-=700',
         end: 'top+=0'
     },
-    y: -300,
+    y: -100,
     '--progress': 1
 });
 });
@@ -32,12 +32,13 @@ onMount(() => {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0;
     }
 
     img {
         object-fit: cover;
-        height: 60vh;
-        width: 100%;
+        height: 70vh;
+        width: 110%;
         clip-path: inset(0 calc((1 - var(--progress)) * 20%) 0 calc((1 - var(--progress)) * 20%) round 1em);
     }
 </style>
