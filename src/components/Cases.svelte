@@ -32,11 +32,11 @@
       />
     </div>
     <div class="project">
-      <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+      <p class="view-project orange">
+        Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
       </p>
       <img
-        src="src/assets/markk.png"
+        src="./src/assets/markk.png"
         alt="test"
       />
     </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="project">
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+        src="./src/assets/ubica.jpg"
         alt="test"
       />
     </div>
@@ -152,6 +152,11 @@
     height: 100%;
     transition: .2s;
     cursor: pointer;
+    font-weight: 400;
+  }
+
+  .orange {
+    color: var(--bitterSweet);
   }
 
   @keyframes projectMarquee {
