@@ -36,7 +36,7 @@
         Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
       </p>
       <img
-        src="./src/assets/markk.png"
+        src="../src/assets/markk.png"
         alt="test"
       />
     </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="project">
       <img
-        src="../src/assets/ubica.jpg"
+        src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-20211-scaled.jpg"
         alt="test"
       />
     </div>
