@@ -46,7 +46,7 @@
   <div class="photography">
       <div class="image-overlay" />
     <img class="image"
-      src="./src/assets/aarhus.jpg"
+      src="../src/assets/aarhus.jpg"
       alt=""
     />
     <div class="clip"> 

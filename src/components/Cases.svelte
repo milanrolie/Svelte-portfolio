@@ -49,13 +49,13 @@
     </div>
     <div class="project">
       <img
-        src="./src/assets/ubica.jpg"
+        src="../src/assets/ubica.jpg"
         alt="test"
       />
     </div>
     <div class="project">
       <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+        Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica
       </p>
       <img
         src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
