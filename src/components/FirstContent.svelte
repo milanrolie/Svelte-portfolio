@@ -6,8 +6,8 @@
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    gsap.to(".intro-gsap", {
-        y: 0,
+    gsap.from(".intro-gsap", {
+        y: 300,
         stagger: 0.1,
         delay: 2.5,
         duration: 1,
@@ -65,6 +65,6 @@
     height: 70vh;
     object-fit: cover;
     border-radius: 1em;
-    transform: translateY(300px);
+    transform: translateY(0px);
   }
 </style>
