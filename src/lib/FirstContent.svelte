@@ -35,17 +35,17 @@
 <section class="image-wrapper">
   <img
     class="img1 intro-gsap"
-    src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+    src="https://milanrolie.com/wp-content/uploads/2021/02/abri.png"
     alt="test"
   />
   <img
     class="img2 intro-gsap"
-    src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/05/urban-posters-free-mockup-psd-1072x0-c-default.jpg"
+    src="../src/assets/markk.png"
     alt="test"
   />
   <img
     class="img3 intro-gsap"
-    src="https://images.unsplash.com/photo-1587938745570-681161dcfe17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=983&q=80"
+    src="src/assets/phone.jpg"
     alt="test"
   />
 </section>
@@ -67,4 +67,5 @@
     border-radius: 1em;
     transform: translateY(0px);
   }
+
 </style>

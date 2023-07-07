@@ -26,6 +26,7 @@
     <p>
       As a creative individual, I am constantly seeking new ways to express my
       passion. Whether it's graphic design, photography, or web development.
+    </p>
 
   </div>
 
@@ -80,4 +81,8 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
     font-weight: 200;
     /* max-width: 80%; */
   }
+
+  p::selection {
+  background: var(--bitterSweet);
+}
 </style>

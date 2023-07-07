@@ -33,9 +33,9 @@
 
 <section class="hero-wrapper">
   <h1>
-    <div class="creative inline-block"><span class="words">creative</span></div>
-    <div class="developer inline-block"><span class="words">developer &</span></div>
-    <div class="designer inline-block"><span class="words">designer</span></div>
+    <div class="creative inline-block"><span class="words">Exposition</span></div>
+    <div class="developer inline-block"><span class="words">FDND 2022 - 2023</span></div>
+    <div class="designer inline-block"><span class="words">Milan rolie</span></div>
   </h1>
   <!-- <div class="info-wrapper">
     <p>Milan Rolie</p>
@@ -70,6 +70,8 @@
 
   .developer {
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    font-size: 7vw;
+    color: rgb(85, 85, 85);
   }
 
   .designer {

@@ -22,7 +22,7 @@
 </script>
 
 
-<footer>
+<footer id="footer-scroll">
     <div class="wrapper">
         <div class="left-content">
             <ul class="stagger">
@@ -34,7 +34,6 @@
             <ul class="stagger">
                 <li>Based in Utrecht,</li>
                 <li>The Netherlands</li>
-
             </ul>
         </div>
         <div class="right-content">
@@ -53,7 +52,7 @@
         </a>
     </div>
         <ul class="socials stagger">
-            <li>Instagram</li>
+            <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
             <li>Behance</li>
             <li>LinkedIn</li>
             <li>Facebook</li>
@@ -82,7 +81,8 @@
     }
 
     a   {
-
+        text-decoration: none;
+        color: var(--bitterSweet);
     }
 
     .big-mail-text {

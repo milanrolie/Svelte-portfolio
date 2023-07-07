@@ -6,7 +6,7 @@
   <h3>The projects I have done</h3>
   <p>
     My projects are a mixture between real clients, personal and educational
-    websites i've built.
+    websites I've built.
   </p>
 </section>
 
@@ -14,24 +14,27 @@
   <div class="text-wrapper" />
   <div class="projects-wrapper">
     <div class="project">
+      <a target="_blank" href="https://milanrolie.github.io/proof-of-concept/">
       <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+        Ink One page - Ink One page - Ink One page - Ink One page - Ink One page
       </p>
       <img
       src="https://images.unsplash.com/photo-1562118506-b7271445f4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
       alt="test"
       />
+    </a>
     </div>
     <div class="project">
-      <p class="view-project">
+      <p class="view-project orange">
         50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/05/urban-posters-free-mockup-psd-1072x0-c-default.jpg"
+        src="https://user-images.githubusercontent.com/112857190/214674458-0dcfa0fa-487c-4516-974d-c5165a603fca.png"
         alt="test"
       />
     </div>
     <div class="project">
+      <a href="https://milanrolie.github.io/markk/" target="_blank">
       <p class="view-project orange">
         Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
       </p>
@@ -39,55 +42,75 @@
         src="../src/assets/markk.png"
         alt="test"
       />
+    </a>
     </div>
 
     <div class="project">
+      <a href="https://tiny-pink-monkey-cuff.cyclic.app/" target="_blank">
+      <p class="view-project orange">
+        UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard
+      </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/05/urban-posters-free-mockup-psd-1072x0-c-default.jpg"
+        src="src/assets/dashboard.jpg"
         alt="test"
       />
+    </a>
     </div>
     <div class="project">
-      <img
-        src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-20211-scaled.jpg"
-        alt="test"
-      />
-    </div>
-    <div class="project">
-      <p class="view-project">
+      <a href="https://ubicautrecht.nl/" target="_blank">
+      <p class="view-project black">
         Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
-        alt="test"
+      src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
+      alt="test"
       />
+    </a>
     </div>
     <div class="project">
-      <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+      <a href="https://family-fitness.nl/" target="_blank">      <p class="view-project orange">
+        Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness 
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+        src="https://images.unsplash.com/photo-1593476123561-9516f2097158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
         alt="test"
       />
+    </a>
+
     </div>
     <div class="project">
-      <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+      <a target="_blank" href="https://precious-trench-coat-pig.cyclic.app/">
+      <p class="view-project offset">
+        visitekaartje - visitekaartje - visitekaartje - visitekaartje - visitekaartje
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+        src="https://user-images.githubusercontent.com/112857190/218090470-43f74458-3437-4f0a-9d73-acdb72f2bb95.png"
         alt="test"
       />
+    </a>
     </div>
     <div class="project">
-      <p class="view-project">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
+      <a target="_blank" href="https://realtime-ultitv-production.up.railway.app/">
+      <p class="view-project orange">
+        Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0
       </p>
       <img
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2023/06/iphone-14-pro-black-free-mockup-1072x0-c-default.jpg"
+        src="https://user-images.githubusercontent.com/112857190/237328656-c2eaa029-4fc5-4b41-ac16-b211000562a3.png"
         alt="test"
       />
+    </a>
+    </div>
+    <div class="project">
+      <a href="https://milanrolie.com/" target="_blank">
+        <div class="marquee">
+      <p class="view-project">
+        milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com
+      </p>
+      <img
+        src="https://milanrolie.com/wp-content/uploads/2021/02/bier.png"
+        alt="test"
+      />
+    </a>
     </div>
   </div>
 </section>
@@ -138,6 +161,8 @@
     overflow: hidden;
   }
 
+  
+
   .view-project {
     display: flex;
     position: absolute;
@@ -150,13 +175,23 @@
     animation: projectMarquee 40s infinite linear;
     opacity: 0;
     height: 100%;
+    width: max-content;
     transition: .2s;
     cursor: pointer;
     font-weight: 400;
+    white-space: nowrap;
   }
 
   .orange {
     color: var(--bitterSweet);
+  }
+
+  .offset {
+    margin-top: 10%;
+  }
+
+  .black {
+    color: var(--dark);
   }
 
   @keyframes projectMarquee {
@@ -166,7 +201,7 @@
     }
 
     100%  {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
   }
 

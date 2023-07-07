@@ -35,13 +35,13 @@ gsap.to("nav", {
 </script>
 
 <nav>
-<h2 class="logo-text gsap">Studio Rolie</h2>
-    <ul class="gsap">
+<h2 class="logo-text gsap"> <a href="/"> Studio Rolie </a></h2>
+    <!-- <ul class="gsap">
         <li>About</li>
         <li>my Work</li>
         <li>Contact</li>
-    </ul>
-    <button class="hello"> Say Hello</button>
+    </ul> -->
+    <button class="hello"> <a href="#footer-scroll">Say Hello</a>  </button> 
 </nav>
 
 <style>
@@ -69,16 +69,22 @@ gsap.to("nav", {
     }
 
 
-    li:hover {
+    /* li:hover {
         color: var(--webLavender);
         cursor: pointer;
-    }
+    } */
 
     .logo-text {
         color: var(--dark);
         text-transform: uppercase;
         font-weight: 600;
         cursor: pointer;
+        transition: color .2s;
+    }
+
+    .logo-text:hover {
+        color: var(--bitterSweet);
+
     }
 
     button {
@@ -90,12 +96,19 @@ gsap.to("nav", {
         text-transform: uppercase;
         border: none;
         transition: opacity .2s;
+        transition: background-color .2s;
         cursor: pointer;
         height: max-content;
         transform: translateY(-200px);
     }
 
     button:hover {
-        background-color: var(--justBlue);
+        background-color: var(--webLavender);
+    }
+
+    a {
+        color: var(--dark);
+        text-decoration: none;        
+        scroll-behavior: smooth;
     }
 </style>
