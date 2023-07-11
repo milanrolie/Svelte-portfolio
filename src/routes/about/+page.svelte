@@ -211,4 +211,54 @@
     height: 75vh;
     margin-bottom: 10%;
   }
+
+
+  @media screen and (max-width: 1122px) {
+    section {
+    }
+
+    .text-wrapper {
+      height: 30vh;
+    }
+
+    .introduction {
+      flex-direction: column;
+      padding: 5% 15%;
+    }
+    
+    .introduction p {
+      max-width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .images {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 10%;
+    }
+
+    .second-project-image {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 5%;
+  }
+
+  }
+
+  @media screen and (max-width: 700px) {
+    section {
+      /* background-color: blue; */
+    }
+
+    .date {
+      font-size: .7em;
+    }
+
+    .introduction p {
+      max-width: 100%;
+      font-size: 1em;
+    }
+
+
+  }
 </style>

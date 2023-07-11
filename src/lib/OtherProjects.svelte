@@ -2,14 +2,38 @@
 </script>
 
 <section>
-    <h3>Other projects</h3>
+  <h3>Other projects</h3>
   <ul>
-    <li><p>Project over iets</p> <p class="date2">10-11-2019</p></li>
-    <li><p>50k for a better planet</p> <p class="date2">10-11-2019</p></li>
-    <li><p>Commentary tool</p> <p class="date2">10-11-2019</p></li>
-    <li><p>Project over iets</p> <p class="date2">10-11-2019</p></li>
-    <li><p>over iets Anders</p> <p class="date2">10-11-2019</p></li>
-    <li><p>Ink Rio de Janeiro</p> <p class="date2">10-11-2019</p></li>
+    <li>
+      <div class="colored" />
+      <p>Project over iets</p>
+      <p class="date2">10-11-2019</p>
+    </li>
+    <li>
+      <div class="colored" />
+      <p>50k for a better planet</p>
+      <p class="date2">10-11-2019</p>
+    </li>
+    <li>
+      <div class="colored" />
+      <p>Commentary tool</p>
+      <p class="date2">10-11-2019</p>
+    </li>
+    <li>
+      <div class="colored" />
+      <p>Project over iets</p>
+      <p class="date2">10-11-2019</p>
+    </li>
+    <li>
+      <div class="colored" />
+      <p>over iets Anders</p>
+      <p class="date2">10-11-2019</p>
+    </li>
+    <li>
+      <div class="colored" />
+      <p>Ink Rio de Janeiro</p>
+      <p class="date2">10-11-2019</p>
+    </li>
   </ul>
 </section>
 
@@ -23,6 +47,7 @@
     /* background-color: rgb(193, 193, 255); */
     padding: 0;
     padding-top: 5%;
+    margin-bottom: 4%;
   }
 
   h3 {
@@ -35,7 +60,6 @@
     line-height: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
-
   }
 
   ul {
@@ -44,6 +68,7 @@
 
   li {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -53,22 +78,20 @@
     border-top: solid 2px;
     padding: 1px;
     padding: 5px 2%;
-    transition: .3s;
-
+    transition:  0.3s;
   }
 
   p {
     color: var(--dark);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   li:hover p {
-     color: var(--bitterSweet);
-    }
-    
-    li:hover {
-        background-color: rgb(202, 202, 202);
-        cursor: pointer;
+    color: var(--bitterSweet);
+  }
+
+  li:hover {
+    cursor: pointer;
   }
 
   li:last-child {
@@ -76,6 +99,23 @@
   }
 
   ul .date2 {
-    font-size: .5em;
+    font-size: 0.5em;
   }
+
+  .colored {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  li:hover .colored {
+    transition: cubic-bezier(1,0,.49,1.02) 1.2s;
+    transform: translateX(100%);
+  }
+
+
 </style>

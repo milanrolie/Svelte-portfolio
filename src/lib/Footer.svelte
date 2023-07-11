@@ -135,14 +135,13 @@
     }
 
     .socials li {
-        /* background-color: rgb(59, 59, 59); */
         color: var(--bitterSweet);
         letter-spacing: 1px;
-        /* text-transform: uppercase; */
         padding: 0px 4px ;
         padding-top: 1px;
         transition: .2s;
         cursor: pointer;
+        font-size:  clamp(10px, 1vw, 2em);
     }
     
     .socials li:hover {
