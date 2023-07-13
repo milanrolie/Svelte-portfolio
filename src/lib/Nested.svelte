@@ -33,9 +33,9 @@
 
 <section class="hero-wrapper">
   <h1>
-    <div class="creative inline-block"><span class="words">Exposition</span></div>
-    <div class="developer inline-block"><span class="words">FDND 2022 - 2023</span></div>
-    <div class="designer inline-block"><span class="words">Milan rolie</span></div>
+    <div class="creative inline-block"><span class="words">Creative</span></div>
+    <div class="developer inline-block"><span class="words">Developer &</span></div>
+    <div class="designer inline-block"><span class="words">Designer</span></div>
   </h1>
   <!-- <div class="info-wrapper">
     <p>Milan Rolie</p>
@@ -70,8 +70,7 @@
 
   .developer {
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
-    font-size: 7vw;
-    color: rgb(85, 85, 85);
+
   }
 
   .designer {
@@ -94,6 +93,26 @@
   .words {
     display: inline-block;
     /* transform: translateY( 200px); */
+  }
+
+  @media screen and (max-width: 1122px) {
+
+    .hero-wrapper {
+      height: 80vh;
+    }
+
+    h1 {
+      font-size: 10vw;
+    }
+
+  }
+
+  @media screen and (max-width: 700px) {
+
+    h1 {
+      font-size: 10vw;
+    }
+
   }
 
 

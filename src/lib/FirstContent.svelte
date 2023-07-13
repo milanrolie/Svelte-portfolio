@@ -68,4 +68,29 @@
     transform: translateY(0px);
   }
 
+  @media screen and (max-width: 1122px) {
+
+    .img3 { 
+      display: none;
+    }
+
+    img {
+      width: 49%;
+      height: 65vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+  .img2 {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+      height: 90vh;
+    }
+
+}
+
 </style>

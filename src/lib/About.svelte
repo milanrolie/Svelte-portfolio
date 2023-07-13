@@ -85,4 +85,24 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
   p::selection {
   background: var(--bitterSweet);
 }
+
+@media screen and (max-width: 1122px) {
+
+  p {
+    font-size: 2.5em;
+  }
+
+  section {
+    height: 30vh;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+
+}
+
+
 </style>

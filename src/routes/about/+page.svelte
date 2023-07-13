@@ -126,6 +126,7 @@
 <style>
   section {
     padding: 0;
+    overflow-x: hidden;
   }
 
   .text-wrapper {
@@ -134,7 +135,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 60vh;
+    height: 60svh;
     padding: 2%;
     margin-bottom: 2%;
     z-index: -1;
@@ -171,7 +172,7 @@
 
   .first-project-image {
     width: 100%;
-    height: 95vh;
+    height: 95%;
   }
 
   .project-description {
@@ -218,7 +219,7 @@
     }
 
     .text-wrapper {
-      height: 30vh;
+      height: 30%;
     }
 
     .introduction {
@@ -239,7 +240,7 @@
 
     .second-project-image {
       width: 100%;
-      height: 50vh;
+      height: 50%;
       margin-bottom: 5%;
   }
 
