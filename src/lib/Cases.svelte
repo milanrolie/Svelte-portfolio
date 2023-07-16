@@ -1,127 +1,233 @@
 <script>
-
 </script>
+
 <div class="page-wrapper">
   <section class="projects-intro">
-  <h3>The projects I have done</h3>
-  <p>
-    My projects are a mixture between real clients, personal and educational
-    websites I've built.
-  </p>
-</section>
+    <div class="line"></div>
+    <h3>The projects I have done</h3>
+    <p>
+      My projects are a mixture between real clients, personal and educational
+      websites I've built.
+    </p>
+  </section>
 
-<section class="projects">
-  <div class="text-wrapper" />
-  <div class="projects-wrapper">
-    <div class="project">
-      <a target="_blank" href="https://milanrolie.github.io/proof-of-concept/">
-      <p class="view-project">
-        Ink One page - Ink One page - Ink One page - Ink One page - Ink One page
-      </p>
-      <img
-      src="https://images.unsplash.com/photo-1562118506-b7271445f4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-      alt="test"
-      />
-    </a>
-    </div>
-    <div class="project">
-      <p class="view-project orange">
-        50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet - 50k for a better planet
-      </p>
-      <img
-        src="https://user-images.githubusercontent.com/112857190/214674458-0dcfa0fa-487c-4516-974d-c5165a603fca.png"
-        alt="test"
-      />
-    </div>
-    <div class="project">
-      <a href="https://milanrolie.github.io/markk/" target="_blank">
-      <p class="view-project orange">
-        Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
-      </p>
-      <img
-        src="../src/assets/markk.png"
-        alt="test"
-      />
-    </a>
-    </div>
+  <section class="projects">
+    <div class="text-wrapper" />
+    <div class="projects-wrapper">
+      <div class="project">
+        <a
+          target="_blank"
+          href="https://milanrolie.github.io/proof-of-concept/"
+        >
+          <p class="view-project">
+            Ink One page - Ink One page - Ink One page - Ink One page - Ink One
+            page
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+            alt="test"
+          />
+        </a>
+      </div>
+      <div class="project">
+        <p class="view-project orange">
+          50k for a better planet - 50k for a better planet - 50k for a better
+          planet - 50k for a better planet - 50k for a better planet
+        </p>
+        <svg
+          class="svg1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          ><path
+            d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+          /></svg
+        >
+        <p class="project-number">01</p>
+        <img
+          src="https://images.unsplash.com/photo-1530088018703-11b253bae577?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+          alt="test"
+        />
+      </div>
+      <div class="project">
+        <a href="https://milanrolie.github.io/markk/" target="_blank">
+          <p class="view-project orange">
+            Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://images.unsplash.com/photo-1525440584458-b53d13a848de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+            alt="test"
+          />
+        </a>
+      </div>
 
-    <div class="project">
-      <a href="https://tiny-pink-monkey-cuff.cyclic.app/" target="_blank">
-      <p class="view-project orange">
-        UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard
-      </p>
-      <img
-        src="src/assets/dashboard.jpg"
-        alt="test"
-      />
-    </a>
+      <div class="project">
+        <a href="https://tiny-pink-monkey-cuff.cyclic.app/" target="_blank">
+          <p class="view-project orange">
+            UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV
+            Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard -
+            UltiTV Dashboard
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img src="src/assets/dashboard.jpg" alt="test" />
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://ubicautrecht.nl/" target="_blank">
+          <p class="view-project black">
+            Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica -
+            Ubica
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
+            alt="test"
+          />
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://family-fitness.nl/" target="_blank">
+          <p class="view-project orange">
+            Family Fitness - Family Fitness - Family Fitness - Family Fitness -
+            Family Fitness - Family Fitness - Family Fitness
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://images.unsplash.com/photo-1593476123561-9516f2097158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+            alt="test"
+          />
+        </a>
+      </div>
+      <div class="project">
+        <a target="_blank" href="https://precious-trench-coat-pig.cyclic.app/">
+          <p class="view-project offset">
+            visitekaartje - visitekaartje - visitekaartje - visitekaartje -
+            visitekaartje
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://user-images.githubusercontent.com/112857190/218090470-43f74458-3437-4f0a-9d73-acdb72f2bb95.png"
+            alt="test"
+          />
+        </a>
+      </div>
+      <div class="project">
+        <a
+          target="_blank"
+          href="https://realtime-ultitv-production.up.railway.app/"
+        >
+          <p class="view-project orange">
+            Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 -
+            Dashboard 2.0
+          </p>
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+          <p class="project-number">01</p>
+          <img
+            src="https://user-images.githubusercontent.com/112857190/237328656-c2eaa029-4fc5-4b41-ac16-b211000562a3.png"
+            alt="test"
+          />
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://milanrolie.com/" target="_blank">
+          <div class="marquee">
+            <p class="view-project">
+              milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com
+              - milanrolie.com
+            </p>
+            <svg
+              class="svg1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              ><path
+                d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+              /></svg
+            >
+            <p class="project-number">01</p>
+            <img
+              src="https://milanrolie.com/wp-content/uploads/2021/02/bier.png"
+              alt="test"
+            />
+          </div></a
+        >
+      </div>
     </div>
-    <div class="project">
-      <a href="https://ubicautrecht.nl/" target="_blank">
-      <p class="view-project black">
-        Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica
-      </p>
-      <img
-      src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
-      alt="test"
-      />
-    </a>
-    </div>
-    <div class="project">
-      <a href="https://family-fitness.nl/" target="_blank">      <p class="view-project orange">
-        Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness - Family Fitness 
-      </p>
-      <img
-        src="https://images.unsplash.com/photo-1593476123561-9516f2097158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-        alt="test"
-      />
-    </a>
-
-    </div>
-    <div class="project">
-      <a target="_blank" href="https://precious-trench-coat-pig.cyclic.app/">
-      <p class="view-project offset">
-        visitekaartje - visitekaartje - visitekaartje - visitekaartje - visitekaartje
-      </p>
-      <img
-        src="https://user-images.githubusercontent.com/112857190/218090470-43f74458-3437-4f0a-9d73-acdb72f2bb95.png"
-        alt="test"
-      />
-    </a>
-    </div>
-    <div class="project">
-      <a target="_blank" href="https://realtime-ultitv-production.up.railway.app/">
-      <p class="view-project orange">
-        Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0
-      </p>
-      <img
-        src="https://user-images.githubusercontent.com/112857190/237328656-c2eaa029-4fc5-4b41-ac16-b211000562a3.png"
-        alt="test"
-      />
-    </a>
-    </div>
-    <div class="project">
-      <a href="https://milanrolie.com/" target="_blank">
-        <div class="marquee">
-      <p class="view-project">
-        milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com
-      </p>
-      <img
-        src="https://milanrolie.com/wp-content/uploads/2021/02/bier.png"
-        alt="test"
-      />
-    </a>
-    </div>
-  </div>
-</section>
+  </section>
 </div>
 
-
 <style>
-
   .projects-intro {
     margin-bottom: 5%;
     margin-left: 20%;
+  }
+
+  .line {
+    display: none;
   }
 
   h3 {
@@ -161,8 +267,6 @@
     overflow: hidden;
   }
 
-  
-
   .view-project {
     display: flex;
     position: absolute;
@@ -176,7 +280,7 @@
     opacity: 0;
     height: 100%;
     width: max-content;
-    transition: .2s;
+    transition: 0.2s;
     cursor: pointer;
     font-weight: 400;
     white-space: nowrap;
@@ -195,16 +299,14 @@
   }
 
   @keyframes projectMarquee {
-
-    0%  {
+    0% {
       transform: translateX(0%);
     }
 
-    100%  {
+    100% {
       transform: translateX(-50%);
     }
   }
-
 
   img {
     aspect-ratio: 1;
@@ -215,21 +317,106 @@
     cursor: pointer;
     z-index: 1;
   }
-/* 
-  img:hover {
-  }
-  
-  .view-project:hover {
-    opacity: 1;
-  }
-   */
+
   .project:hover img {
     transform: scale(1.06);
   }
-  
-  .project:hover .view-project {
 
+  .project:hover .view-project {
     opacity: 1;
   }
 
+  .svg1 {
+    display: none;
+  }
+
+  @media screen and (max-width: 1122px) {
+    .projects-intro {
+      margin-left: 0%;
+    }
+
+    h3 {
+      font-size: 5em;
+      color: var(--dark);
+      font-weight: 300;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-weight: 200;
+      max-width: 100%;
+    }
+
+    .projects-wrapper {
+      width: 100%;
+    }
+
+    .project {
+      width: 48%;
+    }
+
+    .text-wrapper {
+      width: 0;
+    }
+
+    img {
+      aspect-ratio: 0.7;
+      width: 100%;
+    }
+
+    .project:hover img {
+      transform: scale(1);
+    }
+
+    .svg1 {
+      position: absolute;
+      bottom: 3%;
+      right: 3%;
+      display: block;
+      z-index: 2;
+      fill: var(--webLavender);
+    }
+
+    .project-number {
+      position: absolute;
+      top: 3%;
+      left: 3%;
+      display: block;
+      z-index: 2;
+      color: var(--webLavender);
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    h3 {
+      font-size: 3em;
+      color: var(--dark);
+      font-weight: 300;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+
+    .line {
+    display: block;
+    border: solid 1px var(--dark);
+    margin: 2em 0;
+    opacity: .5;
+  }
+
+    p {
+      font-size: 1em;
+    }
+
+    .project {
+      width: 100%;
+    }
+
+    .view-project {
+      opacity: 1;
+    }
+  }
 </style>

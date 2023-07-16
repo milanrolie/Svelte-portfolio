@@ -9,32 +9,30 @@
     gsap.to(".words", {
       scrollTrigger: {
         trigger: ".hero-wrapper",
-        // pin: true,
         scrub: 1,
         start: "top+=20",
         end: "center+=200",
-        // markers: true,
       },
       y: -150,
-      // x: 20,
-      // stagger: .2,
-    });    
+
+    });
 
     gsap.from(".words", {
       y: 200,
       // stagger: .3,
-      delay: 1,
+      delay: 4,
       duration: 1.5,
       ease: "power4.out",
     });
-
   });
 </script>
 
 <section class="hero-wrapper">
   <h1>
     <div class="creative inline-block"><span class="words">Creative</span></div>
-    <div class="developer inline-block"><span class="words">Developer &</span></div>
+    <div class="developer inline-block">
+      <span class="words">Developer +</span>
+    </div>
     <div class="designer inline-block"><span class="words">Designer</span></div>
   </h1>
   <!-- <div class="info-wrapper">
@@ -70,7 +68,6 @@
 
   .developer {
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
-
   }
 
   .designer {
@@ -96,26 +93,34 @@
   }
 
   @media screen and (max-width: 1122px) {
-
     .hero-wrapper {
-      height: 80vh;
+      height: 40vh;
     }
 
     h1 {
-      font-size: 10vw;
+      font-size: 13vw;
+      position: relative;
+      line-height: 1em;
+      font-weight: 400;
+      left: 0;
     }
 
+    .creative {
+    margin-left: 0;
+  }
+
+  .developer {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  }
+
+  .designer {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  }
   }
 
   @media screen and (max-width: 700px) {
-
     h1 {
-      font-size: 10vw;
+      font-size: 13vw;
     }
-
   }
-
-
-
-
 </style>

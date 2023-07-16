@@ -16,6 +16,17 @@
       },
       y: 100,
     });
+
+    gsap.from(".about-gsap", {
+      scrollTrigger: {
+        trigger: ".image-wrapper",
+        scrub: 1,
+        start: "center-=350",
+        end: "center",
+        // markers: true,
+      },
+      y: 100,
+    });
   });
 </script>
 
@@ -23,11 +34,10 @@
   <!-- <div class="line"></div> -->
   <div class="text-wrapper">
     <!-- <h3>About</h3> -->
-    <p>
+    <p class="about-gsap">
       As a creative individual, I am constantly seeking new ways to express my
       passion. Whether it's graphic design, photography, or web development.
     </p>
-
   </div>
 
   <!-- Currently, I am pursuing my studies in Amsterdam, where I further refine my
@@ -41,9 +51,7 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
 </section>
 
 <style>
-
   section {
-    /* margin-top: 8em; */
     width: 100%;
     height: 70vh;
     padding: 0;
@@ -83,26 +91,30 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
   }
 
   p::selection {
-  background: var(--bitterSweet);
-}
-
-@media screen and (max-width: 1122px) {
-
-  p {
-    font-size: 2.5em;
+    background: var(--bitterSweet);
   }
 
-  section {
-    height: 30vh;
+  @media screen and (max-width: 1122px) {
+    p {
+      font-size: 4.5em;
+      /* text-transform: uppercase; */
+      font-weight: 300;
+      line-height: 1em;
+      color: var(--flashWhite);
+    }
+
+    section {
+      height: 21em;
+      height: max-content;
+      background: none;
+      background-color: var(--dark);
+      padding: 5em 1em ;
+    }
   }
 
-}
-
-@media screen and (max-width: 700px) {
-
-
-
-}
-
-
+  @media screen and (max-width: 700px) {
+    section {
+      margin-top: 50%;
+    }
+  }
 </style>

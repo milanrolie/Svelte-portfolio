@@ -41,4 +41,10 @@ onMount(() => {
         width: 110%;
         clip-path: inset(0 calc((1 - var(--progress)) * 20%) 0 calc((1 - var(--progress)) * 20%) round 1em);
     }
+
+    @media screen and (max-width: 1122px) {
+    section {
+        display: none;
+    }
+  }
 </style>

@@ -1,4 +1,6 @@
 <script>
+  import Menu from "../lib/Menu.svelte";
+  import IntroAnimatie from "../lib/IntroAnimatie.svelte";
   import Nav from "../lib/Nav.svelte";
   import Nested from "../lib/Nested.svelte";
   import FirstContent from "../lib/FirstContent.svelte";
@@ -13,6 +15,8 @@
 
 </script>
 
+<!-- <Menu /> -->
+<IntroAnimatie />
 <Nav />
 <Nested />
 <FirstContent />

@@ -10,14 +10,14 @@
 onMount(() => {
     gsap.to(".logo-svg", {
     y: 0, 
-    delay: 1.5,
+    delay: 4.5,
     stagger: 0,
     duration: 1
 });
 
 gsap.to(".hello", {
     y: 0,
-    delay: 1.5, 
+    delay: 4.5, 
     duration: 1
 });
 

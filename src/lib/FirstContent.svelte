@@ -6,10 +6,10 @@
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    gsap.from(".intro-gsap", {
-        y: 300,
+    gsap.to(".intro-gsap", {
+        y: 0,
         stagger: 0.1,
-        delay: 2.5,
+        delay: 5.5,
         duration: 1,
         ease: "power4.out",
     });
@@ -26,16 +26,16 @@
         
     })
 
-    tl.to('.img1', {y: -400}, "img")
-    .to('.img2', {y: -300, },"img")
-    .to('.img3', {y: -200, },"img")
+    // tl.to('.img1', {y: -400}, "img")
+    // .to('.img2', {y: -300, },"img")
+    // .to('.img3', {y: -200, },"img")
   });
 </script>
 
 <section class="image-wrapper">
   <img
     class="img1 intro-gsap"
-    src="https://milanrolie.com/wp-content/uploads/2021/02/abri.png"
+    src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1010&q=80"
     alt="test"
   />
   <img
@@ -66,6 +66,10 @@
     object-fit: cover;
     border-radius: 1em;
     transform: translateY(0px);
+  }
+
+  .intro-gsap {
+    transform: translateY(500px);
   }
 
   @media screen and (max-width: 1122px) {

@@ -172,7 +172,7 @@
 
   .first-project-image {
     width: 100%;
-    height: 95%;
+    height: 95vh;
   }
 
   .project-description {
