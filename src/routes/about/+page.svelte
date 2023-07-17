@@ -1,5 +1,6 @@
 <script>
   import Nav from "$lib/Nav.svelte";
+  import Transition from "$lib/Transition.svelte";
   import OtherProjects from "$lib/OtherProjects.svelte";
   import Footer from "$lib/Footer.svelte";
   import { gsap } from "gsap";
@@ -11,7 +12,7 @@
   onMount(() => {
     gsap.to(".words", {
       scrollTrigger: {
-        trigger: ".hero-wrapper",
+        // trigger: ".hero-wrapper",
         scrub: 1,
         start: "top+=20",
         end: "center+=200",
@@ -52,6 +53,8 @@
   });
 </script>
 
+
+<!-- <Transition /> -->
 <Nav />
 
 <section class="project-intro">
@@ -135,7 +138,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 60svh;
+    height: 60vh;
     padding: 2%;
     margin-bottom: 2%;
     z-index: -1;
@@ -220,6 +223,7 @@
 
     .text-wrapper {
       height: 30%;
+      margin-top: 40%;
     }
 
     .introduction {
@@ -250,6 +254,11 @@
     section {
       /* background-color: blue; */
     }
+
+    .first-project-image {
+    width: 100%;
+    height: 120%;
+  }
 
     .date {
       font-size: .7em;

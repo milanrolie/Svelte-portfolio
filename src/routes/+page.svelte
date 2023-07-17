@@ -15,9 +15,9 @@
 
 </script>
 
-<!-- <Menu /> -->
-<IntroAnimatie />
+<!-- <IntroAnimatie /> -->
 <Nav />
+<Menu />
 <Nested />
 <FirstContent />
 <About />

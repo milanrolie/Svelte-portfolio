@@ -114,7 +114,7 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
 
   @media screen and (max-width: 700px) {
     section {
-      margin-top: 50%;
+      margin-top: 1%;
     }
   }
 </style>

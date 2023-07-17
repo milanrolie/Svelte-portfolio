@@ -2,8 +2,6 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
-  import { bubble } from "svelte/internal";
-
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
@@ -11,44 +9,38 @@
       y: -60,
       delay: 0,
       stagger: 0.1,
-      duration: 1,
+      duration: .7,
     });
 
     gsap.to(".path-gsap", {
       fill: "#bed0fa",
       delay: 0,
       stagger: 0.2,
-      duration: 1,
+      duration: .7,
     });
-
-    // gsap.to(".path-gsap", {
-    //   y: -6000,
-    //   delay: 2.5,
-    //   stagger: 0.1,
-    //   duration: 1,
-    // });
 
     gsap.to(".percentage", {
       delay: 0.5,
       innerText: 100,
       stagger: 0.1,
       duration: 2,
+      ease: "expo.easeOut",
       snap: {
         innerText: 1,
       },
     });
 
     gsap.to(".overlay", {
-      y: "-100%",
+      y: "-110%",
       delay: 3,
       stagger: 0.1,
-      duration: 1,
+      duration: .7,
+      ease: "expo.easeOut",
     });
   });
 </script>
 
 <div class="overlay">
-  <!-- <p>studio rolie</p> -->
   <svg
     class="logo-svg"
     width="556"
@@ -131,6 +123,7 @@
     flex-direction: column;
     background-color: var(--dark);
     z-index: 100;
+    /* border-radius: 3em; */
   }
 
   p {
@@ -138,15 +131,16 @@
     bottom: 5%;
     font-size: 1em;
     color: var(--gunMetal);
-  }
+}
 
-  svg {
+svg {
     fill: var(--webLavender);
     width: 10%;
     height: 10em;
     fill: var(--gunMetal);
     transition: 0;
     overflow: visible;
+    fill: var(--dark);
   }
 
   path {
@@ -154,8 +148,7 @@
 
   @media screen and (max-width: 1122px) {
     svg {
-    width: 30%;
+      width: 30%;
     }
   }
-
 </style>

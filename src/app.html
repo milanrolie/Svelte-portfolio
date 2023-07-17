@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+	<div class="ball">
+		<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20"></svg>
+			<path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+		</svg>
+	</div>
+
+</body>
+
 </html>
+
+<script>
+	const ball = document.querySelector('.ball');
+
+	let mouseX = 0;
+	let mouseY = 0;
+
+	let ballX = 0;
+	let ballY = 0;
+
+	let speed = 0.1;
+
+	// Update ball position
+	function animate() {
+		//Determine distance between ball and mouse
+		let distX = mouseX - ballX;
+		let distY = mouseY - ballY;
+
+		// Find position of ball and some distance * speed
+		ballX = ballX + (distX * speed);
+		ballY = ballY + (distY * speed);
+
+		ball.style.left = ballX + "px";
+		ball.style.top = ballY + "px";
+
+		requestAnimationFrame(animate);
+	}
+	animate();
+
+	// Move ball with cursor
+	document.addEventListener("mousemove", function (event) {
+		mouseX = event.clientX;
+		mouseY = event.clientY;
+	});
+
+	if (e.target.classList.contains('.case') || e.target.closest('.case')) {
+		circle.classList.add('show-arrow');
+	} else {
+		circle.classList.remove('show-arrow');
+	}
+</script>
 
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap');
-	
+	@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 	:root {
 		--flashWhite: #E9ECEB;
 		--gunMetal: #dadada;
@@ -22,8 +73,9 @@
 		--bitterSweet: #FE5F55;
 		--webLavender: #bed0fa;
 		--dark: #252525;
+		--font2: 'Space Grotesk', sans-serif;
 	}
-	
+
 	/* :global(:root) {
 		--flashWhite: #E9ECEB;
 		--gunMetal: #11110f;
@@ -31,47 +83,69 @@
 		--bitterSweet: #FE5F55;
 		--webLavender: #bed0fa;
 	} */
-	
-	  * {
+
+	* {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-	  }
-	
-	  html {
+	}
+
+	html {
 		scroll-behavior: smooth;
-	  }
-	
-	 body {
+	}
+
+	body {
 		background-color: var(--gunMetal);
 		font-family: 'Outfit', sans-serif;
 		overflow-x: hidden;
-	  }
-	  
-	  section {
+	}
+
+	section {
 		padding: 0% 2%;
-	  }
-	
-	  h1 {
-		color: var(--bitterSweet);
+	}
+
+	h1 {
+		color: var(--dark);
 		text-transform: uppercase;
 		font-size: 6vw;
 		font-weight: 300;
 		line-height: 1em;
-	  }
-	
-	  h2 {
+	}
+
+	h2 {
 		font-size: 2em;
 		font-weight: 700;
-	  }
-	
-	 img {
+	}
+
+	img {
 		border-radius: .5em;
-	  }
-	
-	  p {
+	}
+
+	p {
 		color: var(--dark);
-	  }
-	  
-	</style>
-	
+	}
+
+	.ball {
+		background: #fff;
+		width: 5em;
+		height: 5em;
+		border-radius: 50%;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		mix-blend-mode: difference;
+		z-index: 20;
+		pointer-events: none;
+		display: block;
+	}
+
+	.arrow {
+		position: absolute;
+		transform: translate(120%, 120%) scale(0);
+	}
+
+	.show-arrow {
+		transform: scale(2.5);
+	}
+</style>

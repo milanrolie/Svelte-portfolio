@@ -4,7 +4,7 @@
 <div class="page-wrapper">
   <section class="projects-intro">
     <div class="line"></div>
-    <h3>The projects I have done</h3>
+    <h3>Some projects I have done</h3>
     <p>
       My projects are a mixture between real clients, personal and educational
       websites I've built.
@@ -17,7 +17,7 @@
       <div class="project">
         <a
           target="_blank"
-          href="https://milanrolie.github.io/proof-of-concept/"
+          href="/about"
         >
           <p class="view-project">
             Ink One page - Ink One page - Ink One page - Ink One page - Ink One
@@ -145,78 +145,6 @@
           />
         </a>
       </div>
-      <div class="project">
-        <a target="_blank" href="https://precious-trench-coat-pig.cyclic.app/">
-          <p class="view-project offset">
-            visitekaartje - visitekaartje - visitekaartje - visitekaartje -
-            visitekaartje
-          </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
-          <img
-            src="https://user-images.githubusercontent.com/112857190/218090470-43f74458-3437-4f0a-9d73-acdb72f2bb95.png"
-            alt="test"
-          />
-        </a>
-      </div>
-      <div class="project">
-        <a
-          target="_blank"
-          href="https://realtime-ultitv-production.up.railway.app/"
-        >
-          <p class="view-project orange">
-            Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 - Dashboard 2.0 -
-            Dashboard 2.0
-          </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
-          <img
-            src="https://user-images.githubusercontent.com/112857190/237328656-c2eaa029-4fc5-4b41-ac16-b211000562a3.png"
-            alt="test"
-          />
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://milanrolie.com/" target="_blank">
-          <div class="marquee">
-            <p class="view-project">
-              milanrolie.com - milanrolie.com - milanrolie.com - milanrolie.com
-              - milanrolie.com
-            </p>
-            <svg
-              class="svg1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              ><path
-                d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-              /></svg
-            >
-            <p class="project-number">01</p>
-            <img
-              src="https://milanrolie.com/wp-content/uploads/2021/02/bier.png"
-              alt="test"
-            />
-          </div></a
-        >
-      </div>
-    </div>
   </section>
 </div>
 
@@ -261,7 +189,7 @@
   }
 
   .project {
-    width: 30%;
+    width: 48%;
     clip-path: inset(0 round 1em);
     position: relative;
     overflow: hidden;
@@ -290,10 +218,6 @@
     color: var(--bitterSweet);
   }
 
-  .offset {
-    margin-top: 10%;
-  }
-
   .black {
     color: var(--dark);
   }
@@ -309,7 +233,7 @@
   }
 
   img {
-    aspect-ratio: 1;
+    aspect-ratio: .8;
     width: 100%;
     object-fit: cover;
     border-radius: 1em;
@@ -327,6 +251,10 @@
   }
 
   .svg1 {
+    display: none;
+  }
+
+  .project-number {
     display: none;
   }
 

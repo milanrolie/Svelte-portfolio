@@ -63,7 +63,7 @@
   }
 
   .creative {
-    margin-left: -20%;
+    margin-left: -20.3%;
   }
 
   .developer {

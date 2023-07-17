@@ -79,6 +79,7 @@
     padding: 1px;
     padding: 5px 2%;
     transition:  0.3s;
+    overflow: hidden;
   }
 
   p {
@@ -104,17 +105,17 @@
 
   .colored {
     position: absolute;
-    top: 0;
-    left: -100%;
+    left: 0;
+    top: -100%;
     background-color: rgb(202, 202, 202);
     width: 100%;
     height: 100%;
     z-index: -1;
+    transition: cubic-bezier(1,0,.49,1.02) .8s;
   }
 
   li:hover .colored {
-    transition: cubic-bezier(1,0,.49,1.02) 1.2s;
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
 
 
