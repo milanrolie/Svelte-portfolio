@@ -6,13 +6,11 @@ import { gsap } from "gsap";
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    // gsap.to(".transition", {
-    //   y: '-10%',
-    //   rotate: 0,
-    //   delay: 5,
-    //   stagger: 0,
-    //   duration: 1,
-    // });
+    gsap.to(".transition", {
+      y: '-110%',
+      rotate: 0,
+      duration: 1,
+    });
 });
 
 </script>
@@ -28,6 +26,6 @@ import { gsap } from "gsap";
         width: 120%;
         background-color: var(--dark);
         z-index: 300;
-        transform: translateY(100%) rotate(-10deg);
+        /* transform: translateY(100%) rotate(-10deg); */
     }
 </style>

@@ -196,5 +196,9 @@
     .available {
       display: none;
     }
+    
+    .hello {
+        display: none;
+    }
   }
 </style>

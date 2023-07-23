@@ -16,10 +16,10 @@
 
     const tl = new gsap.timeline({
       scrollTrigger: {
-        trigger: ".image-wrapper",
+        trigger: "nav",
         scrub: 1,
-        start: "top-=800",
-        end: "bottom+=100",
+        start: "top",
+        end: "bottom+=500",
         // markers: true,
       },
       stagger: 0.5,
@@ -29,9 +29,9 @@
 
     // add a media query. When it matches, the associated function will run
     mm.add("(min-width: 1200px)", () => {
-      // tl.to(".img1", { y: -400 }, "img")
-      //   .to(".img2", { y: -300 }, "img")
-      //   .to(".img3", { y: -200 }, "img");
+      tl.to(".img1", { y: -400 }, "img")
+        .to(".img2", { y: -300 }, "img")
+        .to(".img3", { y: -200 }, "img");
     });
   });
 </script>

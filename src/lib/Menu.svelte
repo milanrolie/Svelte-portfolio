@@ -1,12 +1,12 @@
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
 
-  gsap.registerPlugin(ScrollTrigger);
-
   onMount(() => {
-    let menuButton = document.querySelector('.menu-button')
+    let menuButton = document.querySelector(".menu-button");
+    let contactLink = document.querySelector(".contact-link");
+
+    let mm = gsap.matchMedia();
 
     let tl = gsap.timeline({ paused: true, reversed: true });
     tl.to(".menu-wrapper", {
@@ -15,72 +15,123 @@
       duration: 1.2,
       ease: "Expo.easeInOut",
     });
-    tl.to(".explore",{ y:0, duration: 2, ease: "Expo.easeInOut", delay: 1 },"<");
-    tl.to(".menu-wrapper",{ height: "96vh", duration: 1.2, ease: "Expo.easeOut", delay: .1 },"<");
-    tl.to(".menu-button", { rotate: 270, duration: .8, ease: "Expo.easeInOut", delay: 0 }, "<");
-    tl.to(".menu-text-gsap",{ y: 0, duration: 2, ease: "Expo.easeOut", delay: 0.6 },"<");
-    tl.to(".number", { y: 0, duration: 1.7, ease: "Expo.easeOut" }, "<");
-    tl.to(".socials-gsap", { y: 0, duration: 1.5, ease: "Expo.easeInOut", stagger: .2, delay: .4 }, "<");
 
-    menuButton.addEventListener('click', function () {
-        if (tl.reversed()) {
-            tl.timeScale(1.5).play();
-        } else {
-            tl.timeScale(1.5).reverse();
-        }
-    })
+    // add a media query. When it matches, the associated function will run
+    mm.add("(max-width: 700px)", () => {
+      tl.to(
+        ".menu-wrapper",
+        {
+          width: "94%",
+          borderRadius: "1em",
+          duration: 1.2,
+          ease: "Expo.easeInOut",
+          delay: 0,
+        },
+        "<"
+      );
+    });
+
+    tl.to(
+      ".explore",
+      { y: 0, duration: 2, ease: "Expo.easeInOut", delay: 1 },
+      "<"
+    );
+    tl.to(
+      ".menu-wrapper",
+      { height: "96vh", duration: 1.2, ease: "Expo.easeOut", delay: 0.1 },
+      "<"
+    );
+    tl.to(
+      ".menu-button",
+      { rotate: 270, duration: 0.8, ease: "Expo.easeInOut", delay: 0 },
+      "<"
+    );
+    tl.to(
+      ".menu-text-gsap",
+      { y: 0, duration: 2, ease: "Expo.easeOut", delay: 0.6 },
+      "<"
+    );
+    tl.to(".number", { y: 0, duration: 1.7, ease: "Expo.easeOut" }, "<");
+    tl.to(
+      ".socials-gsap",
+      { y: 0, duration: 1.5, stagger: 0.2, delay: 0.4, ease: "Expo.easeInOut" },
+      "<"
+    );
+
+    menuButton.addEventListener("click", function () {
+      if (tl.reversed()) {
+        tl.timeScale(1.5).play();
+      } else {
+        tl.timeScale(1.5).reverse();
+      }
+    });
+
+    contactLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      tl.timeScale(1.5).reverse();
+      setTimeout(function () {
+        window.location.href = "#footer-scroll";
+      }, 1800);
+    });
+
   });
 </script>
+
 <section>
-    <div class="menu-wrapper">
-    <button class="menu-button"> <img src="src/assets/arrow.svg" alt=""></button>
-  <h3 class="explore">
-    Explore <img src="src/assets/arrow.svg" alt="">
-  </h3>
-  <!-- <button class="close-button">close</button> -->
-  <nav>
-    <ul>
-      <li>
-        <p class="number">01</p>
-        <a class="menu-text-gsap" href="">About</a>
-      </li>
-      <li>
-        <p class="number">02</p>
-        <a class="menu-text-gsap" href="">Projects</a>
-      </li>
-      <li>
-        <p class="number">03</p>
-        <a class="menu-text-gsap" href="">Photography</a>
-      </li>
-      <li>
-        <p class="number">04</p>
-        <a class="menu-text-gsap" href="">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="submenu">
-    <div class="left-submenu socials-gsap">
-      <p class="subhead">Contact</p>
-      <ul class="socials">
+  <div class="menu-wrapper">
+    <button class="menu-button">
+      <img src="src/assets/arrow.svg" alt="" /></button
+    >
+    <h3 class="explore">
+      Explore <img src="src/assets/arrow.svg" alt="" />
+    </h3>
+    <!-- <button class="close-button">close</button> -->
+    <nav>
+      <ul>
         <li>
-          <a href="https://www.instagram.com/milanrolie/">contact@studiorolie.com</a>
-          <a href="https://www.instagram.com/milanrolie/">+31 653 63 51 06</a>
-
+          <p class="number">01</p>
+          <a class="menu-text-gsap" href="">About</a>
+        </li>
+        <li>
+          <p class="number">02</p>
+          <a class="menu-text-gsap" href="">Projects</a>
+        </li>
+        <li>
+          <p class="number">03</p>
+          <a class="menu-text-gsap" href="">Photography</a>
+        </li>
+        <li>
+          <p class="number">04</p>
+          <a class="menu-text-gsap contact-link" href="#footer-scroll"
+            >Contact</a
+          >
         </li>
       </ul>
-    </div>
-    <div class="right-submenu socials-gsap">
-      <p class="subhead">socials</p>
-      <ul class="socials">
-        <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
-        <li>Behance</li>
-        <li>LinkedIn</li>
-        <li>Github</li>
-      </ul>
+    </nav>
+
+    <div class="submenu">
+      <div class="left-submenu socials-gsap">
+        <p class="subhead">Contact</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com/milanrolie/"
+              >contact@studiorolie.com</a
+            >
+            <a href="https://www.instagram.com/milanrolie/">+31 653 63 51 06</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-submenu socials-gsap">
+        <p class="subhead">socials</p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
+          <li><a href="https://www.instagram.com/milanrolie/">Behance</a></li>
+          <li><a href="https://www.instagram.com/milanrolie/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/milanrolie/">Github</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <style>
@@ -114,20 +165,6 @@
     transform: translateY(-400%);
   }
 
-  /* button {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    padding: 0.5em 1em;
-    border-radius: 3em;
-    border: none;
-    font-family: "Outfit", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transform: translateX(130%);
-  } */
-
   button {
     position: fixed;
     top: -2px;
@@ -145,20 +182,12 @@
     transform: rotate(135deg) scale(1.8);
   }
 
-
-  nav {
-  }
-
-  ul {
-  }
-
   img {
-    height: .9em;
+    height: 0.9em;
     transform: rotate(90deg);
   }
 
   nav li {
-    /* border-bottom: solid 1px var(--gunMetal); */
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -181,7 +210,16 @@
   }
   nav a {
     font-size: 5em;
-    transform: translateY(-100%);
+    transform: translateY(-130%);
+    transition: margin 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--webLavender);
+    margin-left: 1%;
+  }
+
+  nav li:hover .number {
   }
 
   .submenu {
@@ -217,11 +255,36 @@
     transform: translateY(200%);
   }
 
-  .left-submenu {
-    /* max-width: 50%; */
-  }
-
   .socials a {
     margin-right: 2em;
+  }
+
+  @media screen and (max-width: 1122px) {
+  }
+
+  @media screen and (max-width: 700px) {
+    .menu-wrapper {
+      top: 1.5%;
+      right: 3%;
+    }
+
+    nav {
+      margin-top: 10%;
+    }
+
+    nav a {
+      margin-top: 3%;
+      font-size: 13vw;
+    }
+
+    .submenu {
+      position: absolute;
+      right: 0.5em;
+      bottom: -1em;
+    }
+
+    .socials a {
+      font-size: 0.8em;
+    }
   }
 </style>

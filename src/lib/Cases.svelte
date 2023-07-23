@@ -1,4 +1,30 @@
 <script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+  import { onMount } from "svelte";
+
+  gsap.registerPlugin(ScrollTrigger);
+  
+
+  onMount(() => {
+    let caseClick = document.querySelector(".project");
+
+
+    caseClick.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+      y: '-10%',
+      rotate: 0,
+      delay: 0,
+      stagger: 0,
+      duration: 1,
+    });      setTimeout(function () {
+        window.location.href = "/about";
+      }, 1000);
+    });
+
+   
+});
 </script>
 
 <div class="page-wrapper">

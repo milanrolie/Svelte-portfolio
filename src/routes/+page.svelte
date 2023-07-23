@@ -11,11 +11,13 @@
   import Marquee from "../lib/Marquee.svelte";
   import Footer from "../lib/Footer.svelte";
   import Contact from "../lib/Contact.svelte";
+  import Transition from "../lib/Transition.svelte";
   
 
 </script>
 
-<!-- <IntroAnimatie /> -->
+<Transition />
+<IntroAnimatie />
 <Nav />
 <Menu />
 <Nested />

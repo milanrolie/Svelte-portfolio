@@ -55,8 +55,8 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
     width: 100%;
     height: 70vh;
     padding: 0;
-    background: linear-gradient(#0000 calc(100% - 2px), #0e0e0e);
-    background-image: linear-gradient(#0000 calc(100% - 2px), #0e0e0e);
+    background: linear-gradient(#0000 calc(100% - 2px), var(--gunMetal));
+    background-image: linear-gradient(#0000 calc(100% - 2px), var(--gunMetal));
     background-position-y: 0.69vw;
     background-size: 1px 7vw;
     -webkit-clip-path: inset(1.4vw 0 0 0);
@@ -69,6 +69,7 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
     width: 100%;
     margin-bottom: 1vh;
     padding-left: 2%;
+    background-color: var(--dark);
   }
 
   .text-wrapper {
@@ -78,7 +79,7 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
   }
 
   h3 {
-    color: var(--flashWhite);
+    color: var(--gunMetal);
     font-weight: 300;
     font-size: 3em;
     margin-right: 5%;
@@ -87,6 +88,8 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
   p {
     font-size: 2.5em;
     font-weight: 200;
+    color: var(--gunMetal);
+
     /* max-width: 80%; */
   }
 

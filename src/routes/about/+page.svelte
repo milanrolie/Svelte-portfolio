@@ -6,26 +6,30 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
+  import TransitionOut from "../../lib/TransitionOut.svelte";
 
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    gsap.to(".words", {
-      scrollTrigger: {
-        // trigger: ".hero-wrapper",
-        scrub: 1,
-        start: "top+=20",
-        end: "center+=200",
-      },
-      y: -150,
-    });
 
-    gsap.from(".words", {
-      y: 900,
-      delay: 1,
+    gsap.to(".words", {
+      y: 0,
+      delay: .8,
       duration: 1.5,
       ease: "power4.out",
     });
+
+    // gsap.to(".words", {
+    //   scrollTrigger: {
+    //     trigger: ".text-wrapper",
+    //     scrub: 1,
+    //     start: "top",
+    //     end: "center",
+    //     markers: true,
+    //   },
+    //   y: 0,
+    // });
+
 
     gsap.to(".first-project-image", {
       scrollTrigger: {
@@ -33,20 +37,21 @@
         scrub: 1,
         start: "top-=200",
         end: "center+=200",
+        // markers: true,
       },
       scale: 1.07,
     });
 
     gsap.from(".first-project-image", {
       y: 500,
-      delay: 1.3,
+      delay: 1,
       duration: 1.5,
       ease: "power4.out",
     });
 
     gsap.from(".date", {
       y: 500,
-      delay: 2,
+      delay: 1.7,
       duration: 1.5,
       ease: "power4.out",
     });
@@ -54,7 +59,8 @@
 </script>
 
 
-<!-- <Transition /> -->
+<TransitionOut />
+
 <Nav />
 
 <section class="project-intro">
@@ -149,6 +155,10 @@
     font-size: 9vw;
     text-transform: none;
     line-height: 0.8em;
+  }
+
+  .words {
+    transform: translateY(700px);
   }
 
   .date {
