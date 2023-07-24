@@ -12,6 +12,8 @@
   import Footer from "../lib/Footer.svelte";
   import Contact from "../lib/Contact.svelte";
   import Transition from "../lib/Transition.svelte";
+  import OtherProjects from "../lib/OtherProjects.svelte";
+  import AllProjects from "../lib/allProjects.svelte";
   
 
 </script>
@@ -21,11 +23,14 @@
 <Nav />
 <Menu />
 <Nested />
-<FirstContent />
+<!-- <FirstContent /> -->
+<!-- <BigImage /> -->
 <About />
-<BigImage />
 <Cases />
-<Contact />
+<!-- <Contact />zx -->
+<!-- <About /> -->
+<!-- <OtherProjects /> -->
+<AllProjects />
 <Marquee />
 <Footer />
 

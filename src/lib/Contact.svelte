@@ -103,11 +103,11 @@
   h2 {
     position: absolute;
     top: 45%;
-    font-size: 9vw;
+    font-size: 10vw;
     line-height: .8em;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
     transform: translateY(200px);
     color: var(--flashWhite);
     z-index: 3;

@@ -35,7 +35,7 @@
   }
 
   .sticky-marquee {
-    height: 100vh;
+    height: 60vh;
     padding-top: 4em;
     /* background-color: rgb(103, 103, 103); */
     z-index: -1;
@@ -46,14 +46,14 @@
 
   #legends-marquee {
     display: block;
-    font-size: 7vw;
+    font-size: 10vw;
     color: var(--bitterSweet);
     text-transform: uppercase;
     letter-spacing: 10px;
     font-family: "Outfit", sans-serif;
     white-space: nowrap;
     width: max-content;
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 0%;
     transform: translateX(calc((-100% + 100vw) * var(--x)));
     padding-left: 4%;

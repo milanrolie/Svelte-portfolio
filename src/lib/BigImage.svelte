@@ -13,7 +13,8 @@ onMount(() => {
         trigger: '.big-image',
         scrub: 1,
         start: 'top-=700',
-        end: 'top+=0'
+        end: 'top+=300',
+        markers: true,
     },
     y: -100,
     '--progress': 1

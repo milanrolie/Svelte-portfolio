@@ -4,68 +4,114 @@
   import { onMount } from "svelte";
 
   gsap.registerPlugin(ScrollTrigger);
-  
 
   onMount(() => {
     let caseClick = document.querySelector(".project");
 
-
     caseClick.addEventListener("click", function (e) {
       e.preventDefault();
       gsap.to(".transition", {
-      y: '-10%',
-      rotate: 0,
-      delay: 0,
-      stagger: 0,
-      duration: 1,
-    });      setTimeout(function () {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
         window.location.href = "/about";
       }, 1000);
     });
 
-   
-});
+    gsap.to(".projects-text-gsap", {
+      scrollTrigger: {
+        trigger: ".page-wrapper",
+        scrub: 2,
+        start: "top-=800",
+        end: "top-=300",
+        // markers: true,
+      },
+      y: 0,
+      rotate: 0,
+    });
+
+    gsap.to(".p1", {
+      scrollTrigger: {
+        trigger: ".p1",
+        scrub: 2,
+        start: "top-=1200",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+    gsap.to(".p2", {
+      scrollTrigger: {
+        trigger: ".p2",
+        scrub: 2,
+        start: "top-=1200",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+    gsap.to(".p3", {
+      scrollTrigger: {
+        trigger: ".p3",
+        scrub: 2,
+        start: "top-=1200",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+  });
 </script>
 
 <div class="page-wrapper">
   <section class="projects-intro">
-    <div class="line"></div>
-    <h3>Some projects I have done</h3>
-    <p>
+    <div class="line" />
+    <h3 class="projects-text-gsap">projects</h3>
+    <a class="view-all" href="">View all</a>
+    <!-- <p>
       My projects are a mixture between real clients, personal and educational
       websites I've built.
-    </p>
+    </p> -->
   </section>
+  <div class="line2" />
 
   <section class="projects">
-    <div class="text-wrapper" />
     <div class="projects-wrapper">
-      <div class="project">
-        <a
-          target="_blank"
-          href="/about"
-        >
+      <div class="project p1">
+        <div class="subscripts">
+          <a class="subscript" href="">A better planet</a>
+          <a class="subscript" href="">2022</a>
+        </div>
+        <a target="_blank" href="/about">
           <p class="view-project">
             Ink One page - Ink One page - Ink One page - Ink One page - Ink One
             page
           </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
+
           <img
-            src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             alt="test"
           />
         </a>
       </div>
-      <div class="project">
+      <div class="project p2">
+           <div class="subscripts">
+          <a class="subscript" href="">A better planet</a>
+          <a class="subscript" href="">2022</a>
+        </div>
         <p class="view-project orange">
           50k for a better planet - 50k for a better planet - 50k for a better
           planet - 50k for a better planet - 50k for a better planet
@@ -81,11 +127,15 @@
         >
         <p class="project-number">01</p>
         <img
-          src="https://images.unsplash.com/photo-1530088018703-11b253bae577?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+          src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
           alt="test"
         />
       </div>
-      <div class="project">
+      <div class="project p3">
+        <div class="subscripts">
+          <a class="subscript" href="">A better planet</a>
+          <a class="subscript" href="">2022</a>
+        </div>
         <a href="https://milanrolie.github.io/markk/" target="_blank">
           <p class="view-project orange">
             Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
@@ -101,13 +151,13 @@
           >
           <p class="project-number">01</p>
           <img
-            src="https://images.unsplash.com/photo-1525440584458-b53d13a848de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
             alt="test"
           />
         </a>
       </div>
 
-      <div class="project">
+      <!-- <div class="project">
         <a href="https://tiny-pink-monkey-cuff.cyclic.app/" target="_blank">
           <p class="view-project orange">
             UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV
@@ -170,14 +220,20 @@
             alt="test"
           />
         </a>
-      </div>
+      </div> -->
+    </div>
   </section>
 </div>
 
 <style>
   .projects-intro {
-    margin-bottom: 5%;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
   }
 
   .line {
@@ -185,47 +241,65 @@
   }
 
   h3 {
-    font-size: 3em;
+    font-size: 10vw;
     color: var(--dark);
-    font-weight: 300;
+    font-weight: 600;
+    transform: translateY(100%) rotate(10deg);
+  }
+  
+  .view-all {
+    background-color: var(--dark);
+    font-size: .9em;
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: var(--gunMetal);
+    text-transform: uppercase;
+    transform: translateY(-5%);
   }
 
   p {
     font-size: 1.5em;
     font-weight: 200;
     max-width: 40%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .line2 {
+    margin: 2%;
+    border-bottom: px solid var(--dark);
   }
 
   .projects {
     display: flex;
     flex-direction: row;
-  }
-
-  .text-wrapper {
-    width: 20vw;
+    height: max-content;
   }
 
   .projects-wrapper {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    gap: 2vw;
+    flex-direction: column;
+    width: 100%;
+    gap: 2%;
     flex-wrap: wrap;
-    margin-bottom: 10%;
   }
 
   .project {
-    width: 48%;
-    clip-path: inset(0 round 1em);
+    width: 100%;
+    height: 70vh;
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
     position: relative;
     overflow: hidden;
+    margin-bottom: 2%;
   }
 
   .view-project {
     display: flex;
     position: absolute;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 10vw;
     z-index: 2;
     min-width: max-content;
     text-transform: uppercase;
@@ -248,6 +322,26 @@
     color: var(--dark);
   }
 
+  .subscripts {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    bottom: 4%;
+    left: 2%;
+    width: 95%;
+  }
+
+  .subscript {
+    background-color: var(--dark);
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: var(--gunMetal);
+    text-transform: uppercase;
+  }
+
   @keyframes projectMarquee {
     0% {
       transform: translateX(0%);
@@ -259,17 +353,18 @@
   }
 
   img {
-    aspect-ratio: .8;
-    width: 100%;
+    /* aspect-ratio: 0.8; */
     object-fit: cover;
     border-radius: 1em;
     transition: 0.3s;
     cursor: pointer;
     z-index: 1;
+    width: 100%;
   }
 
-  .project:hover img {
-    transform: scale(1.06);
+   img:hover {
+    /* transform: scale(1.06); */
+    /* filter: grayscale(1); */
   }
 
   .project:hover .view-project {
@@ -355,11 +450,11 @@
     }
 
     .line {
-    display: block;
-    border: solid 1px var(--dark);
-    margin: 2em 0;
-    opacity: .5;
-  }
+      display: block;
+      border: solid 1px var(--dark);
+      margin: 2em 0;
+      opacity: 0.5;
+    }
 
     p {
       font-size: 1em;

@@ -8,7 +8,7 @@
 	%sveltekit.head%
 </head>
 
-<body data-sveltekit-preload-data="hover">
+<body data-sveltekit-preload-data="hover" class="">
 	<div style="display: contents">%sveltekit.body%</div>
 	<div class="ball">
 		<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20"></svg>
@@ -21,6 +21,12 @@
 </html>
 
 <script>
+
+let bodyOverflow = document.querySelector('body')
+
+setTimeout(function () {
+	bodyOverflow.classList.add('.overflow-x')
+  }, 3500);
 
 
 	const ball = document.querySelector('.ball');
@@ -72,7 +78,7 @@
 
 	:root {
 		--flashWhite: #E9ECEB;
-		--gunMetal: #dadada;
+		--gunMetal: #f0f2ed;
 		--justBlue: #774ff0;
 		--bitterSweet: #FE5F55;
 		--webLavender: #bed0fa;
@@ -102,6 +108,13 @@
 		background-color: var(--gunMetal);
 		font-family: 'Outfit', sans-serif;
 		overflow-x: hidden;
+		/* overflow-y: hidden; */
+	}
+
+
+
+	.overflow-x {
+		overflow-y: scroll;
 	}
 
 	section {
@@ -110,11 +123,11 @@
 
 	h1 {
 		color: var(--dark);
-		text-transform: uppercase;
 		font-size: 6vw;
 		font-weight: 300;
 		line-height: 1em;
 	}
+
 
 	h2 {
 		font-size: 2em;

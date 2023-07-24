@@ -165,11 +165,13 @@
     cursor: pointer;
     height: max-content;
     transform: translateY(-200px);
-    margin-right: 5%;
+    margin-right: 4%;
+    background-color: var(--webLavender);
+
   }
 
   button:hover {
-    background-color: var(--webLavender);
+    background-color: var(--bitterSweet);
   }
 
   .available {

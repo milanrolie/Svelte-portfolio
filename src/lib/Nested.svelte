@@ -18,60 +18,92 @@
     });
 
     gsap.from(".words", {
-      y: 200,
+      y: 400,
       // stagger: .3,
       delay: 4,
       duration: 1.5,
       ease: "power4.out",
     });
+
+    gsap.to(".image-wrapper", {
+      y: 0,
+      // stagger: .3,
+      delay: 4.5,
+      duration: 1.5,
+      ease: "power4.out",
+    });
+
+
+    gsap.to(".showreel", {
+      scrollTrigger: {
+        trigger: ".image-wrapper",
+        scrub: 1,
+        start: "top-=600",
+        end: "center+=200",
+        // markers: true,
+      },
+      y: -50,
+    });
+
+    
   });
 </script>
 
 <section class="hero-wrapper">
+  <div class="text-wrapper">
   <h1>
-    <div class="creative inline-block"><span class="words">Creative</span></div>
+    <div class="creative inline-block"><span class="words">Studio</span></div>
     <div class="developer inline-block">
-      <span class="words">Developer +</span>
+      <span class="words">rolie</span>
     </div>
-    <div class="designer inline-block"><span class="words">Designer</span></div>
+    <!-- <div class="designer inline-block"><span class="words">Designer</span></div> -->
   </h1>
   <!-- <div class="info-wrapper">
     <p>Milan Rolie</p>
     <p>Based in Utrecht</p>
     <p>The Netherlands</p>
   </div> -->
+</div>
+<div class="image-wrapper">
+  <div class="showreel-overlay"></div>
+  <img class="showreel" src="https://images.unsplash.com/photo-1527148191484-193c02d12e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+</div>
 </section>
 
 <style>
   .hero-wrapper {
     position: relative;
-    height: 85vh;
+    height: max-content;
+  }
+
+  .text-wrapper {
+    height: 65vh;
   }
 
   h1 {
     position: absolute;
-    font-size: 9vw;
+    font-size: 25.5vw;
     line-height: 0.8em;
-    font-weight: 400;
-    top: 30%;
-    left: 24%;
+    font-weight: 700;
+    top: 1%;
+    left: 0;
+    text-transform: lowercase;
   }
 
   .inline-block {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    /* background-color: aqua; */
+    clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
   }
 
   .creative {
-    margin-left: -20.3%;
+    /* margin-left: -20.3%; */
   }
 
   .developer {
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    margin-left: 65.3%;
+    transform: translateY(-30%);
   }
 
   .designer {
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
   }
 
   .info-wrapper {
@@ -90,6 +122,32 @@
   .words {
     display: inline-block;
     /* transform: translateY( 200px); */
+  }
+
+  .image-wrapper {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(300px);
+    border-radius: 1em;
+  }
+
+  .showreel-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 3;
+    transition: .5s;
+    border-radius: 1em;
+  }
+
+  img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
   }
 
   @media screen and (max-width: 1122px) {

@@ -8,10 +8,10 @@
   onMount(() => {
     gsap.from(".about", {
       scrollTrigger: {
-        trigger: ".image-wrapper",
+        trigger: ".about",
         scrub: 1,
-        start: "center-=300",
-        end: "center",
+        start: "top-=600",
+        end: "top-=100",
         // markers: true,
       },
       y: 100,
@@ -19,82 +19,191 @@
 
     gsap.from(".about-gsap", {
       scrollTrigger: {
-        trigger: ".image-wrapper",
-        scrub: 1,
-        start: "center-=350",
-        end: "center",
+        trigger: ".about",
+        scrub: 2,
+        start: "top-=600",
+        end: "top-=100",
         // markers: true,
       },
       y: 100,
+    });
+
+    gsap.from(".about-gsap-late", {
+      scrollTrigger: {
+        trigger: ".about",
+        scrub: 2,
+        start: "top-=500",
+        end: "top-=100",
+        // markers: true,
+      },
+      y: 150,
+    });
+
+    gsap.to(".portrait", {
+      scrollTrigger: {
+        trigger: ".about",
+        scrub: 2,
+        start: "top-=300",
+        end: "top",
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+    gsap.to(".about-words", {
+      scrollTrigger: {
+        trigger: ".about",
+        scrub: 2,
+        start: "top-=600",
+        end: "top-=100",
+        // markers: true,
+      },
+      y: 0,
+   
     });
   });
 </script>
 
 <section class="about">
-  <!-- <div class="line"></div> -->
-  <div class="text-wrapper">
-    <!-- <h3>About</h3> -->
-    <p class="about-gsap">
-      As a creative individual, I am constantly seeking new ways to express my
-      passion. Whether it's graphic design, photography, or web development.
-    </p>
+  <div class="wrapper">
+    <div class="text-wrapper">
+      <div class="left-wrapper">
+        <p class="about-gsap">
+          As a creative individual, I am constantly seeking new ways to express
+          my passion. Whether it's graphic design, photography, or web
+          development.
+        </p>
+
+        <h4>what i do</h4>
+        <p class="about-gsap">
+   
+        </p>
+      </div>
+      <div class="right-wrapper">
+        <h3>
+          <div class="creative inline-block">
+            <span class="about-words">Creative</span>
+          </div>
+          <div class="developer inline-block">
+            <span class="about-words">Developer +</span>
+          </div>
+          <div class="designer inline-block">
+            <span class="about-words">Designer</span>
+          </div>
+        </h3>
+        <p class="about-gsap-late">
+          As a freelance creative developer, I have the freedom to unleash my
+          imagination and craft digital experiences that captivate audiences. My
+          diverse skill set encompasses various programming languages, design
+          tools, and an eye for aesthetics. From web development to interactive
+          applications. I strongly believe in the power of collaboration and
+          actively seek opportunities to work with like-minded individuals who
+        </p>
+      </div>
+      <img src="src/assets/arrow.svg" alt="Arrrow">
+    </div>
+    <!-- <img class="portrait" src="https://images.unsplash.com/photo-1517101552363-df64abce174a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1103&q=80" alt=""> -->
   </div>
-
-  <!-- Currently, I am pursuing my studies in Amsterdam, where I further refine my
-  skills and knowledge. I have had the privilege to learn from experienced
-  professionals and work on challenging projects that have deepened my
-  understanding of my field. Through my studies, I now combine the creative
-  influences of my hometown with the academic and professional opportunities
-  that Amsterdam has to offer.
-
-I invite you to explore my portfolio and discover my work. Whether it's my designs, photographs, or other projects, I hope my passion and dedication shine through. If you're interested in my work or have a collaboration in mind, please don't hesitate to get in touch. I look forward to hearing from you! -->
 </section>
 
 <style>
   section {
     width: 100%;
-    height: 70vh;
-    padding: 0;
-    background: linear-gradient(#0000 calc(100% - 2px), var(--gunMetal));
-    background-image: linear-gradient(#0000 calc(100% - 2px), var(--gunMetal));
-    background-position-y: 0.69vw;
-    background-size: 1px 7vw;
-    -webkit-clip-path: inset(1.4vw 0 0 0);
-    clip-path: inset(1.4vw 0 0 0);
-    font-size: 2.5vw;
-    font-weight: 400;
-    line-height: 7vw;
+    height: 110vh;
     position: relative;
-    vertical-align: top;
     width: 100%;
-    margin-bottom: 1vh;
-    padding-left: 2%;
+    padding: 0 2%;
+    margin-top: 2%;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
     background-color: var(--dark);
+    border-radius: 1em;
+    padding: 1em;
+    padding-bottom: 0;
   }
 
   .text-wrapper {
     display: flex;
     flex-direction: row;
-    /* margin-left: 10%; */
+    gap: 3em;
   }
 
   h3 {
     color: var(--gunMetal);
     font-weight: 300;
-    font-size: 3em;
+    font-size: 4.5vw;
     margin-right: 5%;
+    line-height: 1em;
   }
 
-  p {
-    font-size: 2.5em;
-    font-weight: 200;
+  .creative {
+    /* margin-left: -20.3%; */
+  }
+  
+  .developer {
+    margin-left: 10%;
+  }
+  
+  .designer {
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+  }
+  
+  .about-words {
+    display: inline-block;
+    transform: translateY(200px);
+  }
+  
+  .inline-block {
+    clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
+  }
+  
+  .left-wrapper p {
+    font-size: 4.5vw;
+    font-weight: 300;
     color: var(--gunMetal);
-
-    /* max-width: 80%; */
+    line-height: 1em;
+    text-wrap: balance;
   }
 
   p::selection {
     background: var(--bitterSweet);
+  }
+  
+  .left-wrapper {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .right-wrapper {
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .right-wrapper p {
+    font-size: 1.2em;
+    color: var(--gunMetal);
+    max-width: 60%;
+    font-weight: 200;
+  }
+
+  img {
+    position: absolute;
+    aspect-ratio: 1;
+    left: 0em;
+    bottom: 0em;
+    width: 10vw;
+    /* height: 30vh; */
+    object-fit: cover;
+    z-index: 1;
+    /* opacity: .5; */
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
+    transform: translateY(0px);
   }
 
   @media screen and (max-width: 1122px) {
@@ -111,7 +220,7 @@ I invite you to explore my portfolio and discover my work. Whether it's my desig
       height: max-content;
       background: none;
       background-color: var(--dark);
-      padding: 5em 1em ;
+      padding: 5em 1em;
     }
   }
 

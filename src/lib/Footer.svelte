@@ -11,7 +11,7 @@
         trigger: "footer",
         scrub: 1,
         start: "top-=700",
-        end: "top-=400",
+        end: "top-=600",
       },
       y: 300,
       opacity: 0.5,
@@ -41,67 +41,73 @@
         <li>Komt nog wel?</li>
       </ul>
     </div>
-  </div>
-  <div class="big-mailto stagger">
-    <a class="big-mail-text" href="mailto: contact@studiorolie.com"
-      >contact<br class="footer-br" />@studiorolie.com
-      <div class="svg-box">
-        <svg
-          class="svg1"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          ><path
+    <div class="big-mailto stagger">
+        <a class="big-mail-text" href="mailto: contact@studiorolie.com"
+        >contact<br class="footer-br" />@studiorolie.com
+        <div class="svg-box">
+            <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
             d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-          /></svg
-        >
-        <!-- <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg> -->
-      </div>
+            /></svg
+            >
+            <!-- <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg> -->
+        </div>
     </a>
-  </div>
-  <ul class="socials stagger">
+</div>
+<ul class="socials stagger">
     <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
     <li>Behance</li>
     <li>LinkedIn</li>
     <li>Facebook</li>
-  </ul>
+</ul>
+</div>
 </footer>
 
 <style>
-  footer {
-    height: 50vh;
-    background-color: var(--gunMetal);
-    padding: 0% 2%;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-right: 20%;
+    footer {
+        border-radius: 1em;
+        padding: 0 2% 0 2%; 
+        height: 70vh;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 20%;
+        background-color: var(--dark);
+        height: 100%;
+        padding-top: 10%;
+        padding-left: 2em;
+        border-radius: 1em 1em 0 0 ;
   }
 
   li {
     text-decoration: none;
     list-style: none;
+    color: var(--gunMetal);
   }
 
   a {
     text-decoration: none;
-    color: var(--bitterSweet);
+    color: var(--gunMetal);
   }
 
   .big-mail-text {
     position: relative;
-    margin-top: 1em;
     font-size: 6vw;
-    color: var(--bitterSweet);
+    color: var(--gunMetal);
     text-decoration: none;
     display: flex;
     flex-direction: row;
     width: max-content;
+    line-height: 1;
   }
 
   .designer {
@@ -126,7 +132,7 @@
   }
 
   svg {
-    fill: var(--bitterSweet);
+    fill: var(--gunMetal);
     transition: 0.8s;
   }
 
@@ -142,7 +148,7 @@
   }
 
   .socials li {
-    color: var(--bitterSweet);
+    color: var(--gunMetal);
     letter-spacing: 1px;
     padding: 0px 4px;
     padding-top: 1px;
