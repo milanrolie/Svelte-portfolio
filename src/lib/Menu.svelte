@@ -1,7 +1,7 @@
 <script>
   import { gsap } from "gsap";
   import { onMount } from "svelte";
-  import arrow from '$lib/assets/arrow.svg';
+  import arrow from '../assets/arrow.svg';
 
 
   onMount(() => {
