@@ -190,6 +190,15 @@
   }
 
   @media screen and (max-width: 1122px) {
+
+    .hello {
+        display: none;
+    }
+
+    .available {
+        margin-right: 7%;
+        margin-top: 1%;
+    }
   }
   @media screen and (max-width: 700px) {
     .logo-svg {

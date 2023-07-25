@@ -147,6 +147,7 @@
     margin-top: 1em;
   }
 
+
   .socials li {
     color: var(--gunMetal);
     letter-spacing: 1px;
@@ -174,7 +175,7 @@
     }
 
     .big-mail-text {
-        font-size: 12vw;
+        font-size: 11vw;
         line-height: 1em;
     }
 

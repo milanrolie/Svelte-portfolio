@@ -28,7 +28,6 @@
 <About />
 <Cases />
 <!-- <Contact />zx -->
-<!-- <About /> -->
 <!-- <OtherProjects /> -->
 <AllProjects />
 <Marquee />

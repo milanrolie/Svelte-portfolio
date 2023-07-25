@@ -41,17 +41,17 @@
       y: 150,
     });
 
-    gsap.to(".portrait", {
-      scrollTrigger: {
-        trigger: ".about",
-        scrub: 2,
-        start: "top-=300",
-        end: "top",
-        // markers: true,
-      },
-      y: 0,
-      '--progress': 1
-    });
+    // gsap.to(".portrait", {
+    //   scrollTrigger: {
+    //     trigger: ".about",
+    //     scrub: 2,
+    //     start: "top-=300",
+    //     end: "top",
+    //     // markers: true,
+    //   },
+    //   y: 0,
+    //   '--progress': 1
+    // });
 
     gsap.to(".about-words", {
       scrollTrigger: {
@@ -67,7 +67,7 @@
   });
 </script>
 
-<section class="about">
+<section class="about" id="about-scroll">
   <div class="wrapper">
     <div class="text-wrapper">
       <div class="left-wrapper">
@@ -211,24 +211,62 @@
   @media screen and (max-width: 1122px) {
     p {
       font-size: 4.5em;
-      /* text-transform: uppercase; */
       font-weight: 300;
       line-height: 1em;
       color: var(--flashWhite);
     }
 
     section {
-      height: 21em;
-      height: max-content;
+      height: 100vh;
       background: none;
-      background-color: var(--dark);
-      padding: 5em 1em;
     }
+
+    .right-wrapper p {
+    font-size: 1.1em;
+    max-width: 90%;
+  } 
+
+  img {
+    left: 1em;
+    bottom: 1em;
+    width: 10vw;
+    /* height: 30vh; */
+  }
+
+
+
   }
 
   @media screen and (max-width: 700px) {
     section {
       margin-top: 1%;
+      height: max-content;
     }
+
+    .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+    
+  .left-wrapper p {
+    font-size: 10vw;
+  }
+
+  .right-wrapper p {
+    font-size: 1.1em;
+    max-width: 100%;
+    margin-bottom: 20%;
+  }
+
+  h3 {
+    font-size: 10vw;
+  }
+
+  .right-wrapper {
+    padding-left: 25%;
+  }
+
   }
 </style>

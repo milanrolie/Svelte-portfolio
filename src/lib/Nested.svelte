@@ -74,6 +74,7 @@
   .hero-wrapper {
     position: relative;
     height: max-content;
+    overflow: hidden;
   }
 
   .text-wrapper {
@@ -152,14 +153,18 @@
 
   @media screen and (max-width: 1122px) {
     .hero-wrapper {
-      height: 40vh;
+      height: max-content;
     }
 
+    .text-wrapper {
+    height: 50vh;
+  }
+
     h1 {
-      font-size: 13vw;
+      font-size: 25vw;
       position: relative;
       line-height: 1em;
-      font-weight: 400;
+      font-weight: 600;
       left: 0;
     }
 
@@ -168,17 +173,30 @@
   }
 
   .developer {
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
-  }
-
-  .designer {
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
-  }
+    margin-left: 47%;
+  }  
   }
 
   @media screen and (max-width: 700px) {
     h1 {
-      font-size: 13vw;
+      font-size: 26vw;
+      padding-top: 13%;
     }
+
+    .developer {
+    margin-left: 48.5%;
+  }  
+
+  .text-wrapper {
+    height: 38vh;
+  }
+
+  .image-wrapper {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(300px);
+    border-radius: 1em;
+  }
   }
 </style>

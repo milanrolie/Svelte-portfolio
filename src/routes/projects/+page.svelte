@@ -36,26 +36,29 @@
 <Nav />
 
 <section class="cases">
-  <h1 class="projects">all projects <svg
-    class="svg2"
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    ><path
-      d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-    /></svg></h1>
+  <h1 class="projects">
+    all projects <svg
+      class="svg2"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      ><path
+        d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+      /></svg
+    >
+  </h1>
 
   <div class="projects-wrapper">
     <div class="case">
       <a href="https://ubicautrecht.nl/" target="_blank">
         <div class="image-clip">
-        <img
-          class="first-project-image"
-          src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
-          alt="test"
-          width="400"
-          height="400"
-        />
+          <img
+            class="first-project-image"
+            src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
+            alt="test"
+            width="400"
+            height="400"
+          />
         </div>
 
         <div class="subscript">
@@ -77,12 +80,12 @@
     <div class="case">
       <a href="https://ubicautrecht.nl/" target="_blank">
         <div class="image-clip">
-        <img
-          src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-          alt="test"
-          width="400"
-          height="400"
-        />
+          <img
+            src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+            alt="test"
+            width="400"
+            height="400"
+          />
         </div>
 
         <div class="subscript">
@@ -101,8 +104,8 @@
       </a>
     </div>
     <div class="case">
-        <a href="https://ubicautrecht.nl/" target="_blank">
-          <div class="image-clip">
+      <a href="https://ubicautrecht.nl/" target="_blank">
+        <div class="image-clip">
           <img
             class="first-project-image"
             src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
@@ -110,52 +113,50 @@
             width="400"
             height="400"
           />
-          </div>
-  
-          <div class="subscript">
-            <p class="view-project black">Ubica Utrecht</p>
-            <p class="animated-tags">Website / design / work</p>
-  
-            <svg
-              class="svg1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              ><path
-                d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-              /></svg
-            >
-          </div>
-        </a>
-      </div>
-      <div class="case">
-        <a href="https://ubicautrecht.nl/" target="_blank">
-          <div class="image-clip">
+        </div>
+
+        <div class="subscript">
+          <p class="view-project black">Ubica Utrecht</p>
+          <p class="animated-tags">Website / design / work</p>
+
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+        </div>
+      </a>
+    </div>
+    <div class="case">
+      <a href="https://ubicautrecht.nl/" target="_blank">
+        <div class="image-clip">
           <img
             src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
             alt="test"
             width="400"
             height="400"
           />
-          </div>
-  
-          <div class="subscript">
-            <p class="view-project black">Ubica Utrecht</p>
-  
-            <svg
-              class="svg1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              ><path
-                d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-              /></svg
-            >
-          </div>
-        </a>
-      </div>
-  
+        </div>
 
+        <div class="subscript">
+          <p class="view-project black">Ubica Utrecht</p>
+
+          <svg
+            class="svg1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            ><path
+              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
+            /></svg
+          >
+        </div>
+      </a>
+    </div>
 
     <Footer />
   </div>
@@ -194,20 +195,20 @@
     position: relative;
     width: 49%;
     margin-bottom: 5%;
-}
+  }
 
-.image-clip {
-      clip-path: inset(0px 0px 1% 0px round 1em);
+  .image-clip {
+    clip-path: inset(0px 0px 1% 0px round 1em);
   }
 
   img {
     aspect-ratio: 1.3;
     width: 100%;
     height: auto;
-    transition: .5s;
-}
+    transition: 0.5s;
+  }
 
-.subscript {
+  .subscript {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -225,7 +226,7 @@
   }
 
   .svg1 {
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .case:hover .svg1 {
@@ -241,8 +242,4 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-
-
-
-
 </style>

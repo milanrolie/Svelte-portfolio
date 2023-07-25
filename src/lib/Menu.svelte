@@ -83,17 +83,17 @@
 <section>
   <div class="menu-wrapper">
     <button class="menu-button">
-      <img src="src/assets/arrow.svg" alt="" /></button
+        <img src={arrow} alt="Menu arrow" /></button
     >
     <h3 class="explore">
-      Explore <img src={arrow} alt="" />
+      Explore <img src={arrow} alt="Menu arrow" />
     </h3>
     <!-- <button class="close-button">close</button> -->
     <nav>
       <ul>
         <li>
           <p class="number">01</p>
-          <a class="menu-text-gsap" href="">About</a>
+          <a class="menu-text-gsap" href="#about-scroll">About</a>
         </li>
         <li>
           <p class="number">02</p>

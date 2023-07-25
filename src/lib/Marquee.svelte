@@ -59,4 +59,17 @@
     transform: translateX(calc((-100% + 100vw) * var(--x)));
     padding-left: 4%;
   }
+
+  @media screen and (max-width: 1122px) {
+    #legends-marquee {
+    font-size: 15vw;
+  }
+    
+}
+
+  @media screen and (max-width: 700px) {
+    #legends-marquee {
+    font-size: 25vw;
+  }
+  }
 </style>

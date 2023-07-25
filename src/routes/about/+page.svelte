@@ -155,6 +155,7 @@
     font-size: 9vw;
     text-transform: none;
     line-height: 0.8em;
+    font-weight: 600;
   }
 
   .words {

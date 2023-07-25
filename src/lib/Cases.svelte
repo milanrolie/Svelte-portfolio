@@ -2,8 +2,9 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
+  import { Flip } from "gsap/dist/Flip";
 
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, Flip);
 
   onMount(() => {
     let caseClick = document.querySelector(".project");
@@ -73,7 +74,45 @@
       '--progress': 1
     });
 
-  });
+
+// const toggleFullscreen = document.querySelector('.js-view2')
+
+// toggleFullscreen.addEventListener("click", () => {
+//     gsap.to(".p2", {
+//       top: 0,
+//       left: 0,
+//       height: '100vh',
+//       duration: .7,
+//     })
+//   });
+
+  //   let imageOne = document.querySelector('.js-view2')
+    
+  //   imageOne.addEventListener("click", () => {
+  //     const state = Flip.getState(".p2");
+  //     const fullSize = document.querySelector(".p2");
+  
+  // fullSize.classList.toggle("active");
+
+  // Flip.from(state, {
+  //   duration: 0.6,
+  //   fade: true,
+  //   absolute: false,
+  //   toggleClass: ".p2",
+  //   ease: "power1.inOut"
+  // });
+
+
+// const toggleFullscreen = document.querySelector('.js-view2')
+// const animatedImage = document.querySelector('.p2')
+
+// toggleFullscreen.addEventListener("click", () => {
+
+//   animatedImage.classList.toggle("active");
+
+// });
+
+});
 </script>
 
 <div class="page-wrapper">
@@ -96,7 +135,7 @@
           <a class="subscript" href="">2022</a>
         </div>
         <a target="_blank" href="/about">
-          <p class="view-project">
+          <p class="view-project js-view">
             Ink One page - Ink One page - Ink One page - Ink One page - Ink One
             page
           </p>
@@ -112,7 +151,7 @@
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
-        <p class="view-project orange">
+        <p class="view-project orange js-view2">
           50k for a better planet - 50k for a better planet - 50k for a better
           planet - 50k for a better planet - 50k for a better planet
         </p>
@@ -236,6 +275,7 @@
     clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
   }
 
+
   .line {
     display: none;
   }
@@ -287,6 +327,7 @@
   }
 
   .project {
+    position: relative;
     width: 100%;
     height: 70vh;
     clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
@@ -294,6 +335,16 @@
     overflow: hidden;
     margin-bottom: 2%;
   }
+
+  /* .p2 {
+    position: absolute;
+  }
+   */
+  /* .active {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  } */
 
   .view-project {
     display: flex;
@@ -385,11 +436,8 @@
     }
 
     h3 {
-      font-size: 5em;
+      font-size: 15vw;
       color: var(--dark);
-      font-weight: 300;
-      line-height: 1em;
-      text-transform: uppercase;
     }
 
     p {
@@ -403,7 +451,7 @@
     }
 
     .project {
-      width: 48%;
+      width: 100%;
     }
 
     .text-wrapper {
@@ -413,10 +461,6 @@
     img {
       aspect-ratio: 0.7;
       width: 100%;
-    }
-
-    .project:hover img {
-      transform: scale(1);
     }
 
     .svg1 {
@@ -438,22 +482,15 @@
       font-size: 1.5em;
       font-weight: 300;
     }
+
+    .view-project {
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 700px) {
     h3 {
-      font-size: 3em;
-      color: var(--dark);
-      font-weight: 300;
-      line-height: 1em;
-      text-transform: uppercase;
-    }
-
-    .line {
-      display: block;
-      border: solid 1px var(--dark);
-      margin: 2em 0;
-      opacity: 0.5;
+      font-size: 19vw;
     }
 
     p {
@@ -467,5 +504,16 @@
     .view-project {
       opacity: 1;
     }
+
+    .subscripts {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    bottom: 11%;
+    left: 2%;
+    width: 95%;
+  }
   }
 </style>
