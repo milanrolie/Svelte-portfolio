@@ -32,16 +32,17 @@
     padding: 0;
     overflow-x: hidden;
     z-index: -1;
-  }
-
-  .sticky-marquee {
+    padding: 2%;
     height: 60vh;
+  }
+  
+  .sticky-marquee {
     padding-top: 4em;
-    /* background-color: rgb(103, 103, 103); */
     z-index: -1;
     --x: 0;
     max-width: 100vw;
     overflow: hidden;
+    border-radius: 1em;
   }
 
   #legends-marquee {

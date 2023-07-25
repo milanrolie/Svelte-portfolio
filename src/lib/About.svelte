@@ -2,6 +2,8 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
+  import arrow from '$lib/assets/arrow.svg';
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -101,7 +103,7 @@
           actively seek opportunities to work with like-minded individuals who
         </p>
       </div>
-      <img src="src/assets/arrow.svg" alt="Arrrow">
+      <img src="{arrow}" alt="Arrrow">
     </div>
     <!-- <img class="portrait" src="https://images.unsplash.com/photo-1517101552363-df64abce174a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1103&q=80" alt=""> -->
   </div>
