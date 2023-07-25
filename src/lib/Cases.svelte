@@ -3,10 +3,10 @@
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
   import { Flip } from "gsap/dist/Flip";
-  import grrr from "$lib/assets/grrr-iphone.jpg";
-  import legends from "$lib/assets/legends-macbook2.jpg";
-  import favela from "$lib/assets/favela.jpg";
-  import markk from "$lib/assets/markk.jpg";
+  import grrr from "$lib/assets/grrr-iphone.webp";
+  import legends from "$lib/assets/legends-macbook2.webp";
+  import favela from "$lib/assets/favela.webp";
+  import markk from "$lib/assets/markk.webp";
 
   gsap.registerPlugin(ScrollTrigger, Flip);
 
@@ -396,6 +396,7 @@
     cursor: pointer;
     z-index: 1;
     width: 100%;
+    height: auto;
   }
 
   img:hover {
