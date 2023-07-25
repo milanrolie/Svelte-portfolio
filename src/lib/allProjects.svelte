@@ -2,7 +2,24 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
-  import arrow from '$lib/assets/arrow.svg';
+  import arrow from "$lib/assets/arrow.svg";
+
+  import grrr from "$lib/assets/grrr-iphone.jpg";
+  import legends from "$lib/assets/legends-macbook2.jpg";
+  import favela from "$lib/assets/favela.jpg";
+  import markk from "$lib/assets/markk.jpg";
+  import highTea from "$lib/assets/high-tea-low.jpg";
+  import commentary from "$lib/assets/commentary-tool.jpg";
+  import fitness from "$lib/assets/fitness.jpg";
+  import challem from "$lib/assets/challem.jpg";
+  import squad from "$lib/assets/squad.jpg";
+  import twintig from "$lib/assets/twintig.jpg";
+
+
+
+
+
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -34,7 +51,7 @@
     gsap.to(".allRight-gsap", {
       x: 0,
       duration: 1,
-      stagger: .4,
+      stagger: 0.4,
       scrollTrigger: {
         trigger: ".clip",
         scrub: 1,
@@ -50,7 +67,7 @@
       x: 0,
       opacity: 1,
       duration: 1,
-      stagger: .1,
+      stagger: 0.1,
       scrollTrigger: {
         trigger: ".clip",
         start: "top-=600",
@@ -60,33 +77,66 @@
       },
     });
 
-    const hoverElement1 = document.querySelector('.first')
-    const projectImage1 = document.querySelector('.project-image1')
-    const hoverElement2 = document.querySelector('.second')
-    const projectImage2 = document.querySelector('.project-image2')
-
+    const hoverElement1 = document.querySelector(".first");
+    const projectImage1 = document.querySelector(".project-image1");
+    const hoverElement2 = document.querySelector(".second");
+    const projectImage2 = document.querySelector(".project-image2");
+    const hoverElement3 = document.querySelector(".third");
+    const projectImage3 = document.querySelector(".project-image3");
+    const hoverElement4 = document.querySelector(".fourth");
+    const projectImage4 = document.querySelector(".project-image4");
+    const hoverElement5 = document.querySelector(".fifth");
+    const projectImage5 = document.querySelector(".project-image5");
+    const hoverElement6 = document.querySelector(".sixt");
+    const projectImage6 = document.querySelector(".project-image6");
 
     hoverElement1.addEventListener("mouseenter", () => {
-      projectImage1.classList.toggle('view')
-    })
+      projectImage1.classList.toggle("view");
+    });
 
     hoverElement1.addEventListener("mouseleave", () => {
-      projectImage1.classList.toggle('view')
-    })
-
+      projectImage1.classList.toggle("view");
+    });
 
     hoverElement2.addEventListener("mouseenter", () => {
-      projectImage2.classList.toggle('view')
-    })
+      projectImage2.classList.toggle("view");
+    });
 
     hoverElement2.addEventListener("mouseleave", () => {
-      projectImage2.classList.toggle('view')
-    })
+      projectImage2.classList.toggle("view");
+    });
 
+    hoverElement3.addEventListener("mouseenter", () => {
+      projectImage3.classList.toggle("view");
+    });
 
-    // toggleFullscreen.addEventListener("click", () => {
+    hoverElement3.addEventListener("mouseleave", () => {
+      projectImage3.classList.toggle("view");
+    });
 
+    hoverElement4.addEventListener("mouseenter", () => {
+      projectImage4.classList.toggle("view");
+    });
 
+    hoverElement4.addEventListener("mouseleave", () => {
+      projectImage4.classList.toggle("view");
+    });
+
+    hoverElement5.addEventListener("mouseenter", () => {
+      projectImage5.classList.toggle("view");
+    });
+
+    hoverElement5.addEventListener("mouseleave", () => {
+      projectImage5.classList.toggle("view");
+    });
+
+    hoverElement6.addEventListener("mouseenter", () => {
+      projectImage6.classList.toggle("view");
+    });
+
+    hoverElement6.addEventListener("mouseleave", () => {
+      projectImage6.classList.toggle("view");
+    });
   });
 </script>
 
@@ -99,94 +149,120 @@
       <li class="first">
         <div class="clip">
           <p class="allProjects-gsap">
-            Project over iets <img src="{arrow}" alt="" />
+            Grand café Ubica <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-        <p class="tag"> Website </p>
-        <p class="tag"> video </p>
-      </div>
+          <p class="tag">Website</p>
+          <p class="tag">Design</p>
+        </div>
 
         <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
-      <li class="second" >
+      <li class="second">
         <div class="clip">
           <p class="allProjects-gsap">
-            50k for a better planet <img src="{arrow}" alt="" />
+            Commentary tool <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-          <p class="tag"> Website </p>
-          <p class="tag"> design </p>
-          <p class="tag"> Animations </p>
+          <p class="tag">Website</p>
+          <p class="tag">UX</p>
+          <p class="tag">Data</p>
         </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+        <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
-      <li>
+      <li class="third">
         <div class="clip">
           <p class="allProjects-gsap">
-            Commentary tool <img src="{arrow}" alt="" />
+            Family fitness <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-          <p class="tag"> Website </p>
-          <p class="tag"> design </p>
-          <p class="tag"> ux </p>
+          <p class="tag">Website</p>
+          <p class="tag">video</p>
         </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+        <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
-      <li>
+      <li class="fourth">
         <div class="clip">
           <p class="allProjects-gsap">
-            Project over iets <img src="{arrow}" alt="" />
+            Challem <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-          <p class="tag"> Website </p>
-          <p class="tag"> design </p>
-          <p class="tag"> ux </p>
+          <p class="tag">Website</p>
         </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+        <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
-      <li>
+      <li class="fifth">
         <div class="clip">
           <p class="allProjects-gsap">
-            over iets Anders <img src="{arrow}" alt="" />
+            Twintig Utrecht <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-          <p class="tag"> Website </p>
-          <p class="tag"> design </p>
-          <p class="tag"> ux </p>
+          <p class="tag">Website</p>
+          <p class="tag">design</p>
         </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+        <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
-      <li>
+      <li class="sixt">
         <div class="clip">
           <p class="allProjects-gsap">
-            Ink Rio de Janeiro <img src="{arrow}" alt="" />
+            Fdnd squad profile page <img src={arrow} alt="" />
           </p>
         </div>
         <div class="tags">
-          <p class="tag"> Website </p>
-          <p class="tag"> design </p>
-          <p class="tag"> ux </p>
+          <p class="tag">Website</p>
+          <p class="tag">design</p>
+          <p class="tag">data</p>
         </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+        <p class="date2 allRight-gsap">10-11-2019</p>
       </li>
     </ul>
     <div class="image-wrapper">
       <img
+      class="project-image project-image"
+      src={markk}
+      alt=""
+    />
+      
+      <img
         class="project-image project-image1 view"
-        src="https://images.unsplash.com/photo-1523274158540-2aa98c15ec26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+        src={highTea}
         alt=""
       />
 
       <img
-      class="project-image project-image2 view"
-      src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-      alt=""
-    />
+        class="project-image project-image2 view"
+        src={commentary}
+        alt=""
+      />
+
+      <img
+        class="project-image project-image3 view"
+        src={fitness}
+        alt=""
+      />
+
+      <img
+        class="project-image project-image4 view"
+        src={challem}
+        alt=""
+      />
+
+      <img
+        class="project-image project-image5 view"
+        src={twintig}
+        alt=""
+      />
+
+      <img
+        class="project-image project-image6 view"
+        src={squad}
+        alt=""
+      />
       <div class="image-overlay" />
     </div>
   </div>
@@ -241,6 +317,8 @@
     padding: 1% 2%;
     transition: 0.3s;
     overflow: hidden;
+    text-transform: lowercase;
+    font-weight: 200;
   }
 
   p {
@@ -261,13 +339,13 @@
     left: 45%;
     display: flex;
     flex-direction: row;
-    gap: .5em;
+    gap: 0.4em;
   }
 
   .tag {
     background-color: none;
-    font-size: .4em;
-    padding: .3em 1em;
+    font-size: 0.4em;
+    padding: 0.3em 1em;
     border-radius: 1em;
     text-decoration: none;
     color: var(--gunMetal);
@@ -275,8 +353,7 @@
     border: solid 1px var(--gunMetal);
     transform: translateX(50px);
     opacity: 0;
-} 
-
+  }
 
   li:hover {
     cursor: pointer;
@@ -294,10 +371,10 @@
   li img {
     position: absolute;
     object-fit: cover;
-    right: -1em;
-    height: 2.6vw;
-    width: 2.6vw;
-    transform: translateY(10px);
+    right: -.8em;
+    height: 2vw;
+    width: 2vw;
+    transform: translateY(55%);
     margin-left: 3%;
     opacity: 0;
     transition: 0.8s;
@@ -322,9 +399,9 @@
     object-fit: cover;
     border-radius: 0 0 1em 1em;
     z-index: 2;
-    transition: .5s;
+    transition: 0.5s;
   }
-  
+
   .project-image1 {
     opacity: 1;
   }
@@ -339,64 +416,60 @@
     width: 100%;
     height: 100%;
     background-color: var(--dark);
-    opacity: 0.5;
+    opacity: 0.2;
     border-radius: 0 0 1em 1em;
     z-index: 3;
   }
 
   @media screen and (max-width: 1122px) {
-  
-    
   }
 
   @media screen and (max-width: 700px) {
-
     h3 {
-    font-size: 20vw;
-  }
+      font-size: 20vw;
+    }
 
     li {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    list-style: none;
-    font-size: 7vw;
-    border-top: solid 1px var(--gunMetal);
-    padding: 1px;
-    padding: 1% 2%;
-    transition: 0.3s;
-    overflow: hidden;
-  }
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-decoration: none;
+      list-style: none;
+      font-size: 7vw;
+      border-top: solid 1px var(--gunMetal);
+      padding: 1px;
+      padding: 1% 2%;
+      transition: 0.3s;
+      overflow: hidden;
+    }
 
-  .date2 {
-    position: absolute;
-    right: 2%;
-    bottom: .8em;
-  }
+    .date2 {
+      position: absolute;
+      right: 2%;
+      bottom: 0.8em;
+    }
 
-  .tags {
-    position: relative;
-    top: 30%;
-    left: 0;
-    gap: .2em;
-    margin: 1% 0 1.5% 0;
-  }
+    .tags {
+      position: relative;
+      top: 30%;
+      left: 0;
+      gap: 0.2em;
+      margin: 1% 0 1.5% 0;
+    }
 
-  .tag {
-    background-color: none;
-    font-size: .3em;
-    padding: .3em 1em;
-    border-radius: 1em;
-    text-decoration: none;
-    color: var(--gunMetal);
-    text-transform: uppercase;
-    border: solid 1px var(--gunMetal);
-    transform: translateX(50px);
-    opacity: 0;
-} 
-   
+    .tag {
+      background-color: none;
+      font-size: 0.3em;
+      padding: 0.3em 1em;
+      border-radius: 1em;
+      text-decoration: none;
+      color: var(--gunMetal);
+      text-transform: uppercase;
+      border: solid 1px var(--gunMetal);
+      transform: translateX(50px);
+      opacity: 0;
+    }
   }
 </style>

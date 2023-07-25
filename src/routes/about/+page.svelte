@@ -7,6 +7,8 @@
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
   import TransitionOut from "../../lib/TransitionOut.svelte";
+  import AllProjects from "../../lib/allProjects.svelte";
+  import Menu from "../../lib/Menu.svelte";
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -55,12 +57,53 @@
       duration: 1.5,
       ease: "power4.out",
     });
+
+    gsap.to(".second-project-image", {
+      scrollTrigger: {
+        trigger: ".second-project-image",
+        scrub: 2,
+        start: "top-=1200",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+    gsap.to(".second-part2", {
+      scrollTrigger: {
+        trigger: ".second-part2",
+        scrub: 2,
+        start: "top-=1000",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
+
+    gsap.to(".third-project-image", {
+      scrollTrigger: {
+        trigger: ".third-project-image",
+        scrub: 2,
+        start: "top-=1200",
+        end: "top-=200",
+        stagger: 1,
+        // markers: true,
+      },
+      y: 0,
+      '--progress': 1
+    });
+
   });
 </script>
 
 
 <TransitionOut />
-
+<Menu />
 <Nav />
 
 <section class="project-intro">
@@ -69,11 +112,13 @@
   </div>
   <div class="image">
     <p class="date">23-10-2020</p>
+    <div class="img-clip">
     <img
       class="first-project-image"
       src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
       alt=" "
     />
+  </div>
   </div>
   <div class="project-description">
     <div class="introduction">
@@ -93,12 +138,12 @@
     </div>
     <div class="images">
       <img
-        class="second-project-image"
+        class="second-project-image project-clip-gsap "
         src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
         alt=""
       />
       <img
-        class="second-project-image"
+        class="second-project-image project-clip-gsap second-part2"
         src="https://www.mockupworld.co/wp-content/uploads/dynamic/2022/12/ipad-pro-m2-free-mockup-1072x0-c-default.jpg"
         alt=""
       />
@@ -120,7 +165,7 @@
     </div>
     <div class="images">
       <img
-        class="third-project-image"
+        class="third-project-image project-clip-gsap"
         src="https://images.unsplash.com/photo-1574281583557-6cd118037a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
         alt=""
       />
@@ -129,12 +174,12 @@
 </section>
 
 
-<OtherProjects />
+<AllProjects />
 <Footer />
 
 <style>
   section {
-    padding: 0;
+    /* padding: 0; */
     overflow-x: hidden;
   }
 
@@ -169,9 +214,20 @@
     font-weight: 400;
     padding: 0.5em 1em;
     border: solid 2px;
-    border-radius: 1em;
+    border-radius: 2em;
     color: var(--gunMetal);
     background-color: var(--dark);
+  }
+
+  .img-clip {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+
+  .project-clip-gsap {
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
   }
 
   .image {
@@ -182,6 +238,7 @@
   img {
     object-fit: cover;
     z-index: 2;
+    border-radius: 1em;
   }
 
   .first-project-image {

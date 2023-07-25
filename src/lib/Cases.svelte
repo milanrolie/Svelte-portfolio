@@ -3,6 +3,10 @@
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
   import { Flip } from "gsap/dist/Flip";
+  import grrr from "$lib/assets/grrr-iphone.jpg";
+  import legends from "$lib/assets/legends-macbook2.jpg";
+  import favela from "$lib/assets/favela.jpg";
+  import markk from "$lib/assets/markk.jpg";
 
   gsap.registerPlugin(ScrollTrigger, Flip);
 
@@ -45,7 +49,7 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
 
     gsap.to(".p2", {
@@ -58,7 +62,7 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
 
     gsap.to(".p3", {
@@ -71,48 +75,45 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
 
+    // const toggleFullscreen = document.querySelector('.js-view2')
 
-// const toggleFullscreen = document.querySelector('.js-view2')
+    // toggleFullscreen.addEventListener("click", () => {
+    //     gsap.to(".p2", {
+    //       top: 0,
+    //       left: 0,
+    //       height: '100vh',
+    //       duration: .7,
+    //     })
+    //   });
 
-// toggleFullscreen.addEventListener("click", () => {
-//     gsap.to(".p2", {
-//       top: 0,
-//       left: 0,
-//       height: '100vh',
-//       duration: .7,
-//     })
-//   });
+    //   let imageOne = document.querySelector('.js-view2')
 
-  //   let imageOne = document.querySelector('.js-view2')
-    
-  //   imageOne.addEventListener("click", () => {
-  //     const state = Flip.getState(".p2");
-  //     const fullSize = document.querySelector(".p2");
-  
-  // fullSize.classList.toggle("active");
+    //   imageOne.addEventListener("click", () => {
+    //     const state = Flip.getState(".p2");
+    //     const fullSize = document.querySelector(".p2");
 
-  // Flip.from(state, {
-  //   duration: 0.6,
-  //   fade: true,
-  //   absolute: false,
-  //   toggleClass: ".p2",
-  //   ease: "power1.inOut"
-  // });
+    // fullSize.classList.toggle("active");
 
+    // Flip.from(state, {
+    //   duration: 0.6,
+    //   fade: true,
+    //   absolute: false,
+    //   toggleClass: ".p2",
+    //   ease: "power1.inOut"
+    // });
 
-// const toggleFullscreen = document.querySelector('.js-view2')
-// const animatedImage = document.querySelector('.p2')
+    // const toggleFullscreen = document.querySelector('.js-view2')
+    // const animatedImage = document.querySelector('.p2')
 
-// toggleFullscreen.addEventListener("click", () => {
+    // toggleFullscreen.addEventListener("click", () => {
 
-//   animatedImage.classList.toggle("active");
+    //   animatedImage.classList.toggle("active");
 
-// });
-
-});
+    // });
+  });
 </script>
 
 <div class="page-wrapper">
@@ -131,44 +132,28 @@
     <div class="projects-wrapper">
       <div class="project p1">
         <div class="subscripts">
-          <a class="subscript" href="">A better planet</a>
-          <a class="subscript" href="">2022</a>
+          <div class="subscript" href="">A better planet</div>
+          <div class="subscript" href="">2022</div>
         </div>
         <a target="_blank" href="/about">
           <p class="view-project js-view">
-            Ink One page - Ink One page - Ink One page - Ink One page - Ink One
-            page
+            50k for a better planet © 50k for a better planet © 50k for a better
+            planet © 50k for a better planet © 50k for a better planet
           </p>
 
-          <img
-            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            alt="test"
-          />
+          <img src={grrr} alt="GRRR one page" />
         </a>
       </div>
       <div class="project p2">
-           <div class="subscripts">
+        <div class="subscripts">
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
         <p class="view-project orange js-view2">
-          50k for a better planet - 50k for a better planet - 50k for a better
-          planet - 50k for a better planet - 50k for a better planet
+          Ink One page © Ink One page © Ink One page © Ink One page © Ink One
+          page
         </p>
-        <svg
-          class="svg1"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          ><path
-            d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-          /></svg
-        >
-        <p class="project-number">01</p>
-        <img
-          src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          alt="test"
-        />
+        <img src={favela} alt="Legends website" />
       </div>
       <div class="project p3">
         <div class="subscripts">
@@ -176,8 +161,8 @@
           <a class="subscript" href="">2022</a>
         </div>
         <a href="https://milanrolie.github.io/markk/" target="_blank">
-          <p class="view-project orange">
-            Markk - Markk - Markk - Markk - Markk - Markk - Markk - Markk
+          <p class="view-project blue">
+            Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
           </p>
           <svg
             class="svg1"
@@ -189,10 +174,7 @@
             /></svg
           >
           <p class="project-number">01</p>
-          <img
-            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="test"
-          />
+          <img src={markk} alt="test" />
         </a>
       </div>
 
@@ -275,7 +257,6 @@
     clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
   }
 
-
   .line {
     display: none;
   }
@@ -286,10 +267,10 @@
     font-weight: 600;
     transform: translateY(100%) rotate(10deg);
   }
-  
+
   .view-all {
     background-color: var(--dark);
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 0.4em 1em;
     border-radius: 1em;
     text-decoration: none;
@@ -330,7 +311,7 @@
     position: relative;
     width: 100%;
     height: 70vh;
-    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
     position: relative;
     overflow: hidden;
     margin-bottom: 2%;
@@ -373,6 +354,10 @@
     color: var(--dark);
   }
 
+  .blue {
+    color: #6866fa;
+  }
+
   .subscripts {
     position: absolute;
     display: flex;
@@ -413,7 +398,7 @@
     width: 100%;
   }
 
-   img:hover {
+  img:hover {
     /* transform: scale(1.06); */
     /* filter: grayscale(1); */
   }
@@ -506,14 +491,14 @@
     }
 
     .subscripts {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
-    bottom: 11%;
-    left: 2%;
-    width: 95%;
-  }
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5px;
+      bottom: 11%;
+      left: 2%;
+      width: 95%;
+    }
   }
 </style>

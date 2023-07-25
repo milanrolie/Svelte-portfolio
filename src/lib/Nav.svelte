@@ -38,6 +38,7 @@
 </script>
 
 <nav class="nav-gsap">
+  <a href="/">
   <svg
     class="logo-svg"
     width="556"
@@ -91,6 +92,7 @@
       </clipPath>
     </defs>
   </svg>
+</a>
 
   <p class="available">
     Available for freelance work

@@ -79,13 +79,17 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-right: 20%;
         background-color: var(--dark);
         height: 100%;
         padding-top: 10%;
         padding-left: 2em;
         border-radius: 1em 1em 0 0 ;
+  }
+
+  ul {
+    margin-right: 12vw;
   }
 
   li {
@@ -108,6 +112,7 @@
     flex-direction: row;
     width: max-content;
     line-height: 1;
+    transition: color .2s;
   }
 
   .designer {
@@ -116,6 +121,11 @@
 
   .big-mail-text:hover svg {
     transform: translateX(25%) translateY(-25%);
+    fill: var(--webLavender);
+  }
+
+  .big-mail-text:hover {
+    color: var(--webLavender);
   }
 
   .svg-box {
