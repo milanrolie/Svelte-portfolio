@@ -1,6 +1,8 @@
 <script>
   import { gsap } from "gsap";
   import { onMount } from "svelte";
+  import arrow from '$lib/assets/arrow.svg';
+
 
   onMount(() => {
     let menuButton = document.querySelector(".menu-button");
@@ -83,7 +85,7 @@
       <img src="src/assets/arrow.svg" alt="" /></button
     >
     <h3 class="explore">
-      Explore <img src="src/assets/arrow.svg" alt="" />
+      Explore <img src={arrow} alt="" />
     </h3>
     <!-- <button class="close-button">close</button> -->
     <nav>
