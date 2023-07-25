@@ -14,6 +14,8 @@
   import Transition from "../lib/Transition.svelte";
   import OtherProjects from "../lib/OtherProjects.svelte";
   import AllProjects from "../lib/allProjects.svelte";
+
+  
   
 
 </script>

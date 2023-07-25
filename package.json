@@ -17,6 +17,7 @@
 	"dependencies": {
 		"@studio-freight/lenis": "^1.0.16",
 		"gsap": "^3.12.1",
+		"smooth-scrollbar": "^8.8.4",
 		"split-type": "^0.3.3"
 	}
 }

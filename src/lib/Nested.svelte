@@ -38,8 +38,8 @@
       scrollTrigger: {
         trigger: ".image-wrapper",
         scrub: 1,
-        start: "top-=600",
-        end: "center+=200",
+        start: "top-=800",
+        end: "top+=200",
         // markers: true,
       },
       y: -50,
@@ -65,7 +65,7 @@
   </div> -->
 </div>
 <div class="image-wrapper">
-  <div class="showreel-overlay"></div>
+  <!-- <div class="showreel-overlay"></div> -->
   <img class="showreel" src="https://images.unsplash.com/photo-1527148191484-193c02d12e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
 </div>
 </section>
@@ -73,7 +73,6 @@
 <style>
   .hero-wrapper {
     position: relative;
-    height: max-content;
     overflow: hidden;
   }
 
@@ -129,7 +128,7 @@
     height: 80vh;
     position: relative;
     overflow: hidden;
-    transform: translateY(300px);
+    transform: translateY(50%);
     border-radius: 1em;
   }
 

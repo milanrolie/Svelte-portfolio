@@ -13,16 +13,23 @@
     });
 
     gsap.to(".path-gsap", {
-      fill: "#bed0fa",
+      // fill: "#bed0fa",
       delay: 0,
       stagger: 0.2,
       duration: .7,
     });
 
+    gsap.to(".path-gsap", {
+      opacity: 0,
+      delay: 2.7,
+      // stagger: 0.2,
+      duration: .5,
+    });
+
     gsap.to(".percentage", {
       delay: 0.5,
       innerText: 100,
-      stagger: 0.1,
+      // stagger: 0.1,
       duration: 2,
       ease: "expo.easeOut",
       snap: {
@@ -31,8 +38,8 @@
     });
 
     gsap.to(".overlay", {
-      y: "-110%",
-      delay: 3,
+      y: "-100%",
+      delay: 3.5,
       stagger: 0.1,
       duration: .7,
       ease: "expo.easeOut",
@@ -116,7 +123,7 @@
 
 <style>
   .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     height: 100vh;
     width: 100%;
@@ -124,7 +131,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--dark);
+    background-color: var(--webLavender);
     z-index: 100;
     /* border-radius: 3em; */
   }
@@ -133,7 +140,7 @@
     position: absolute;
     bottom: 5%;
     font-size: 1em;
-    color: var(--gunMetal);
+    color: var(--dark);
 }
 
 svg {
