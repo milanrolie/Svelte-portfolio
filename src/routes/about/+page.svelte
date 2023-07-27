@@ -174,7 +174,7 @@
 </section>
 
 
-<AllProjects />
+<OtherProjects />
 <Footer />
 
 <style>
