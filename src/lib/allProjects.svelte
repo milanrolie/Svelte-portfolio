@@ -140,7 +140,7 @@
       <h3 class="others-gsap">others</h3>
     </div>
     <ul>
-      <a href="/ubica">
+      <a href="https://studiorolie.com/ubica">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -155,7 +155,7 @@
         </li>
       </a>
 
-      <a href="/commentary-tool">
+      <a href="https://studiorolie.com/commentary-tool">
         <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -171,7 +171,7 @@
         </li>
       </a>
 
-      <a href="/family-fitness">
+      <a href="https://studiorolie.com/family-fitness">
         <li class="third">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -186,7 +186,7 @@
         </li>
       </a>
 
-      <a href="/challem">
+      <a href="https://studiorolie.com/challem">
         <li class="fourth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -200,7 +200,7 @@
         </li>
       </a>
 
-      <a href="/twintig">
+      <a href="https://studiorolie.com/twintig">
         <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -215,7 +215,7 @@
         </li>
       </a>
 
-      <a href="/squad-page">
+      <a href="https://studiorolie.com/squad-page">
         <li class="sixt">
           <div class="clip">
             <p class="allProjects-gsap">

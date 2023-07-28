@@ -99,7 +99,7 @@
           <div class="subscript" href="">A better planet</div>
           <div class="subscript" href="">2022</div>
         </div>
-        <a href="/a-better-planet">
+        <a href="https://studiorolie.com/a-better-planet">
           <p class="view-project js-view">
             50k for a better planet © 50k for a better planet © 50k for a better
             planet © 50k for a better planet © 50k for a better planet
@@ -112,7 +112,7 @@
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
-        <a href="/ink">
+        <a href="https://studiorolie.com/ink">
         <p class="view-project orange js-view2">
           Ink One page © Ink One page © Ink One page © Ink One page © Ink One
           page
@@ -125,7 +125,7 @@
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
-        <a href="/markk" target="_blank">
+        <a href="https://studiorolie.com/markk">
           <p class="view-project blue">
             Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
           </p>
