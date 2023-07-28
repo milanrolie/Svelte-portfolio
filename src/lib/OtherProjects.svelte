@@ -337,7 +337,6 @@
     text-decoration: none;
     list-style: none;
     font-size: 3vw;
-    border-top: solid 1px var(--gunMetal);
     padding: 1px;
     padding: 1% 2%;
     transition: 0.3s;

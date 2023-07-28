@@ -88,20 +88,19 @@
     <h3 class="explore">
       Explore <img src={arrow} alt="Menu arrow" />
     </h3>
-    <!-- <button class="close-button">close</button> -->
     <nav>
       <ul>
         <li>
           <p class="number">01</p>
-          <a class="menu-text-gsap" href="#about-scroll">About</a>
+          <a class="menu-text-gsap" href="https://studiorolie.com#about">About</a>
         </li>
         <li>
           <p class="number">02</p>
-          <a class="menu-text-gsap" href="">Projects</a>
+          <a class="menu-text-gsap" href="/projects">Projects</a>
         </li>
         <li>
           <p class="number">03</p>
-          <a class="menu-text-gsap" href="">Photography</a>
+          <a class="menu-text-gsap" href="">Coming soon</a>
         </li>
         <li>
           <p class="number">04</p>
