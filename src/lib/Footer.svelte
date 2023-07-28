@@ -19,7 +19,7 @@
   });
 </script>
 
-<footer id="footer-scroll">
+<footer id="contact">
   <div class="wrapper">
     <div class="left-content">
       <ul class="stagger">

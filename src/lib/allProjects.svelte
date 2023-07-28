@@ -15,12 +15,6 @@
   import squad from "$lib/assets/squad.jpg";
   import twintig from "$lib/assets/twintig.jpg";
 
-
-
-
-
-
-
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
@@ -146,123 +140,106 @@
       <h3 class="others-gsap">others</h3>
     </div>
     <ul>
-      <li class="first">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Grand café Ubica <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-          <p class="tag">Design</p>
-        </div>
+      <a href="/ubica">
+        <li class="first">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Grand café Ubica <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+            <p class="tag">Design</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
 
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
-      <li class="second">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Commentary tool <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-          <p class="tag">UX</p>
-          <p class="tag">Data</p>
-        </div>
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
-      <li class="third">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Family fitness <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-          <p class="tag">video</p>
-        </div>
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
-      <li class="fourth">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Challem <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-        </div>
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
-      <li class="fifth">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Twintig Utrecht <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-          <p class="tag">design</p>
-        </div>
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
-      <li class="sixt">
-        <div class="clip">
-          <p class="allProjects-gsap">
-            Fdnd squad profile page <img src={arrow} alt="" />
-          </p>
-        </div>
-        <div class="tags">
-          <p class="tag">Website</p>
-          <p class="tag">design</p>
-          <p class="tag">data</p>
-        </div>
-        <p class="date2 allRight-gsap">10-11-2019</p>
-      </li>
+      <a href="/commentary-tool">
+        <li class="second">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Commentary tool <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+            <p class="tag">UX</p>
+            <p class="tag">Data</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
+
+      <a href="/family-fitness">
+        <li class="third">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Family fitness <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+            <p class="tag">video</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
+
+      <a href="/challem">
+        <li class="fourth">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Challem <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
+
+      <a href="/twintig">
+        <li class="fifth">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Twintig Utrecht <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+            <p class="tag">design</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
+
+      <a href="/squad-page">
+        <li class="sixt">
+          <div class="clip">
+            <p class="allProjects-gsap">
+              Fdnd squad profile page <img src={arrow} alt="" />
+            </p>
+          </div>
+          <div class="tags">
+            <p class="tag">Website</p>
+            <p class="tag">design</p>
+            <p class="tag">data</p>
+          </div>
+          <p class="date2 allRight-gsap">10-11-2019</p>
+        </li>
+      </a>
+
     </ul>
     <div class="image-wrapper">
-      <img
-      class="project-image project-image"
-      src={markk}
-      alt=""
-    />
-      
-      <img
-        class="project-image project-image1 view"
-        src={highTea}
-        alt=""
-      />
-
-      <img
-        class="project-image project-image2 view"
-        src={commentary}
-        alt=""
-      />
-
-      <img
-        class="project-image project-image3 view"
-        src={fitness}
-        alt=""
-      />
-
-      <img
-        class="project-image project-image4 view"
-        src={challem}
-        alt=""
-      />
-
-      <img
-        class="project-image project-image5 view"
-        src={twintig}
-        alt=""
-      />
-
-      <img
-        class="project-image project-image6 view"
-        src={squad}
-        alt=""
-      />
+      <img class="project-image project-image" src={markk} alt="" />
+      <img class="project-image project-image1 view" src={highTea} alt="" />
+      <img class="project-image project-image2 view" src={commentary} alt="" />
+      <img class="project-image project-image3 view" src={fitness} alt="" />
+      <img class="project-image project-image4 view" src={challem} alt="" />
+      <img class="project-image project-image5 view" src={twintig} alt="" />
+      <img class="project-image project-image6 view" src={squad} alt="" />
       <div class="image-overlay" />
     </div>
   </div>
@@ -329,6 +306,10 @@
     flex-direction: row;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .allProjects-gsap {
     transform: translateY(100%);
   }
@@ -371,7 +352,7 @@
   li img {
     position: absolute;
     object-fit: cover;
-    right: -.8em;
+    right: -0.8em;
     height: 2vw;
     width: 2vw;
     transform: translateY(55%);

@@ -97,11 +97,13 @@
 	body {
 		background-color: var(--gunMetal);
 		font-family: 'Outfit', sans-serif;
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 		/* overflow-y: hidden; */
 	}
 
-
+	body::-webkit-scrollbar{
+    display: none;
+  }
 
 	.overflow-x {
 		overflow-y: scroll;
@@ -117,7 +119,6 @@
 		font-weight: 300;
 		line-height: 1em;
 	}
-
 
 	h2 {
 		font-size: 2em;
@@ -144,7 +145,7 @@
 		mix-blend-mode: difference;
 		z-index: 20;
 		pointer-events: none;
-		display: block;
+		display: none;
 	}
 
 	.arrow {
@@ -155,7 +156,6 @@
 	.show-arrow {
 		transform: scale(2.5);
 	}
-
 
 	html.lenis {
 		height: auto;
@@ -182,10 +182,5 @@
 		.ball {
 			display: none;
 		}
-
-
-
-
-
 	}
 </style>

@@ -5,241 +5,381 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
+  import grrr from "$lib/assets/grrr-iphone.webp";
+  import legends from "$lib/assets/legends-macbook2.webp";
+  import favela from "$lib/assets/favela.webp";
+  import markk from "$lib/assets/markk.webp";
+  import arrow from "$lib/assets/arrow.svg";
+  import highTea from "$lib/assets/high-tea-low.jpg";
+  import commentary from "$lib/assets/commentary-tool.jpg";
+  import fitness from "$lib/assets/fitness.jpg";
+  import challem from "$lib/assets/challem.jpg";
+  import squad from "$lib/assets/squad.jpg";
+  import twintig from "$lib/assets/twintig.jpg";
+  import Lenis from "@studio-freight/lenis";
+  import Menu from "../../lib/Menu.svelte";
 
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    gsap.from(".projects", {
-      y: 900,
-      delay: 1,
+    const lenis = new Lenis({
       duration: 1.5,
-      ease: "power4.out",
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+      direction: "horizontal",
+      gestureDirection: "vertical",
+      orientation: "horizontal",
+      smooth: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
     });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
 
     gsap.from(".case", {
-      y: 700,
-      delay: 1.2,
-      duration: 1.5,
-      stagger: 0.2,
-      ease: "power4.out",
+      duration: 1,
+      delay: 0.5,
+      stagger: 0.3,
+      y: "150%",
     });
 
-    gsap.from(".svg2", {
-      y: 500,
-      delay: 2,
-      duration: 1.5,
-      ease: "power4.out",
-    });
+    // gsap.to(".bar", {
+    //   scrollTrigger: {
+    //     trigger: ".cases",
+    //     scrub: 1,
+    //     start: "top",
+    //     end: "top",
+    //     markers: true,
+    //   },
+    //   x: 0,
+    // });
   });
 </script>
 
 <Nav />
+<Menu />
 
 <section class="cases">
-  <h1 class="projects">
-    all projects <svg
-      class="svg2"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      ><path
-        d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-      /></svg
-    >
-  </h1>
-
+  <h1 class="projects">- all projects</h1>
   <div class="projects-wrapper">
-    <div class="case">
-      <a href="https://ubicautrecht.nl/" target="_blank">
-        <div class="image-clip">
-          <img
-            class="first-project-image"
-            src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
-            alt="test"
-            width="400"
-            height="400"
-          />
-        </div>
+    <div class="case p1">
+      <div class="subscripts">
+        <div class="subscript" href="">A better planet</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/a-better-planet">
+        <p class="view-project js-view">
+          50k for a better planet © 50k for a better planet © 50k for a better
+          planet © 50k for a better planet © 50k for a better planet
+        </p>
 
-        <div class="subscript">
-          <p class="view-project black">Ubica Utrecht</p>
-          <p class="animated-tags">Website / design / work</p>
-
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-        </div>
-      </a>
-    </div>
-    <div class="case">
-      <a href="https://ubicautrecht.nl/" target="_blank">
-        <div class="image-clip">
-          <img
-            src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-            alt="test"
-            width="400"
-            height="400"
-          />
-        </div>
-
-        <div class="subscript">
-          <p class="view-project black">Ubica Utrecht</p>
-
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-        </div>
-      </a>
-    </div>
-    <div class="case">
-      <a href="https://ubicautrecht.nl/" target="_blank">
-        <div class="image-clip">
-          <img
-            class="first-project-image"
-            src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
-            alt="test"
-            width="400"
-            height="400"
-          />
-        </div>
-
-        <div class="subscript">
-          <p class="view-project black">Ubica Utrecht</p>
-          <p class="animated-tags">Website / design / work</p>
-
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-        </div>
-      </a>
-    </div>
-    <div class="case">
-      <a href="https://ubicautrecht.nl/" target="_blank">
-        <div class="image-clip">
-          <img
-            src="https://images.unsplash.com/photo-1525286335722-c30c6b5df541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-            alt="test"
-            width="400"
-            height="400"
-          />
-        </div>
-
-        <div class="subscript">
-          <p class="view-project black">Ubica Utrecht</p>
-
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-        </div>
+        <img src={grrr} alt="GRRR one page" />
       </a>
     </div>
 
-    <Footer />
+    <div class="case p2">
+      <div class="subscripts">
+        <div class="subscript" href="">Ink football</div>
+        <div class="subscript" href="">2023</div>
+      </div>
+      <a href="/ink">
+        <p class="view-project js-view orange">
+          Ink football © Ink football © ink football
+          planet © Ink football © Ink football
+        </p>
+
+        <img src={favela} alt="Ink Football" />
+      </a>
+    </div>
+    <div class="case p3">
+      <div class="subscripts">
+        <div class="subscript" href="">Markk Agency</div>
+        <div class="subscript" href="">2023</div>
+      </div>
+      <a href="/markk">
+        <p class="view-project js-view blue">
+          Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
+        </p>
+        <img src={markk} alt="Markk Agency" />
+      </a>
+    </div>
+    <div class="case p2">
+      <div class="subscripts">
+        <div class="subscript" href="">Twintig Utrecht</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/twintig">
+        <p class="view-project js-view">
+          Twintig Utrecht © Twintig Utrecht © Twintig Utrecht © Twintig Utrecht © Twintig Utrecht
+        </p>
+        <img src={twintig} alt="Twintig Utrecht" />
+      </a>
+    </div>
+    <div class="case p3">
+      <div class="subscripts">
+        <div class="subscript" href="">Commentary tool</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/commentary-tool">
+        <p class="view-project js-view orange">
+          Commentary tool © Commentary tool © Commentary tool © Commentary tool © Commentary tool
+        </p>
+        <img src={commentary} alt="Commentary tool" />
+      </a>
+    </div>
+    <div class="case p2">
+      <div class="subscripts">
+        <div class="subscript" href="">Ubica Utrecht</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/ubica">
+        <p class="view-project js-view">
+          Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht
+        </p>
+        <img src={highTea} alt="Ubica Utrecht" />
+      </a>
+    </div>
+    <div class="case p3">
+      <div class="subscripts">
+        <div class="subscript" href="">FDND squad page</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/squad-page">
+        <p class="view-project js-view">
+          FDND squad page © FDND squad page © FDND squad page © FDND squad page © FDND squad page
+        </p>
+        <img src={squad} alt="FDND squad page" />
+      </a>
+    </div>
+    <div class="case p2">
+      <div class="subscripts">
+        <div class="subscript" href="">Family Fitness</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/family-fitness">
+        <p class="view-project js-view">
+          Family Fitness © Family Fitness © Family Fitness © Family Fitness © Family Fitness
+        </p>
+        <img src={fitness} alt="Family Fitness" />
+      </a>
+    </div>
+    <div class="case p3">
+      <div class="subscripts">
+        <div class="subscript" href="">Challem</div>
+        <div class="subscript" href="">2022</div>
+      </div>
+      <a href="/challem">
+        <p class="view-project js-view">
+          Challem © Challem © Challem © Challem © Challem © Challem © Challem
+        </p>
+        <img src={challem} alt="Challem" />
+      </a>
+    </div>
+    <div class="case p2">
+      <div class="subscripts">
+        <div class="subscript" href="">Your project here?</div>
+        <div class="subscript" href="">anytime</div>
+      </div>
+      <a href="https://studiorolie.com#contact">
+        <p class="view-project js-view">
+          Your project here? © Your project here? © Your project here? © Your project here? © Your project here?
+        </p>
+        <img src={favela} alt="Your project here?" />
+      </a>
+    </div>
   </div>
+
+  <footer>
+    <p>studio rolie</p>
+    <p />
+    <img src={arrow} alt="" />
+    <div class="progress-bar">
+      <div class="bar"></div>
+    </div>
+  </footer>
 </section>
 
 <style>
   .cases {
-    padding-top: 10%;
+    height: 100vh;
+    width: max-content;
+    padding: 5% 2% 5% 2%;
+    width: max-content;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: var(--dark); */
   }
 
   h1 {
-    text-transform: capitalize;
+    position: fixed;
+    top: 2.5%;
+    left: 10%;
+    font-weight: 600;
+    font-size: 2vh;
     margin-bottom: 2%;
-    font-family: var(--font2);
-    letter-spacing: 1;
-    padding-bottom: 2%;
-    border-bottom: solid 1px var(--dark);
-  }
-
-  .svg2 {
-    position: absolute;
-    transform: scale(2) rotate(180deg);
-    bottom: 14%;
-    right: 1%;
   }
 
   .projects-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 2%;
+    align-items: flex-end;
+    gap: 2em;
   }
 
   .case {
     position: relative;
-    width: 49%;
-    margin-bottom: 5%;
+    width: 75vh;
+    height: 50vh;
+    overflow: hidden;
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
   }
 
-  .image-clip {
-    clip-path: inset(0px 0px 1% 0px round 1em);
+  .view-project {
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    font-size: 9vw;
+    z-index: 2;
+    min-width: max-content;
+    text-transform: uppercase;
+    color: var(--webLavender);
+    animation: projectMarquee 40s infinite linear;
+    opacity: 0;
+    height: 100%;
+    width: max-content;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-bottom: 20vh;
   }
 
-  img {
-    aspect-ratio: 1.3;
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
+  .orange {
+    color: var(--bitterSweet);
   }
 
-  .subscript {
+  .black {
+    color: var(--dark);
+  }
+
+  .blue {
+    color: #6866fa;
+  }
+
+  .subscripts {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 1px;
-    border-bottom: 1px solid var(--dark);
-    overflow: hidden;
-  }
-
-  .animated-tags {
-    transform: translateX(200%);
-    transition: 0.6s;
-  }
-  .case:hover .animated-tags {
-    transform: translateX(10%);
-  }
-
-  .svg1 {
+    gap: 5px;
+    bottom: 1em;
+    left: 2%;
+    width: 95%;
+    opacity: 0;
     transition: 0.3s;
   }
 
-  .case:hover .svg1 {
-    transform: rotate(45deg);
+  .subscript {
+    background-color: var(--dark);
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: var(--gunMetal);
+    text-transform: uppercase;
   }
 
-  .case:hover img {
-    transform: scale(1.1);
+  @keyframes projectMarquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .case img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+
+  .p2 {
+    height: 80vh;
+    width: 65vh;
   }
 
   a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  .case:hover .view-project {
+    opacity: 1;
+  }
+
+  .case:hover .subscripts {
+    opacity: 1;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    padding: 0 2%;
+  }
+
+  /* footer img {
+    position: absolute;
+    right: 2%;
+    transform: rotate(270deg);
+  } */
+
+  .progress-bar {
+    position: absolute;
+    right: 1.5%;
+    width: 10em;
+    height: 4px;
+    background-color: rgb(154, 154, 154);
+    border-radius: 1em;
+    overflow: hidden;
+  }
+
+  .bar {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    transform: translateX(-100%);
   }
 </style>

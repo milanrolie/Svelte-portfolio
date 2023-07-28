@@ -1,14 +1,33 @@
-<!-- <script lang="ts">
-  import { fly } from "svelte/transition";
+<script>
+import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+  import { onMount } from "svelte";
 
-  export let url: URL
+  gsap.registerPlugin(ScrollTrigger);
+
+  onMount(() => {
+    // gsap.to(".transition", {
+    //   y: '-10%',
+    //   rotate: 0,
+    //   delay: 5,
+    //   stagger: 0,
+    //   duration: 1,
+    // });
+});
+
 </script>
 
-{#key url}
-  <div
-    in:fly={{ x: -200, duration: 300, delay: 300 }}
-    out:fly={{ x: 200, duration: 300 }}
-  >
-    <slot />
-  </div>
-{/key} -->
+<div class="transition"></div>
+
+<style>
+    .transition {
+        position: fixed;
+        top: 0;
+        left: -10%;
+        height: 120vh;
+        width: 120%;
+        background-color: var(--dark);
+        z-index: 300;
+        transform: translateY(100%) rotate(-10deg);
+    }
+</style>

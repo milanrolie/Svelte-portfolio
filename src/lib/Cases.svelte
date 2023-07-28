@@ -23,7 +23,7 @@
         duration: 1,
       });
       setTimeout(function () {
-        window.location.href = "/about";
+        window.location.href = "/a-better-planet";
       }, 1000);
     });
 
@@ -77,42 +77,6 @@
       y: 0,
       "--progress": 1,
     });
-
-    // const toggleFullscreen = document.querySelector('.js-view2')
-
-    // toggleFullscreen.addEventListener("click", () => {
-    //     gsap.to(".p2", {
-    //       top: 0,
-    //       left: 0,
-    //       height: '100vh',
-    //       duration: .7,
-    //     })
-    //   });
-
-    //   let imageOne = document.querySelector('.js-view2')
-
-    //   imageOne.addEventListener("click", () => {
-    //     const state = Flip.getState(".p2");
-    //     const fullSize = document.querySelector(".p2");
-
-    // fullSize.classList.toggle("active");
-
-    // Flip.from(state, {
-    //   duration: 0.6,
-    //   fade: true,
-    //   absolute: false,
-    //   toggleClass: ".p2",
-    //   ease: "power1.inOut"
-    // });
-
-    // const toggleFullscreen = document.querySelector('.js-view2')
-    // const animatedImage = document.querySelector('.p2')
-
-    // toggleFullscreen.addEventListener("click", () => {
-
-    //   animatedImage.classList.toggle("active");
-
-    // });
   });
 </script>
 
@@ -120,7 +84,7 @@
   <section class="projects-intro">
     <div class="line" />
     <h3 class="projects-text-gsap">projects</h3>
-    <a class="view-all" href="">View all</a>
+    <a class="view-all" href="/projects">View all</a>
     <!-- <p>
       My projects are a mixture between real clients, personal and educational
       websites I've built.
@@ -135,12 +99,11 @@
           <div class="subscript" href="">A better planet</div>
           <div class="subscript" href="">2022</div>
         </div>
-        <a target="_blank" href="/about">
+        <a href="/a-better-planet">
           <p class="view-project js-view">
             50k for a better planet © 50k for a better planet © 50k for a better
             planet © 50k for a better planet © 50k for a better planet
           </p>
-
           <img src={grrr} alt="GRRR one page" />
         </a>
       </div>
@@ -149,99 +112,27 @@
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
+        <a href="/ink">
         <p class="view-project orange js-view2">
           Ink One page © Ink One page © Ink One page © Ink One page © Ink One
           page
         </p>
         <img src={favela} alt="Legends website" />
+      </a>
       </div>
       <div class="project p3">
         <div class="subscripts">
           <a class="subscript" href="">A better planet</a>
           <a class="subscript" href="">2022</a>
         </div>
-        <a href="https://milanrolie.github.io/markk/" target="_blank">
+        <a href="/markk" target="_blank">
           <p class="view-project blue">
             Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
           </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
           <p class="project-number">01</p>
           <img src={markk} alt="test" />
         </a>
       </div>
-
-      <!-- <div class="project">
-        <a href="https://tiny-pink-monkey-cuff.cyclic.app/" target="_blank">
-          <p class="view-project orange">
-            UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV
-            Dashboard - UltiTV Dashboard - UltiTV Dashboard - UltiTV Dashboard -
-            UltiTV Dashboard
-          </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
-          <img src="src/assets/dashboard.jpg" alt="test" />
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://ubicautrecht.nl/" target="_blank">
-          <p class="view-project black">
-            Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica - Ubica -
-            Ubica
-          </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
-          <img
-            src="https://twintig-utrecht.nl/wp-content/uploads/2022/01/Ubica-NSlagmolen-29-september-202119-scaled.jpg"
-            alt="test"
-          />
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://family-fitness.nl/" target="_blank">
-          <p class="view-project orange">
-            Family Fitness - Family Fitness - Family Fitness - Family Fitness -
-            Family Fitness - Family Fitness - Family Fitness
-          </p>
-          <svg
-            class="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            ><path
-              d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-            /></svg
-          >
-          <p class="project-number">01</p>
-          <img
-            src="https://images.unsplash.com/photo-1593476123561-9516f2097158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
-            alt="test"
-          />
-        </a>
-      </div> -->
     </div>
   </section>
 </div>

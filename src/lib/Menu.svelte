@@ -73,7 +73,7 @@
       e.preventDefault();
       tl.timeScale(1.5).reverse();
       setTimeout(function () {
-        window.location.href = "#footer-scroll";
+        window.location.href = "#contact";
       }, 1800);
     });
 
@@ -105,7 +105,7 @@
         </li>
         <li>
           <p class="number">04</p>
-          <a class="menu-text-gsap contact-link" href="#footer-scroll"
+          <a class="menu-text-gsap contact-link" href="#contact"
             >Contact</a
           >
         </li>

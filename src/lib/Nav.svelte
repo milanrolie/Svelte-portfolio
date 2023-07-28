@@ -107,7 +107,7 @@
         <li>my Work</li>
         <li>Contact</li>
     </ul> -->
-  <button class="hello"> <a href="#footer-scroll" onclick="lenis.scrollTo('#footer-scroll')">Say Hello</a> </button>
+  <button class="hello"> <a href="#contact" onclick="lenis.scrollTo('#contact')">Say Hello</a> </button>
 </nav>
 
 <style>
