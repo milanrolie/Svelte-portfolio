@@ -23,6 +23,17 @@
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
+    let p1 = document.querySelector(".p1");
+    let p2 = document.querySelector(".p2");
+    let p3 = document.querySelector(".p3");
+    let p4 = document.querySelector(".p4");
+    let p5 = document.querySelector(".p5");
+    let p6 = document.querySelector(".p6");
+    let p7 = document.querySelector(".p7");
+    let p8 = document.querySelector(".p8");
+    let p9 = document.querySelector(".p9");
+    let p10 = document.querySelector(".p10");
+
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
@@ -67,16 +78,145 @@
       y: "150%",
     });
 
-    // gsap.to(".bar", {
-    //   scrollTrigger: {
-    //     trigger: ".cases",
-    //     scrub: 1,
-    //     start: "top",
-    //     end: "top",
-    //     markers: true,
-    //   },
-    //   x: 0,
-    // });
+    p1.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/a-better-planet";
+      }, 1000);
+    });
+
+    p2.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/ink";
+      }, 1000);
+    });
+
+    p3.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/markk";
+      }, 1000);
+    });
+
+    p4.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/twintig";
+      }, 1000);
+    });
+
+    p5.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/commentary-tool";
+      }, 1000);
+    });
+
+    p6.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/ubica";
+      }, 1000);
+    });
+
+    p7.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/squad-page";
+      }, 1000);
+    });
+
+    p8.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/family-fitness";
+      }, 1000);
+    });
+
+    p9.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/challem";
+      }, 1000);
+    });
+
+    p10.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "https://studiorolie.com/#contact";
+      }, 1000);
+    });
   });
 </script>
 
@@ -109,8 +249,8 @@
       </div>
       <a href="/ink">
         <p class="view-project js-view orange">
-          Ink football © Ink football © ink football
-          planet © Ink football © Ink football
+          Ink football © Ink football © ink football planet © Ink football © Ink
+          football
         </p>
 
         <img src={favela} alt="Ink Football" />
@@ -128,67 +268,72 @@
         <img src={markk} alt="Markk Agency" />
       </a>
     </div>
-    <div class="case p2">
+    <div class="case p4">
       <div class="subscripts">
         <div class="subscript" href="">Twintig Utrecht</div>
         <div class="subscript" href="">2022</div>
       </div>
       <a href="/twintig">
         <p class="view-project js-view">
-          Twintig Utrecht © Twintig Utrecht © Twintig Utrecht © Twintig Utrecht © Twintig Utrecht
+          Twintig Utrecht © Twintig Utrecht © Twintig Utrecht © Twintig Utrecht
+          © Twintig Utrecht
         </p>
         <img src={twintig} alt="Twintig Utrecht" />
       </a>
     </div>
-    <div class="case p3">
+    <div class="case p5">
       <div class="subscripts">
         <div class="subscript" href="">Commentary tool</div>
         <div class="subscript" href="">2022</div>
       </div>
       <a href="/commentary-tool">
         <p class="view-project js-view orange">
-          Commentary tool © Commentary tool © Commentary tool © Commentary tool © Commentary tool
+          Commentary tool © Commentary tool © Commentary tool © Commentary tool
+          © Commentary tool
         </p>
         <img src={commentary} alt="Commentary tool" />
       </a>
     </div>
-    <div class="case p2">
+    <div class="case p6">
       <div class="subscripts">
         <div class="subscript" href="">Ubica Utrecht</div>
         <div class="subscript" href="">2022</div>
       </div>
       <a href="/ubica">
         <p class="view-project js-view">
-          Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht
+          Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica
+          Utrecht
         </p>
         <img src={highTea} alt="Ubica Utrecht" />
       </a>
     </div>
-    <div class="case p3">
+    <div class="case p7">
       <div class="subscripts">
         <div class="subscript" href="">FDND squad page</div>
         <div class="subscript" href="">2022</div>
       </div>
       <a href="/squad-page">
         <p class="view-project js-view">
-          FDND squad page © FDND squad page © FDND squad page © FDND squad page © FDND squad page
+          FDND squad page © FDND squad page © FDND squad page © FDND squad page
+          © FDND squad page
         </p>
         <img src={squad} alt="FDND squad page" />
       </a>
     </div>
-    <div class="case p2">
+    <div class="case p8">
       <div class="subscripts">
         <div class="subscript" href="">Family Fitness</div>
         <div class="subscript" href="">2022</div>
       </div>
       <a href="/family-fitness">
         <p class="view-project js-view">
-          Family Fitness © Family Fitness © Family Fitness © Family Fitness © Family Fitness
+          Family Fitness © Family Fitness © Family Fitness © Family Fitness ©
+          Family Fitness
         </p>
         <img src={fitness} alt="Family Fitness" />
       </a>
     </div>
-    <div class="case p3">
+    <div class="case p9">
       <div class="subscripts">
         <div class="subscript" href="">Challem</div>
         <div class="subscript" href="">2022</div>
@@ -200,14 +345,15 @@
         <img src={challem} alt="Challem" />
       </a>
     </div>
-    <div class="case p2">
+    <div class="case p10">
       <div class="subscripts">
         <div class="subscript" href="">Your project here?</div>
         <div class="subscript" href="">anytime</div>
       </div>
       <a href="https://studiorolie.com#contact">
         <p class="view-project js-view">
-          Your project here? © Your project here? © Your project here? © Your project here? © Your project here?
+          Your project here? © Your project here? © Your project here? © Your
+          project here? © Your project here?
         </p>
         <img src={favela} alt="Your project here?" />
       </a>
@@ -219,7 +365,7 @@
     <p />
     <img src={arrow} alt="" />
     <div class="progress-bar">
-      <div class="bar"></div>
+      <div class="bar" />
     </div>
   </footer>
 </section>

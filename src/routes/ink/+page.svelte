@@ -9,6 +9,8 @@
   import TransitionOut from "../../lib/TransitionOut.svelte";
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
+  import legends from "$lib/assets/legends-macbook2.webp";
+
 
 
   gsap.registerPlugin(ScrollTrigger);
@@ -111,14 +113,14 @@
 
 <section class="project-intro">
   <div class="text-wrapper">
-    <h1 class="words">Ultimate frisbee commentary tool</h1>
+    <h1 class="words">Where the real legends begin</h1>
   </div>
   <div class="image">
     <p class="date">23-10-2020</p>
     <div class="img-clip">
     <img
       class="first-project-image"
-      src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+      src={legends}
       alt=" "
     />
   </div>
@@ -193,8 +195,8 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 60vh;
-    padding: 2%;
-    margin-bottom: 2%;
+    padding-right: 5%;
+    margin-bottom: 5%;
     z-index: -1;
   }
 
@@ -202,7 +204,7 @@
     color: var(--dark);
     font-size: 9vw;
     text-transform: none;
-    line-height: 0.8em;
+    line-height: 0.9em;
     font-weight: 600;
   }
 

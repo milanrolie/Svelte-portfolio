@@ -3,10 +3,6 @@
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
   import arrow from "$lib/assets/arrow.svg";
-
-  import grrr from "$lib/assets/grrr-iphone.jpg";
-  import legends from "$lib/assets/legends-macbook2.jpg";
-  import favela from "$lib/assets/favela.jpg";
   import markk from "$lib/assets/markk.jpg";
   import highTea from "$lib/assets/high-tea-low.jpg";
   import commentary from "$lib/assets/commentary-tool.jpg";
@@ -131,6 +127,32 @@
     hoverElement6.addEventListener("mouseleave", () => {
       projectImage6.classList.toggle("view");
     });
+
+    const links = [
+      { class: ".p1p", url: "/ubica" },
+      { class: ".p2p", url: "/commentary-tool" },
+      { class: ".p3p", url: "/family-fitness" },
+      { class: ".p4", url: "/challem" },
+      { class: ".p5", url: "/twintig" },
+      { class: ".p6", url: "/squad-page" },
+    ];
+
+    links.forEach((link) => {
+      const el = document.querySelector(link.class);
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        gsap.to(".transition", {
+          y: "-10%",
+          rotate: 0,
+          delay: 0,
+          stagger: 0,
+          duration: 1,
+        });
+        setTimeout(function () {
+          window.location.href = link.url;
+        }, 1000);
+      });
+    });
   });
 </script>
 
@@ -140,7 +162,7 @@
       <h3 class="others-gsap">others</h3>
     </div>
     <ul>
-      <a href="/ubica">
+      <a class="p1p" href="/ubica">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -155,7 +177,7 @@
         </li>
       </a>
 
-      <a href="/commentary-tool">
+      <a class="p2p" href="/commentary-tool">
         <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -171,7 +193,7 @@
         </li>
       </a>
 
-      <a href="/family-fitness">
+      <a class="p3p" href="/family-fitness">
         <li class="third">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -186,7 +208,7 @@
         </li>
       </a>
 
-      <a href="/challem">
+      <a class="p4" href="/challem">
         <li class="fourth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -200,7 +222,7 @@
         </li>
       </a>
 
-      <a href="/twintig">
+      <a class="p5" href="/twintig">
         <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -215,7 +237,7 @@
         </li>
       </a>
 
-      <a href="/squad-page">
+      <a class="p6" href="/squad-page">
         <li class="sixt">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -230,7 +252,6 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-
     </ul>
     <div class="image-wrapper">
       <img class="project-image project-image" src={markk} alt="" />

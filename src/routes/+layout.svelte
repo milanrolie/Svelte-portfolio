@@ -1,6 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import Lenis from "@studio-freight/lenis";
+  import TransitionOut from "../lib/TransitionOut.svelte";
+  import Transition from "../lib/Transition.svelte";
+  
 
   onMount(() => {
     const lenis = new Lenis({
@@ -37,6 +40,8 @@
 
     gsap.ticker.lagSmoothing(0);
   });
+
 </script>
 
 <slot />
+<Transition />

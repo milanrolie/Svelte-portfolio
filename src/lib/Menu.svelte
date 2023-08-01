@@ -138,7 +138,7 @@
 
 <style>
   .menu-wrapper {
-    position: relative;
+    position: fixed;
     right: 1%;
     top: 2%;
     height: 10px;

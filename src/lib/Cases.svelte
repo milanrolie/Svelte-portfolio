@@ -11,11 +11,26 @@
   gsap.registerPlugin(ScrollTrigger, Flip);
 
   onMount(() => {
+    let viewAll = document.querySelector(".view-all");
     let caseClick1 = document.querySelector(".p1");
     let caseClick2 = document.querySelector(".p2");
     let caseClick3 = document.querySelector(".p3");
 
 
+
+    viewAll.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/projects";
+      }, 1000);
+    });
 
     caseClick1.addEventListener("click", function (e) {
       e.preventDefault();
