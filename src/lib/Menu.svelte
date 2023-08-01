@@ -283,11 +283,15 @@
       right: 3%;
     }
 
+    button {
+      background-color: aqua;
+    }
+
 
   button img {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 8px;
+    left: 8px;
   }
 
     nav {
