@@ -14,7 +14,6 @@
         end: "center+=200",
       },
       y: -150,
-
     });
 
     gsap.from(".words", {
@@ -33,7 +32,6 @@
       ease: "power4.out",
     });
 
-
     gsap.to(".showreel", {
       scrollTrigger: {
         trigger: ".image-wrapper",
@@ -45,29 +43,46 @@
       y: -50,
     });
 
-    
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 700px)", () => {
+      gsap.to(".showreel", {
+        scrollTrigger: {
+          trigger: ".image-wrapper",
+          scrub: 1,
+          start: "top-=800",
+          end: "top+=200",
+          // markers: true,
+        },
+        y: 0,
+      });
+    });
   });
 </script>
 
 <section class="hero-wrapper">
   <div class="text-wrapper">
-  <h1>
-    <div class="creative inline-block"><span class="words">Studio</span></div>
-    <div class="developer inline-block">
-      <span class="words">rolie</span>
-    </div>
-    <!-- <div class="designer inline-block"><span class="words">Designer</span></div> -->
-  </h1>
-  <!-- <div class="info-wrapper">
+    <h1>
+      <div class="creative inline-block"><span class="words">Studio</span></div>
+      <div class="developer inline-block">
+        <span class="words">rolie</span>
+      </div>
+      <!-- <div class="designer inline-block"><span class="words">Designer</span></div> -->
+    </h1>
+    <!-- <div class="info-wrapper">
     <p>Milan Rolie</p>
     <p>Based in Utrecht</p>
     <p>The Netherlands</p>
   </div> -->
-</div>
-<div class="image-wrapper">
-  <!-- <div class="showreel-overlay"></div> -->
-  <img class="showreel" src="https://images.unsplash.com/photo-1527148191484-193c02d12e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
-</div>
+  </div>
+  <div class="image-wrapper">
+    <!-- <div class="showreel-overlay"></div> -->
+    <img
+      class="showreel"
+      src="https://images.unsplash.com/photo-1527148191484-193c02d12e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      alt=""
+    />
+  </div>
 </section>
 
 <style>
@@ -136,8 +151,8 @@
     }
 
     .text-wrapper {
-    height: 50vh;
-  }
+      height: 50vh;
+    }
 
     h1 {
       font-size: 25vw;
@@ -148,12 +163,12 @@
     }
 
     .creative {
-    margin-left: 0;
-  }
+      margin-left: 0;
+    }
 
-  .developer {
-    margin-left: 47%;
-  }  
+    .developer {
+      margin-left: 47%;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -163,19 +178,19 @@
     }
 
     .developer {
-    margin-left: 48.5%;
-  }  
+      margin-left: 48.5%;
+    }
 
-  .text-wrapper {
-    height: 38svh;
-  }
+    .text-wrapper {
+      height: 38svh;
+    }
 
-  .image-wrapper {
-    height: 80svh;
-    position: relative;
-    overflow: hidden;
-    transform: translateY(300px);
-    border-radius: 1em;
-  }
+    .image-wrapper {
+      height: 80svh;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(300px);
+      border-radius: 1em;
+    }
   }
 </style>

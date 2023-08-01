@@ -45,8 +45,8 @@
       "<"
     );
     tl.to(
-      ".menu-button",
-      { rotate: 270, duration: 0.8, ease: "Expo.easeInOut", delay: 0 },
+      "button img",
+      { rotate: 270, duration: 1.5, top: "50%", left: "50%", ease: "Expo.easeInOut", delay: 0 },
       "<"
     );
     tl.to(
@@ -181,7 +181,16 @@
 
   button:hover {
     cursor: pointer;
-    transform: rotate(135deg) scale(1.8);
+  }
+  
+  button:hover button img {
+    transform: rotate(135deg);
+  }
+
+  button img {
+    position: absolute;
+    top: 32%;
+    left: 45%;
   }
 
   img {
