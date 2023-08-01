@@ -11,13 +11,12 @@
   import Menu from "../../lib/Menu.svelte";
   import Lenis from "@studio-freight/lenis";
 
-
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
     gsap.to(".words", {
       y: 0,
-      delay: .8,
+      delay: 0.8,
       duration: 1.5,
       ease: "power4.out",
     });
@@ -32,7 +31,6 @@
     //   },
     //   y: 0,
     // });
-
 
     gsap.to(".first-project-image", {
       scrollTrigger: {
@@ -69,7 +67,7 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
 
     gsap.to(".second-part2", {
@@ -82,9 +80,8 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
-
 
     gsap.to(".third-project-image", {
       scrollTrigger: {
@@ -96,12 +93,10 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
-
   });
 </script>
-
 
 <TransitionOut />
 <Menu />
@@ -114,12 +109,12 @@
   <div class="image">
     <p class="date">23-10-2020</p>
     <div class="img-clip">
-    <img
-      class="first-project-image"
-      src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
-      alt=" "
-    />
-  </div>
+      <img
+        class="first-project-image"
+        src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+        alt=" "
+      />
+    </div>
   </div>
   <div class="project-description">
     <div class="introduction">
@@ -139,7 +134,7 @@
     </div>
     <div class="images">
       <img
-        class="second-project-image project-clip-gsap "
+        class="second-project-image project-clip-gsap"
         src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
         alt=""
       />
@@ -173,7 +168,6 @@
     </div>
   </div>
 </section>
-
 
 <OtherProjects />
 <Footer />
@@ -228,7 +222,7 @@
   }
 
   .project-clip-gsap {
-    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
   }
 
   .image {
@@ -285,11 +279,7 @@
     margin-bottom: 10%;
   }
 
-
   @media screen and (max-width: 1122px) {
-    section {
-    }
-
     .text-wrapper {
       height: 30%;
       margin-top: 40%;
@@ -299,45 +289,38 @@
       flex-direction: column;
       padding: 5% 15%;
     }
-    
+
     .introduction p {
       max-width: 90%;
       margin-bottom: 1em;
     }
 
     .images {
-    display: flex;
-    flex-direction: column;
-    padding: 0% 10%;
+      display: flex;
+      flex-direction: column;
+      padding: 0% 10%;
     }
 
     .second-project-image {
       width: 100%;
       height: 50%;
       margin-bottom: 5%;
-  }
-
+    }
   }
 
   @media screen and (max-width: 700px) {
-    section {
-      /* background-color: blue; */
+    .first-project-image {
+      width: 100%;
+      height: 120%;
     }
 
-    .first-project-image {
-    width: 100%;
-    height: 120%;
-  }
-
     .date {
-      font-size: .7em;
+      font-size: 0.7em;
     }
 
     .introduction p {
       max-width: 100%;
       font-size: 1em;
     }
-
-
   }
 </style>

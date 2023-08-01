@@ -94,29 +94,9 @@
     clip-path: polygon(0 0, 220% 0, 220% 100%, 0% 100%);
   }
 
-  .creative {
-    /* margin-left: -20.3%; */
-  }
-
   .developer {
     margin-left: 65.3%;
     transform: translateY(-30%);
-  }
-
-  .designer {
-  }
-
-  .info-wrapper {
-    position: absolute;
-    bottom: 7%;
-    left: 2.5%;
-  }
-
-  p {
-    color: var(--flashWhite);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 200;
   }
 
   .words {
@@ -132,7 +112,7 @@
     border-radius: 1em;
   }
 
-  .showreel-overlay {
+  /* .showreel-overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -142,7 +122,7 @@
     z-index: 3;
     transition: .5s;
     border-radius: 1em;
-  }
+  } */
 
   img {
     width: 100%;
@@ -187,11 +167,11 @@
   }  
 
   .text-wrapper {
-    height: 38vh;
+    height: 38svh;
   }
 
   .image-wrapper {
-    height: 80vh;
+    height: 80svh;
     position: relative;
     overflow: hidden;
     transform: translateY(300px);

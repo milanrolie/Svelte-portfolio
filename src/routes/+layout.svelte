@@ -1,5 +1,5 @@
 <script>
-      import { onMount } from "svelte";
+  import { onMount } from "svelte";
   import Lenis from "@studio-freight/lenis";
 
   onMount(() => {
@@ -20,8 +20,7 @@
 
     requestAnimationFrame(raf);
 
-    lenis.on("scroll", (e) => {
-    });
+    lenis.on("scroll", (e) => {});
 
     function raf(time) {
       lenis.raf(time);

@@ -285,9 +285,9 @@
     color: var(--bitterSweet);
   }
 
-  .black {
+  /* .black {
     color: var(--dark);
-  }
+  } */
 
   .blue {
     color: #6866fa;

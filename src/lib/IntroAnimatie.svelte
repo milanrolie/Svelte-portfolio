@@ -153,9 +153,6 @@ svg {
     fill: var(--dark);
   }
 
-  path {
-  }
-
   @media screen and (max-width: 1122px) {
     svg {
       width: 30%;

@@ -122,19 +122,6 @@
     z-index: 7;
   }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    list-style-type: none;
-    color: var(--dark);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 200;
-  }
-
   .logo-svg {
     width: 5em;
     height: auto;

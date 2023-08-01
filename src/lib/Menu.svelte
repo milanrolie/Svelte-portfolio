@@ -100,7 +100,7 @@
         </li>
         <li>
           <p class="number">03</p>
-          <a class="menu-text-gsap" href="">Coming soon</a>
+          <a class="menu-text-gsap" href=" ">Coming soon</a>
         </li>
         <li>
           <p class="number">04</p>
@@ -220,9 +220,6 @@
   nav a:hover {
     color: var(--webLavender);
     margin-left: 1%;
-  }
-
-  nav li:hover .number {
   }
 
   .submenu {

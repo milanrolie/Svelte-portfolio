@@ -286,9 +286,6 @@
 
 
   @media screen and (max-width: 1122px) {
-    section {
-    }
-
     .text-wrapper {
       height: 30%;
       margin-top: 40%;
@@ -319,10 +316,6 @@
   }
 
   @media screen and (max-width: 700px) {
-    section {
-      /* background-color: blue; */
-    }
-
     .first-project-image {
     width: 100%;
     height: 120%;

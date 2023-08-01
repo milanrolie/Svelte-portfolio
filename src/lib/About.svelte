@@ -141,10 +141,6 @@
     margin-right: 5%;
     line-height: 1em;
   }
-
-  .creative {
-    /* margin-left: -20.3%; */
-  }
   
   .developer {
     margin-left: 10%;
@@ -169,7 +165,6 @@
     font-weight: 300;
     color: var(--gunMetal);
     line-height: 1em;
-    text-wrap: balance;
   }
 
   p::selection {
