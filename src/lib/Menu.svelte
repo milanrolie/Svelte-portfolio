@@ -41,7 +41,7 @@
     );
     tl.to(
       ".menu-wrapper",
-      { height: "96vh", duration: 1.2, ease: "Expo.easeOut", delay: 0.1 },
+      { height: "96svh", duration: 1.2, ease: "Expo.easeOut", delay: 0.1 },
       "<"
     );
     tl.to(

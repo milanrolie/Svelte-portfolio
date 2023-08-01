@@ -314,7 +314,7 @@
   @media screen and (max-width: 700px) {
     .first-project-image {
       width: 100%;
-      height: 120%;
+      height: 100svh;
     }
 
     .date {

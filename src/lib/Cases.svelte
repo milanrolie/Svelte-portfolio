@@ -388,17 +388,13 @@
       width: 100%;
     }
 
-    .view-project {
-      opacity: 1;
-    }
-
     .subscripts {
       position: absolute;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       gap: 5px;
-      bottom: 11%;
+      bottom: 2%;
       left: 2%;
       width: 95%;
     }

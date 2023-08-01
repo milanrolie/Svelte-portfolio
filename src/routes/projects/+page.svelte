@@ -242,7 +242,7 @@
       </a>
     </div>
 
-    <div class="case p2">
+    <div class="case p2 high">
       <div class="subscripts">
         <div class="subscript" href="">Ink football</div>
         <div class="subscript" href="">2023</div>
@@ -268,7 +268,7 @@
         <img src={markk} alt="Markk Agency" />
       </a>
     </div>
-    <div class="case p4">
+    <div class="case p4 high">
       <div class="subscripts">
         <div class="subscript" href="">Twintig Utrecht</div>
         <div class="subscript" href="">2022</div>
@@ -294,7 +294,7 @@
         <img src={commentary} alt="Commentary tool" />
       </a>
     </div>
-    <div class="case p6">
+    <div class="case p6 high">
       <div class="subscripts">
         <div class="subscript" href="">Ubica Utrecht</div>
         <div class="subscript" href="">2022</div>
@@ -320,7 +320,7 @@
         <img src={squad} alt="FDND squad page" />
       </a>
     </div>
-    <div class="case p8">
+    <div class="case p8 high">
       <div class="subscripts">
         <div class="subscript" href="">Family Fitness</div>
         <div class="subscript" href="">2022</div>
@@ -345,7 +345,7 @@
         <img src={challem} alt="Challem" />
       </a>
     </div>
-    <div class="case p10">
+    <div class="case p10 high">
       <div class="subscripts">
         <div class="subscript" href="">Your project here?</div>
         <div class="subscript" href="">anytime</div>
@@ -478,7 +478,7 @@
     object-fit: cover;
   }
 
-  .p2 {
+  .high {
     height: 80vh;
     width: 65vh;
   }
@@ -530,4 +530,6 @@
     background-color: var(--dark);
     transform: translateX(-100%);
   }
+
+
 </style>
