@@ -45,7 +45,7 @@
     );
     tl.to(
       "button img",
-      { rotate: 270, duration: 1.5, top: "50%", left: "50%", ease: "Expo.easeInOut", delay: 0 },
+      { rotate: 360, x: -6, duration: 1.5, ease: "Expo.easeInOut", delay: 0 },
       "<"
     );
     tl.to(
@@ -85,7 +85,7 @@
         <img src={arrow} alt="Menu arrow" /></button
     >
     <h3 class="explore">
-      Explore <img src={arrow} alt="Menu arrow" />
+      Explore
     </h3>
     <nav>
       <ul>
@@ -139,7 +139,7 @@
   .menu-wrapper {
     position: fixed;
     right: 1%;
-    top: 2%;
+    top: 1em;
     height: 10px;
     width: 10px;
     display: flex;
@@ -168,13 +168,12 @@
 
   button {
     position: fixed;
-    top: -2px;
+    top: 0;
     right: 0;
     background-color: rgba(255, 255, 255, 0);
-    padding: 1em;
+    padding: 1.5em;
     border: 0;
     z-index: 12;
-    transform: rotate(90deg) scale(1.8);
     transition: transform 0.2s;
   }
 
@@ -188,14 +187,14 @@
 
   button img {
     position: absolute;
-    top: 32%;
-    left: 45%;
+    top: .5em;
+    left: .9em;
   }
 
   img {
-    height: 0.9em;
-    width: 0.9em;
-    transform: rotate(90deg);
+    height: 2em;
+    width: 2em;
+    transform: rotate(180deg);
   }
 
   nav li {
