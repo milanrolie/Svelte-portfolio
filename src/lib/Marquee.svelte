@@ -33,7 +33,7 @@
     overflow-x: hidden;
     z-index: -1;
     padding: 2%;
-    height: 60vh;
+    height: 60lvh;
   }
   
   .sticky-marquee {
@@ -69,7 +69,7 @@
 
   @media screen and (max-width: 700px) {
     #legends-marquee {
-    font-size: 25vw;
+    font-size: 23vw;
   }
   }
 </style>
