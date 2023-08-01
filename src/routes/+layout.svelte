@@ -13,7 +13,7 @@
       gestureOrientation: "vertical",
       smoothWheel: true,
       smoothTouch: true,
-      touchMultiplier: .5,
+      touchMultiplier: .8,
     });
 
     function raf(time) {

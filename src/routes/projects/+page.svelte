@@ -372,7 +372,7 @@
           Your project here? © Your project here? © Your project here? © Your
           project here? © Your project here?
         </p>
-        <img src={favela} alt="Your project here?" />
+        <!-- <img src={favela} alt="Your project here?" /> -->
       </a>
     </div>
   </div>
@@ -493,6 +493,7 @@
     height: 100%;
     transition: 0.5s;
     object-fit: cover;
+    border-radius: 1em;
   }
 
   .high {
@@ -514,6 +515,10 @@
     opacity: 1;
   }
 
+  .p10 {
+    background-color: var(--bitterSweet);
+    border-radius: 1em;
+  } 
   footer {
     position: fixed;
     left: 0;

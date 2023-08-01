@@ -81,9 +81,11 @@
 
 <section>
   <div class="menu-wrapper">
+    <div class="button-wrapper">
     <button class="menu-button">
         <img src={arrow} alt="Menu arrow" /></button
     >
+  </div>
     <h3 class="explore">
       Explore
     </h3>
@@ -166,10 +168,16 @@
     transform: translateY(-400%);
   }
 
-  button {
-    position: fixed;
+  .button-wrapper {
+    position: absolute;
     top: 0;
     right: 0;
+    width: max-content;
+    height: auto;
+  }
+  
+  button {
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     padding: 1.5em;
     border: 0;
