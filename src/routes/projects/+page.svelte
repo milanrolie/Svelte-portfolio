@@ -53,7 +53,6 @@
     requestAnimationFrame(raf);
 
     lenis.on("scroll", (e) => {
-      console.log(e);
     });
 
     function raf(time) {
@@ -82,11 +81,18 @@
     });
 
     mm.add("(max-width: 700px)", () => {
-      gsap.from(".cases", {
+      gsap.from(".projects-wrapper", {
         duration: 2,
         delay: 0.5,
         y: "100%",
       });
+
+      gsap.from(".projects", {
+        duration: 1,
+        delay: 1.5,
+        y: 1000,
+      });
+
     });
 
     p1.addEventListener("click", function (e) {
@@ -236,7 +242,7 @@
 <Menu />
 
 <section class="cases">
-  <h1 class="projects">- all projects</h1>
+  <h1 class="projects">projects</h1>
   <div class="projects-wrapper">
     <div class="case p1">
       <div class="subscripts">
@@ -558,15 +564,21 @@
       padding: 40% 2% 2% 2%;
       width: max-content;
       overflow-y: visible;
+      overflow-x: hidden;
     }
+
+    h1 {
+    position: relative;
+    top: 2.5%;
+    left: 1%;
+    font-weight: 600;
+    font-size: 10vh;
+    margin-bottom: 5%;
+  }
+
     .projects-wrapper {
       flex-direction: column;
     }
-
-    /* .high {
-    height: 80vh;
-    width: 100vw;
-  } */
 
     .case {
       position: relative;
@@ -575,5 +587,11 @@
       overflow: hidden;
       clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
     }
+
+    footer {
+      display: none;
+    }
+
+    
   }
 </style>
