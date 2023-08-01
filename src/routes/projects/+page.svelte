@@ -18,6 +18,7 @@
   import twintig from "$lib/assets/twintig.jpg";
   import Lenis from "@studio-freight/lenis";
   import Menu from "../../lib/Menu.svelte";
+  import TransitionOut from "../../lib/TransitionOut.svelte";
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -79,6 +80,7 @@
   });
 </script>
 
+<TransitionOut />
 <Nav />
 <Menu />
 

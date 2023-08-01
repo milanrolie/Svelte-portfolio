@@ -11,9 +11,13 @@
   gsap.registerPlugin(ScrollTrigger, Flip);
 
   onMount(() => {
-    let caseClick = document.querySelector(".project");
+    let caseClick1 = document.querySelector(".p1");
+    let caseClick2 = document.querySelector(".p2");
+    let caseClick3 = document.querySelector(".p3");
 
-    caseClick.addEventListener("click", function (e) {
+
+
+    caseClick1.addEventListener("click", function (e) {
       e.preventDefault();
       gsap.to(".transition", {
         y: "-10%",
@@ -26,6 +30,35 @@
         window.location.href = "/a-better-planet";
       }, 1000);
     });
+
+    caseClick2.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/ink";
+      }, 1000);
+    });
+
+    caseClick3.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(function () {
+        window.location.href = "/markk";
+      }, 1000);
+    });
+
 
     gsap.to(".projects-text-gsap", {
       scrollTrigger: {
@@ -96,8 +129,8 @@
     <div class="projects-wrapper">
       <div class="project p1">
         <div class="subscripts">
-          <div class="subscript" href="">A better planet</div>
-          <div class="subscript" href="">2022</div>
+          <div class="subscript">A better planet</div>
+          <div class="subscript">2022</div>
         </div>
         <a href="https://studiorolie.com/a-better-planet">
           <p class="view-project js-view">
@@ -109,8 +142,8 @@
       </div>
       <div class="project p2">
         <div class="subscripts">
-          <a class="subscript" href="">A better planet</a>
-          <a class="subscript" href="">2022</a>
+          <div class="subscript">A better planet</div>
+          <div class="subscript">2022</div>
         </div>
         <a href="https://studiorolie.com/ink">
         <p class="view-project orange js-view2">
@@ -122,14 +155,13 @@
       </div>
       <div class="project p3">
         <div class="subscripts">
-          <a class="subscript" href="">A better planet</a>
-          <a class="subscript" href="">2022</a>
+          <div class="subscript">A better planet</div>
+          <div class="subscript">2022</div>
         </div>
         <a href="https://studiorolie.com/markk">
           <p class="view-project blue">
             Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
           </p>
-          <p class="project-number">01</p>
           <img src={markk} alt="test" />
         </a>
       </div>

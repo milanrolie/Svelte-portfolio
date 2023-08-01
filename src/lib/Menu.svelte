@@ -186,7 +186,7 @@
 
   img {
     height: 0.9em;
-    widows: 0,9em;
+    width: 0.9em;
     transform: rotate(90deg);
   }
 
