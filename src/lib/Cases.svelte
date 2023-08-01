@@ -343,7 +343,7 @@
       flex-direction: row;
       justify-content: space-between;
       gap: 5px;
-      bottom: .8em;
+      bottom: 1em;
       left: 2%;
       width: 95%;
     }

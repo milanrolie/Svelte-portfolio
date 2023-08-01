@@ -195,7 +195,7 @@
 
   button img {
     position: absolute;
-    top: .5em;
+    top: .9em;
     left: .9em;
   }
 

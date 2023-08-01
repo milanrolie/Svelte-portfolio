@@ -125,7 +125,7 @@
   .overlay {
     position: fixed;
     top: 0;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
     display: flex;
     align-items: center;

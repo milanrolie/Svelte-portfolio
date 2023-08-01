@@ -12,8 +12,8 @@
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      smoothTouch: true,
-      touchMultiplier: .8,
+      smoothTouch: false,
+      touchMultiplier: 1.1,
     });
 
     function raf(time) {
