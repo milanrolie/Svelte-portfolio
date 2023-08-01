@@ -2,24 +2,14 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
-  import { Flip } from "gsap/dist/Flip";
   import grrr from "$lib/assets/grrr-iphone.webp";
-  import legends from "$lib/assets/legends-macbook2.webp";
   import favela from "$lib/assets/favela.webp";
   import markk from "$lib/assets/markk.webp";
 
-  gsap.registerPlugin(ScrollTrigger, Flip);
+  gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
-    let viewAll = document.querySelector(".view-all");
-    let caseClick1 = document.querySelector(".p1");
-    let caseClick2 = document.querySelector(".p2");
-    let caseClick3 = document.querySelector(".p3");
-
-
-
-    viewAll.addEventListener("click", function (e) {
-      e.preventDefault();
+    const goToPage = (url) => {
       gsap.to(".transition", {
         y: "-10%",
         rotate: 0,
@@ -27,53 +17,35 @@
         stagger: 0,
         duration: 1,
       });
-      setTimeout(function () {
-        window.location.href = "/projects";
+      setTimeout(() => {
+        window.location.href = url;
       }, 1000);
-    });
+    };
 
-    caseClick1.addEventListener("click", function (e) {
+    const viewAll = document.querySelector(".view-all");
+    const caseClick1 = document.querySelector(".p1");
+    const caseClick2 = document.querySelector(".p2");
+    const caseClick3 = document.querySelector(".p3");
+
+    viewAll.addEventListener("click", (e) => {
       e.preventDefault();
-      gsap.to(".transition", {
-        y: "-10%",
-        rotate: 0,
-        delay: 0,
-        stagger: 0,
-        duration: 1,
-      });
-      setTimeout(function () {
-        window.location.href = "/a-better-planet";
-      }, 1000);
+      goToPage("/projects");
     });
 
-    caseClick2.addEventListener("click", function (e) {
+    caseClick1.addEventListener("click", (e) => {
       e.preventDefault();
-      gsap.to(".transition", {
-        y: "-10%",
-        rotate: 0,
-        delay: 0,
-        stagger: 0,
-        duration: 1,
-      });
-      setTimeout(function () {
-        window.location.href = "/ink";
-      }, 1000);
+      goToPage("/a-better-planet");
     });
 
-    caseClick3.addEventListener("click", function (e) {
+    caseClick2.addEventListener("click", (e) => {
       e.preventDefault();
-      gsap.to(".transition", {
-        y: "-10%",
-        rotate: 0,
-        delay: 0,
-        stagger: 0,
-        duration: 1,
-      });
-      setTimeout(function () {
-        window.location.href = "/markk";
-      }, 1000);
+      goToPage("/ink");
     });
 
+    caseClick3.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToPage("/markk");
+    });
 
     gsap.to(".projects-text-gsap", {
       scrollTrigger: {
@@ -87,43 +59,20 @@
       rotate: 0,
     });
 
-    gsap.to(".p1", {
-      scrollTrigger: {
-        trigger: ".p1",
-        scrub: 2,
-        start: "top-=1200",
-        end: "top-=200",
-        stagger: 1,
-        // markers: true,
-      },
-      y: 0,
-      "--progress": 1,
-    });
-
-    gsap.to(".p2", {
-      scrollTrigger: {
-        trigger: ".p2",
-        scrub: 2,
-        start: "top-=1200",
-        end: "top-=200",
-        stagger: 1,
-        // markers: true,
-      },
-      y: 0,
-      "--progress": 1,
-    });
-
-    gsap.to(".p3", {
-      scrollTrigger: {
-        trigger: ".p3",
-        scrub: 2,
-        start: "top-=1200",
-        end: "top-=200",
-        stagger: 1,
-        // markers: true,
-      },
-      y: 0,
-      "--progress": 1,
+    const projects = [".p1", ".p2", ".p3"];
+    projects.forEach((project) => {
+      gsap.to(project, {
+        scrollTrigger: {
+          trigger: project,
+          scrub: 2,
+          start: "top-=1200",
+          end: "top-=200",
+          stagger: 1,
+          // markers: true,
+        },
+        y: 0,
+        "--progress": 1,
+      });
     });
   });
 </script>
@@ -394,9 +343,13 @@
       flex-direction: row;
       justify-content: space-between;
       gap: 5px;
-      bottom: 2%;
+      bottom: .8em;
       left: 2%;
       width: 95%;
+    }
+
+    .view-project {
+      opacity: 1;
     }
   }
 </style>

@@ -52,7 +52,7 @@
 
     requestAnimationFrame(raf);
 
-    lenis.on("scroll", (e) => {
+    lenis.on("scroll", () => {
     });
 
     function raf(time) {
@@ -560,7 +560,7 @@
 
   @media screen and (max-width: 700px) {
     .cases {
-      height: max-content;
+      height: auto;
       padding: 40% 2% 2% 2%;
       width: max-content;
       overflow-y: visible;

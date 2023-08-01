@@ -1,7 +1,7 @@
 <script>
+  import { gsap } from "gsap";
   import { onMount } from "svelte";
   import Lenis from "@studio-freight/lenis";
-  import TransitionOut from "../lib/TransitionOut.svelte";
   import Transition from "../lib/Transition.svelte";
   
 
@@ -9,10 +9,10 @@
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-      direction: "vertical",
-      gestureDirection: "vertical",
-      smooth: true,
-      smoothTouch: false,
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      smoothTouch: true,
       touchMultiplier: 2,
     });
 
@@ -23,16 +23,7 @@
 
     requestAnimationFrame(raf);
 
-    lenis.on("scroll", (e) => {});
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    lenis.on("scroll", ScrollTrigger.update);
+    lenis.on("scroll", () => {});
 
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
@@ -40,7 +31,6 @@
 
     gsap.ticker.lagSmoothing(0);
   });
-
 </script>
 
 <slot />

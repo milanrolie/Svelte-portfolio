@@ -22,83 +22,6 @@
 
 <script>
 
-//   import Lenis from "@studio-freight/lenis";
-
-//     const lenis = new Lenis({
-//       duration: 1.5,
-//       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-//       direction: "vertical",
-//       gestureDirection: "vertical",
-//       smooth: true,
-//       smoothTouch: false,
-//       touchMultiplier: 2,
-//     });
-
-//     function raf(time) {
-//       lenis.raf(time);
-//       requestAnimationFrame(raf);
-//     }
-
-//     requestAnimationFrame(raf);
-
-//     lenis.on("scroll", (e) => {
-//       console.log(e);
-//     });
-
-//     function raf(time) {
-//       lenis.raf(time);
-//       requestAnimationFrame(raf);
-//     }
-
-//     requestAnimationFrame(raf);
-
-//     lenis.on("scroll", ScrollTrigger.update);
-
-//     gsap.ticker.add((time) => {
-//       lenis.raf(time * 1000);
-//     });
-
-//     gsap.ticker.lagSmoothing(0);
-
-	
-
-	// const ball = document.querySelector('.ball');
-
-	// let mouseX = 0;
-	// let mouseY = 0;
-
-	// let ballX = 0;
-	// let ballY = 0;
-
-	// let ballSpeed = 0.1;
-
-	// // Update ball positions
-	// function animate() {
-	// 	//Determine distance between ball and mouse
-	// 	let distX = mouseX - ballX;
-	// 	let distY = mouseY - ballY;
-
-	// 	// Find position of ball and some distance * ballSpeed
-	// 	ballX = ballX + (distX * ballSpeed);
-	// 	ballY = ballY + (distY * ballSpeed);
-
-	// 	ball.style.left = ballX + "px";
-	// 	ball.style.top = ballY + "px";
-
-	// 	requestAnimationFrame(animate);
-	// }
-	// animate();
-
-	// // Move ball with cursor
-	// document.addEventListener("mousemove", function (event) {
-	// 	mouseX = event.clientX;
-	// 	mouseY = event.clientY;
-	// });
-
-
-
-
-
 </script>
 
 
@@ -131,7 +54,7 @@
 	}
 
 	html {
-		scroll-behavior: smooth;
+		/* scroll-behavior: smooth; */
 	}
 
 	body {
@@ -144,10 +67,6 @@
 	body::-webkit-scrollbar{
     display: none;
   }
-
-	.overflow-x {
-		overflow-y: scroll;
-	}
 
 	section {
 		padding: 0% 2%;
@@ -165,9 +84,9 @@
 		font-weight: 700;
 	}
 
-	img {
+	/* img {
 		border-radius: .5em;
-	}
+	} */
 
 	p {
 		color: var(--dark);
@@ -215,12 +134,5 @@
 
 	.lenis.lenis-scrolling iframe {
 		pointer-events: none;
-	}
-
-	@media screen and (max-width: 1122px) {
-
-		.ball {
-			display: none;
-		}
 	}
 </style>

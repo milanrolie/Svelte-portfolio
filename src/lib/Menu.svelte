@@ -19,7 +19,6 @@
       ease: "Expo.easeInOut",
     });
 
-    // add a media query. When it matches, the associated function will run
     mm.add("(max-width: 700px)", () => {
       tl.to(
         ".menu-wrapper",
@@ -276,6 +275,13 @@
       top: 1.5%;
       right: 3%;
     }
+
+
+  button img {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+  }
 
     nav {
       margin-top: 10%;
