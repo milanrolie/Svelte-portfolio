@@ -71,11 +71,22 @@
 
     gsap.ticker.lagSmoothing(0);
 
-    gsap.from(".case", {
-      duration: 1,
-      delay: 0.5,
-      stagger: 0.3,
-      y: "150%",
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 701px)", () => {
+      gsap.from(".case", {
+        duration: 1,
+        delay: 0.5,
+        stagger: 0.3,
+        y: "150%",
+      });
+    });
+
+    mm.add("(max-width: 700px)", () => {
+      gsap.from(".cases", {
+        duration: 2,
+        delay: 0.5,
+        y: "100%",
+      });
     });
 
     p1.addEventListener("click", function (e) {
@@ -531,5 +542,38 @@
     transform: translateX(-100%);
   }
 
+  @media screen and (max-width: 1122px) {
+    .view-project {
+      opacity: 1;
+    }
 
+    .subscripts {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .cases {
+      height: max-content;
+      padding: 40% 2% 2% 2%;
+      width: max-content;
+      overflow-y: visible;
+    }
+    .projects-wrapper {
+      flex-direction: column;
+    }
+
+    /* .high {
+    height: 80vh;
+    width: 100vw;
+  } */
+
+    .case {
+      position: relative;
+      width: 100vw;
+      height: 80vh;
+      overflow: hidden;
+      clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
+    }
+  }
 </style>
