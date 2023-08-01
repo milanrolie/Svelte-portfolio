@@ -462,7 +462,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
-    bottom: 1em;
+    bottom: .9em;
     left: 2%;
     width: 95%;
     opacity: 0;
@@ -593,9 +593,18 @@
       clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
     }
 
+    .view-project {
+      font-size: 20vw;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0;
+    }
+
     footer {
       display: none;
     }
+
+    
 
     
   }
