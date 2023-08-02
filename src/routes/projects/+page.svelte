@@ -37,10 +37,10 @@
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-      direction: "horizontal",
-      gestureDirection: "vertical",
       orientation: "horizontal",
-      smooth: true,
+      gestureOrientation: "vertical",
+      orientation: "horizontal",
+      smoothWheel: true,
       smoothTouch: false,
       touchMultiplier: 2,
     });
@@ -81,18 +81,20 @@
     });
 
     mm.add("(max-width: 700px)", () => {
-      gsap.from(".projects-wrapper", {
-        duration: 2,
-        delay: 0.5,
-        y: "100%",
-      });
+      gsap.to(".projects", {
+      y: 0,
+      delay: .8,
+      duration: 1.5,
+      ease: "power4.out",
+    });
 
-      gsap.from(".projects", {
-        duration: 1,
-        delay: 1.5,
-        y: 1000,
-      });
-
+    gsap.from(".projects-wrapper", {
+      y: 500,
+      delay: 1,
+      duration: 1.5,
+      ease: "power4.out",
+    });
+    
     });
 
     p1.addEventListener("click", function (e) {
@@ -363,12 +365,12 @@
       </a>
     </div>
     <div class="case p10 high">
-      <div class="subscripts">
-        <div class="subscript" href="">Your project here?</div>
-        <div class="subscript" href="">anytime</div>
+      <div class="subscripts show">
+        <div class="subscript show" href="">Your project here?</div>
+        <div class="subscript show" href="">anytime</div>
       </div>
       <a href="https://studiorolie.com#contact">
-        <p class="view-project js-view">
+        <p class="view-project js-view view-content show">
           Your project here? © Your project here? © Your project here? © Your
           project here? © Your project here?
         </p>
@@ -407,6 +409,10 @@
     font-weight: 600;
     font-size: 2vh;
     margin-bottom: 2%;
+  }
+
+  .projects {
+    transform: translateY(700px);
   }
 
   .projects-wrapper {
@@ -515,8 +521,17 @@
     opacity: 1;
   }
 
+  .show {
+    opacity: 1;
+  }
+
+  .show div {
+    background-color: var(--gunMetal);
+    color: var(--dark);
+  }
+
   .p10 {
-    background-color: var(--bitterSweet);
+    background-color: var(--dark);
     border-radius: 1em;
   } 
   footer {

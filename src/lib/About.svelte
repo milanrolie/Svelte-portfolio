@@ -67,7 +67,7 @@
   });
 </script>
 
-<section class="about" id="about-scroll">
+<section class="about" id="about">
   <div class="wrapper">
     <div class="text-wrapper">
       <div class="left-wrapper">
