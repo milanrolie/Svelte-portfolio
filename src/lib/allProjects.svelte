@@ -439,20 +439,28 @@
       align-items: flex-start;
       text-decoration: none;
       list-style: none;
-      font-size: 7vw;
-      border-top: solid 1px var(--gunMetal);
+      font-size: 10vw;
       padding: 1px;
       padding: 1% 2%;
       transition: 0.3s;
       overflow: hidden;
     }
-
+    
+    li:first-child {
+      border-top: solid 1px var(--gunMetal);
+    }
+    
+    li img {
+      display: none;
+    }
+    
     .date2 {
       position: absolute;
       right: 2%;
       bottom: 0.8em;
+      display: none;
     }
-
+    
     .tags {
       position: relative;
       top: 30%;
@@ -460,18 +468,12 @@
       gap: 0.2em;
       margin: 1% 0 1.5% 0;
     }
-
+    
     .tag {
-      background-color: none;
-      font-size: 0.3em;
-      padding: 0.3em 1em;
+      font-size: .7rem;
+      padding: 0.2em .8em;
       border-radius: 1em;
-      text-decoration: none;
-      color: var(--gunMetal);
-      text-transform: uppercase;
-      border: solid 1px var(--gunMetal);
-      transform: translateX(50px);
-      opacity: 0;
+      font-weight: 300;
     }
   }
 </style>

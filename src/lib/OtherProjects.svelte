@@ -131,6 +131,35 @@
     hoverElement6.addEventListener("mouseleave", () => {
       projectImage6.classList.toggle("view");
     });
+
+    const links = [
+      { class: ".p1", url: "/a-better-planet" },
+      { class: ".p2", url: "/ink" },
+      { class: ".p3", url: "/markk" },
+      { class: ".p4", url: "/ubica" },
+      { class: ".p5", url: "/commentary-tool" },
+      { class: ".p6", url: "/family-fitness" },
+      { class: ".p7", url: "/challem" },
+      { class: ".p8", url: "/twintig" },
+      { class: ".p9", url: "/squad-page" },
+    ];
+
+    links.forEach((link) => {
+      const el = document.querySelector(link.class);
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        gsap.to(".transition", {
+          y: "-10%",
+          rotate: 0,
+          delay: 0,
+          stagger: 0,
+          duration: 1,
+        });
+        setTimeout(function () {
+          window.location.href = link.url;
+        }, 1000);
+      });
+    });
   });
 </script>
 
@@ -140,7 +169,7 @@
       <h3 class="others-gsap">others</h3>
     </div>
     <ul>
-      <a href="/a-better-planet">
+      <a class="p1" href="/a-better-planet">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -156,7 +185,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/ink">
+      <a class="p2" href="/ink">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -171,7 +200,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/markk">
+      <a class="p3" href="/markk">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -187,7 +216,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/ubica">
+      <a class="p4" href="/ubica">
         <li class="first">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -202,7 +231,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/commentary-tool">
+      <a class="p5" href="/commentary-tool">
         <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -217,7 +246,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/family-fitness">
+      <a class="p6" href="/family-fitness">
         <li class="third">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -231,7 +260,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/challem">
+      <a class="p7" href="/challem">
         <li class="fourth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -244,7 +273,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/twintig">
+      <a class="p8" href="/twintig">
         <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -258,7 +287,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a href="/squad-page">
+      <a class="p9" href="/squad-page">
         <li class="sixt">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -387,10 +416,6 @@
     cursor: pointer;
   }
 
-  li:last-child {
-    border-bottom: solid 1px var(--gunMetal);
-  }
-
   ul .date2 {
     font-size: 0.5em;
     transform: translateX(200px);
@@ -465,20 +490,28 @@
       align-items: flex-start;
       text-decoration: none;
       list-style: none;
-      font-size: 7vw;
-      border-top: solid 1px var(--gunMetal);
+      font-size: 10vw;
       padding: 1px;
       padding: 1% 2%;
       transition: 0.3s;
       overflow: hidden;
     }
-
+    
+    li:first-child {
+      border-top: solid 1px var(--gunMetal);
+    }
+    
+    li img {
+      display: none;
+    }
+    
     .date2 {
       position: absolute;
       right: 2%;
       bottom: 0.8em;
+      display: none;
     }
-
+    
     .tags {
       position: relative;
       top: 30%;
@@ -486,18 +519,12 @@
       gap: 0.2em;
       margin: 1% 0 1.5% 0;
     }
-
+    
     .tag {
-      background-color: none;
-      font-size: 0.3em;
-      padding: 0.3em 1em;
+      font-size: .7rem;
+      padding: 0.2em .8em;
       border-radius: 1em;
-      text-decoration: none;
-      color: var(--gunMetal);
-      text-transform: uppercase;
-      border: solid 1px var(--gunMetal);
-      transform: translateX(50px);
-      opacity: 0;
+      font-weight: 300;
     }
   }
 </style>

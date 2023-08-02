@@ -110,9 +110,9 @@
 <section class="project-intro">
   <div class="text-wrapper">
     <h1 class="words">Ultimate frisbee commentary tool</h1>
+    <p class="date">23-10-2020</p>
   </div>
   <div class="image">
-    <p class="date">23-10-2020</p>
     <div class="img-clip">
     <img
       class="first-project-image"
@@ -323,8 +323,14 @@
     height: 120%;
   }
 
+  .images {
+    padding: 0;
+    }
+
+
     .date {
       font-size: .7em;
+display: none;
     }
 
     .introduction p {

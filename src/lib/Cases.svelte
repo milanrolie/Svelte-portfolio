@@ -164,6 +164,11 @@
     color: var(--gunMetal);
     text-transform: uppercase;
     transform: translateY(-5%);
+    transition: .2s;
+  }
+
+  .view-all:hover {
+    background-color: var(--webLavender);
   }
 
   p {
@@ -335,6 +340,7 @@
 
     .project {
       width: 100%;
+      height: 70svh;
     }
 
     .subscripts {

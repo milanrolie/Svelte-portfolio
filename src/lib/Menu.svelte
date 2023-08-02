@@ -9,6 +9,26 @@
     let menuButton = document.querySelector(".menu-button");
     let contactLink = document.querySelector(".contact-link");
 
+    const projects = document.querySelector(".projects");
+
+    projects.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToPage("/projects");
+    });
+
+    const goToPage = (url) => {
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(() => {
+        window.location.href = url;
+      }, 1000);
+    };
+
     let mm = gsap.matchMedia();
 
     let tl = gsap.timeline({ paused: true, reversed: true });
@@ -97,7 +117,7 @@
         </li>
         <li>
           <p class="number">02</p>
-          <a class="menu-text-gsap" href="/projects">Projects</a>
+          <a class="menu-text-gsap projects" href="/projects">Projects</a>
         </li>
         <li>
           <p class="number">03</p>
@@ -281,10 +301,6 @@
     .menu-wrapper {
       top: 1.5%;
       right: 3%;
-    }
-
-    button {
-      background-color: aqua;
     }
 
 
