@@ -11,6 +11,12 @@
   import Menu from "../../lib/Menu.svelte";
   import Lenis from "@studio-freight/lenis";
   import markk from "$lib/assets/markk.webp";
+  import markkLaptop from "$lib/assets/markk-laptop.jpg";
+  import markkLogo from "$lib/assets/markk-logo.jpg";
+  import video from "$lib/assets/markk.mp4";
+
+
+
 
 
 
@@ -138,12 +144,12 @@
     <div class="images">
       <img
         class="second-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+        src={markkLaptop}
         alt=""
       />
       <img
         class="second-project-image project-clip-gsap second-part2"
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2022/12/ipad-pro-m2-free-mockup-1072x0-c-default.jpg"
+        src={markkLogo}
         alt=""
       />
     </div>
@@ -163,11 +169,7 @@
       </p>
     </div>
     <div class="images">
-      <img
-        class="third-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1574281583557-6cd118037a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-        alt=""
-      />
+      <video autoplay loop class="third-project-image project-clip-gsap" src={video}></video>
     </div>
   </div>
 </section>
@@ -281,6 +283,13 @@
     height: 75vh;
     margin-bottom: 10%;
   }
+
+  video {
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 1em;
+  }
+
 
   @media screen and (max-width: 1122px) {
     .text-wrapper {

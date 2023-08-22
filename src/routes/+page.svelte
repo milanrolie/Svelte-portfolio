@@ -14,12 +14,14 @@
   import Transition from "../lib/Transition.svelte";
   import OtherProjects from "../lib/OtherProjects.svelte";
   import AllProjects from "../lib/allProjects.svelte";
+  import WorkTogether from "../lib/WorkTogether.svelte";
 </script>
 
 <Transition />
 <IntroAnimatie />
 <Nav />
 <Menu />
+<WorkTogether />
 <Nested />
 <About />
 <Cases />

@@ -9,6 +9,12 @@
   import TransitionOut from "../../lib/TransitionOut.svelte";
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
+  import challemIpad from "$lib/assets/challem-ipad.jpg"
+  import challemMobile from "$lib/assets/challem-mobile.jpg"
+  import bladmuziek from "$lib/assets/bladmuziek.jpg"
+  import video from "$lib/assets/challem-video.mp4"
+
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -107,14 +113,14 @@
 
 <section class="project-intro">
   <div class="text-wrapper">
-    <h1 class="words">Ultimate frisbee commentary tool</h1>
+    <h1 class="words">Challem</h1>
   </div>
   <div class="image">
-    <p class="date">23-10-2020</p>
+    <!-- <p class="date">23-10-2020</p> -->
     <div class="img-clip">
     <img
       class="first-project-image"
-      src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+      src={challemIpad}
       alt=" "
     />
   </div>
@@ -138,12 +144,12 @@
     <div class="images">
       <img
         class="second-project-image project-clip-gsap "
-        src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+        src={challemMobile}
         alt=""
       />
       <img
         class="second-project-image project-clip-gsap second-part2"
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2022/12/ipad-pro-m2-free-mockup-1072x0-c-default.jpg"
+        src={bladmuziek}
         alt=""
       />
     </div>
@@ -163,11 +169,7 @@
       </p>
     </div>
     <div class="images">
-      <img
-        class="third-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1574281583557-6cd118037a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-        alt=""
-      />
+      <video loop autoplay class="third-project-image project-clip-gsap" src={video}></video>
     </div>
   </div>
 </section>
@@ -281,6 +283,12 @@
     width: 100%;
     height: 75vh;
     margin-bottom: 10%;
+  }
+  
+  video {
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 1em;
   }
 
 

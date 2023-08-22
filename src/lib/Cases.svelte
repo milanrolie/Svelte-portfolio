@@ -9,6 +9,18 @@
   gsap.registerPlugin(ScrollTrigger);
 
   onMount(() => {
+    const goToPage = (url) => {
+      gsap.to(".transition", {
+        y: "-10%",
+        rotate: 0,
+        delay: 0,
+        stagger: 0,
+        duration: 1,
+      });
+      setTimeout(() => {
+        window.location.href = url;
+      }, 1000);
+    };
 
 
     const viewAll = document.querySelector(".view-all");

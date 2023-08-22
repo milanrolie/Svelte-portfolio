@@ -10,14 +10,12 @@
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
 
-
   gsap.registerPlugin(ScrollTrigger);
-  
 
   onMount(() => {
     gsap.to(".words", {
       y: 0,
-      delay: .8,
+      delay: 0.8,
       duration: 1.5,
       ease: "power4.out",
     });
@@ -32,7 +30,6 @@
     //   },
     //   y: 0,
     // });
-
 
     gsap.to(".first-project-image", {
       scrollTrigger: {
@@ -69,7 +66,7 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
 
     gsap.to(".second-part2", {
@@ -82,9 +79,8 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
-
 
     gsap.to(".third-project-image", {
       scrollTrigger: {
@@ -96,12 +92,10 @@
         // markers: true,
       },
       y: 0,
-      '--progress': 1
+      "--progress": 1,
     });
-
   });
 </script>
-
 
 <TransitionOut />
 <Menu />
@@ -109,37 +103,39 @@
 
 <section class="project-intro">
   <div class="text-wrapper">
-    <h1 class="words">Ultimate frisbee commentary tool</h1>
+    <h1 class="words">A better planet</h1>
     <p class="date">23-10-2020</p>
   </div>
   <div class="image">
     <div class="img-clip">
-    <img
-      class="first-project-image"
-      src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
-      alt=" "
-    />
-  </div>
+      <img
+        class="first-project-image"
+        src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+        alt=" "
+      />
+    </div>
   </div>
   <div class="project-description">
     <div class="introduction">
       <p>
-        Flowers are nature's delicate gems, adorning the world with their
-        vibrant hues and captivating fragrances. They possess a unique ability
-        to convey emotions, symbolizing love, gratitude, or sorrow. From the
-        elegant roses to the cheerful sunflowers, each blossom tells a story,
-        captivating our senses and uplifting our spirits.
+        This is a project I have done as an school project in collaboration with
+        Lama lama. Lama Lama is a creative digital agency. They deliver digital
+        changes for companies with a conscience and brands with a heart. They
+        embrace a fluid approach, and use our expertise to create longevity and
+        value for our clients. Together with them they hope to make the world a
+        little better.
       </p>
       <p>
-        Beyond their aesthetic appeal, flowers play an essential role in
-        ecosystems, attracting pollinators and supporting biodiversity. They
-        bring life to gardens, parks, and landscapes, creating breathtaking
-        displays of color.
+        In this project I had to make a website for a company called Ink. Ink is
+        an organisation who help children in Brazil to get them from the streets
+        and educate them with the right tools and knowledge. The website is a
+        landing page where visitors can see the progress Ink has made with
+        helping children.
       </p>
     </div>
     <div class="images">
       <img
-        class="second-project-image project-clip-gsap "
+        class="second-project-image project-clip-gsap"
         src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
         alt=""
       />
@@ -149,13 +145,9 @@
         alt=""
       />
     </div>
-    <div class="introduction">
+    <!-- <div class="introduction">
       <p>
-        Flowers are nature's delicate gems, adorning the world with their
-        vibrant hues and captivating fragrances. They possess a unique ability
-        to convey emotions, symbolizing love, gratitude, or sorrow. From the
-        elegant roses to the cheerful sunflowers, each blossom tells a story,
-        captivating our senses and uplifting our spirits.
+      
       </p>
       <p>
         Beyond their aesthetic appeal, flowers play an essential role in
@@ -163,7 +155,7 @@
         bring life to gardens, parks, and landscapes, creating breathtaking
         displays of color.
       </p>
-    </div>
+    </div> -->
     <div class="images">
       <img
         class="third-project-image project-clip-gsap"
@@ -173,7 +165,6 @@
     </div>
   </div>
 </section>
-
 
 <OtherProjects />
 <Footer />
@@ -228,7 +219,7 @@
   }
 
   .project-clip-gsap {
-    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0  round 1em);
+    clip-path: inset(calc((1 - var(--progress)) * 100%) 0 0 0 round 1em);
   }
 
   .image {
@@ -285,9 +276,7 @@
     margin-bottom: 10%;
   }
 
-
   @media screen and (max-width: 1122px) {
-
     .text-wrapper {
       height: 30%;
       margin-top: 40%;
@@ -297,47 +286,43 @@
       flex-direction: column;
       padding: 5% 15%;
     }
-    
+
     .introduction p {
       max-width: 90%;
       margin-bottom: 1em;
     }
 
     .images {
-    display: flex;
-    flex-direction: column;
-    padding: 0% 10%;
+      display: flex;
+      flex-direction: column;
+      padding: 0% 10%;
     }
 
     .second-project-image {
       width: 100%;
       height: 50%;
       margin-bottom: 5%;
-  }
-
+    }
   }
 
   @media screen and (max-width: 700px) {
     .first-project-image {
-    width: 100%;
-    height: 120%;
-  }
-
-  .images {
-    padding: 0;
+      width: 100%;
+      height: 120%;
     }
 
+    .images {
+      padding: 0;
+    }
 
     .date {
-      font-size: .7em;
-display: none;
+      font-size: 0.7em;
+      display: none;
     }
 
     .introduction p {
       max-width: 100%;
       font-size: 1em;
     }
-
-
   }
 </style>

@@ -73,8 +73,8 @@
 
     const hoverElement1 = document.querySelector(".first");
     const projectImage1 = document.querySelector(".project-image1");
-    const hoverElement2 = document.querySelector(".second");
-    const projectImage2 = document.querySelector(".project-image2");
+    // const hoverElement2 = document.querySelector(".second");
+    // const projectImage2 = document.querySelector(".project-image2");
     const hoverElement3 = document.querySelector(".third");
     const projectImage3 = document.querySelector(".project-image3");
     const hoverElement4 = document.querySelector(".fourth");
@@ -92,13 +92,13 @@
       projectImage1.classList.toggle("view");
     });
 
-    hoverElement2.addEventListener("mouseenter", () => {
-      projectImage2.classList.toggle("view");
-    });
+    // hoverElement2.addEventListener("mouseenter", () => {
+    //   projectImage2.classList.toggle("view");
+    // });
 
-    hoverElement2.addEventListener("mouseleave", () => {
-      projectImage2.classList.toggle("view");
-    });
+    // hoverElement2.addEventListener("mouseleave", () => {
+    //   projectImage2.classList.toggle("view");
+    // });
 
     hoverElement3.addEventListener("mouseenter", () => {
       projectImage3.classList.toggle("view");
@@ -137,7 +137,7 @@
       { class: ".p2", url: "/ink" },
       { class: ".p3", url: "/markk" },
       { class: ".p4", url: "/ubica" },
-      { class: ".p5", url: "/commentary-tool" },
+      // { class: ".p5", url: "/commentary-tool" },
       { class: ".p6", url: "/family-fitness" },
       { class: ".p7", url: "/challem" },
       { class: ".p8", url: "/twintig" },
@@ -231,7 +231,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a class="p5" href="/commentary-tool">
+      <!-- <a class="p5" href="/commentary-tool">
         <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -245,7 +245,7 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
+      </a> -->
       <a class="p6" href="/family-fitness">
         <li class="third">
           <div class="clip">
