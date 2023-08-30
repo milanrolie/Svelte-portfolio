@@ -173,7 +173,7 @@
       <img
         class="third-project-image project-clip-gsap"
         src={secondaryImage}
-        alt=""
+        alt="Ubica mac"
       />
     </div>
   </div>
