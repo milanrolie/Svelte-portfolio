@@ -10,7 +10,7 @@
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
   import mainImage from "$lib/assets/ubicaMac.jpg"
-  import secondaryImage from "$lib/assets/ubicaMac2.jpg"
+  import secondaryImage from "$lib/assets/ubica-laptop.jpg"
   import bar from "$lib/assets/ubica.jpg"
   import highTea from "$lib/assets/high-tea-low.jpg"
 
