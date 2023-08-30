@@ -21,7 +21,7 @@
 <IntroAnimatie />
 <Nav />
 <Menu />
-<WorkTogether />
+<!-- <WorkTogether /> -->
 <Nested />
 <About />
 <Cases />

@@ -9,6 +9,11 @@
   import TransitionOut from "../../lib/TransitionOut.svelte";
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
+  import headImage from "$lib/assets/ABPlanet-mac.jpg";
+  import video from "$lib/assets/aBetterPlanet_lowRes.mp4";
+  import grrr from "$lib/assets/grrr-iphone.webp";
+
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -104,13 +109,13 @@
 <section class="project-intro">
   <div class="text-wrapper">
     <h1 class="words">A better planet</h1>
-    <p class="date">23-10-2020</p>
+    <!-- <p class="date">23-10-2020</p> -->
   </div>
   <div class="image">
     <div class="img-clip">
       <img
         class="first-project-image"
-        src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+        src={headImage}
         alt=" "
       />
     </div>
@@ -136,18 +141,18 @@
     <div class="images">
       <img
         class="second-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+        src={grrr}
         alt=""
       />
       <img
         class="second-project-image project-clip-gsap second-part2"
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2022/12/ipad-pro-m2-free-mockup-1072x0-c-default.jpg"
+        src="https://images.unsplash.com/photo-1591025207163-942350e47db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHN1c3RhaW5hYmlsaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
         alt=""
       />
     </div>
-    <!-- <div class="introduction">
+    <div class="introduction">
       <p>
-      
+      test
       </p>
       <p>
         Beyond their aesthetic appeal, flowers play an essential role in
@@ -155,14 +160,10 @@
         bring life to gardens, parks, and landscapes, creating breathtaking
         displays of color.
       </p>
-    </div> -->
-    <div class="images">
-      <img
-        class="third-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1574281583557-6cd118037a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-        alt=""
-      />
     </div>
+    <div class="images">
+      <video loop autoplay in class="third-project-image project-clip-gsap" src={video}></video>
+
   </div>
 </section>
 
@@ -233,6 +234,12 @@
     border-radius: 1em;
   }
 
+  video {
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 1em;
+  }
+
   .first-project-image {
     width: 100%;
     height: 95vh;
@@ -271,7 +278,7 @@
   }
 
   .third-project-image {
-    width: 100%;
+    width: 102%;
     height: 75vh;
     margin-bottom: 10%;
   }

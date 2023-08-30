@@ -5,6 +5,8 @@
   import grrr from "$lib/assets/grrr-iphone.webp";
   import favela from "$lib/assets/favela.webp";
   import markk from "$lib/assets/markk.webp";
+  import ubica from "$lib/assets/ubicaMac.jpg";
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +29,8 @@
     const caseClick1 = document.querySelector(".p1");
     const caseClick2 = document.querySelector(".p2");
     const caseClick3 = document.querySelector(".p3");
+    const caseClick4 = document.querySelector(".p4");
+
 
     viewAll.addEventListener("click", (e) => {
       e.preventDefault();
@@ -48,6 +52,11 @@
       goToPage("/markk");
     });
 
+    caseClick4.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToPage("/ubica");
+    });
+
     gsap.to(".projects-text-gsap", {
       scrollTrigger: {
         trigger: ".page-wrapper",
@@ -60,7 +69,7 @@
       rotate: 0,
     });
 
-    const projects = [".p1", ".p2", ".p3"];
+    const projects = [".p1", ".p2", ".p3", ".p4", ".p5,"];
     projects.forEach((project) => {
       gsap.to(project, {
         scrollTrigger: {
@@ -127,7 +136,33 @@
           <p class="view-project blue">
             Markk © Markk © Markk © Markk © Markk © Markk © Markk © Markk
           </p>
-          <img src={markk} alt="test" />
+          <img src={markk} alt="Markk Agency" />
+        </a>
+      </div>
+
+      <div class="project p4">
+        <div class="subscripts">
+          <div class="subscript">Ubica Utrecht</div>
+          <div class="subscript">2022</div>
+        </div>
+        <a href="https://studiorolie.com/ubica">
+          <p class="view-project">
+            Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht © Ubica Utrecht
+          </p>
+          <img src={ubica} alt="Ubica Utrecht" />
+        </a>
+      </div>
+
+      <div class="project p5">
+        <div class="subscripts">
+          <div class="subscript">Challem</div>
+          <div class="subscript">2023</div>
+        </div>
+        <a href="https://studiorolie.com/markk">
+          <p class="view-project blue">
+            Challem © Challem © Challem © Challem © Challem © Challem © Challem © Challem
+          </p>
+          <img src={markk} alt="Markk Agency" />
         </a>
       </div>
     </div>

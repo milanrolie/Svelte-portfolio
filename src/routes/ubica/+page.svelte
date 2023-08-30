@@ -9,7 +9,13 @@
   import TransitionOut from "../../lib/TransitionOut.svelte";
   import AllProjects from "../../lib/allProjects.svelte";
   import Menu from "../../lib/Menu.svelte";
+  import mainImage from "$lib/assets/ubicaMac.jpg"
+  import secondaryImage from "$lib/assets/ubicaMac2.jpg"
+  import bar from "$lib/assets/ubica.jpg"
+  import highTea from "$lib/assets/high-tea-low.jpg"
 
+
+ 
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -108,14 +114,14 @@
 
 <section class="project-intro">
   <div class="text-wrapper">
-    <h1 class="words">Ultimate frisbee commentary tool</h1>
+    <h1 class="words">Ubica Utrecht</h1>
   </div>
   <div class="image">
-    <p class="date">23-10-2020</p>
+    <!-- <p class="date">23-10-2020</p> -->
     <div class="img-clip">
     <img
       class="first-project-image"
-      src="https://images.unsplash.com/photo-1611179892587-26e9518c90d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80"
+      src={mainImage}
       alt=" "
     />
   </div>
@@ -139,12 +145,12 @@
     <div class="images">
       <img
         class="second-project-image project-clip-gsap "
-        src="https://images.unsplash.com/photo-1623658962582-a09214e103e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+        src={bar}
         alt=""
       />
       <img
         class="second-project-image project-clip-gsap second-part2"
-        src="https://www.mockupworld.co/wp-content/uploads/dynamic/2022/12/ipad-pro-m2-free-mockup-1072x0-c-default.jpg"
+        src={highTea}
         alt=""
       />
     </div>
@@ -166,7 +172,7 @@
     <div class="images">
       <img
         class="third-project-image project-clip-gsap"
-        src="https://images.unsplash.com/photo-1574281583557-6cd118037a4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+        src={secondaryImage}
         alt=""
       />
     </div>

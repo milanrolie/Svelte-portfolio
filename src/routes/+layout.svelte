@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import Lenis from "@studio-freight/lenis";
   import Transition from "../lib/Transition.svelte";
-  
+
 
   onMount(() => {
     const lenis = new Lenis({

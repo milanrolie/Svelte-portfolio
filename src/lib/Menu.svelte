@@ -137,20 +137,19 @@
         <p class="subhead">Contact</p>
         <ul class="socials">
           <li>
-            <a href="https://www.instagram.com/milanrolie/"
+            <a href="mailto:contact@studiorolie.com"
               >contact@studiorolie.com</a
             >
-            <a href="https://www.instagram.com/milanrolie/">+31 653 63 51 06</a>
+            <a href="tel:+31 653 63 51 06">+31 653 63 51 06</a>
           </li>
         </ul>
       </div>
       <div class="right-submenu socials-gsap">
         <p class="subhead">socials</p>
         <ul class="socials">
-          <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
-          <li><a href="https://www.instagram.com/milanrolie/">Behance</a></li>
-          <li><a href="https://www.instagram.com/milanrolie/">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/milanrolie/">Github</a></li>
+          <li><a href="https://www.instagram.com/studiorolie/">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/milan-rolie-778150151//">LinkedIn</a></li>
+          <li><a href="https://github.com/milanrolie">GitHub</a></li>
         </ul>
       </div>
     </div>

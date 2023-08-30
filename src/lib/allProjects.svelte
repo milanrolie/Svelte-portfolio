@@ -73,12 +73,7 @@
     const projectImage2 = document.querySelector(".project-image2");
     const hoverElement3 = document.querySelector(".third");
     const projectImage3 = document.querySelector(".project-image3");
-    const hoverElement4 = document.querySelector(".fourth");
-    const projectImage4 = document.querySelector(".project-image4");
-    const hoverElement5 = document.querySelector(".fifth");
-    const projectImage5 = document.querySelector(".project-image5");
-    const hoverElement6 = document.querySelector(".sixt");
-    const projectImage6 = document.querySelector(".project-image6");
+
 
     hoverElement1.addEventListener("mouseenter", () => {
       projectImage1.classList.toggle("view");
@@ -104,37 +99,10 @@
       projectImage3.classList.toggle("view");
     });
 
-    hoverElement4.addEventListener("mouseenter", () => {
-      projectImage4.classList.toggle("view");
-    });
-
-    hoverElement4.addEventListener("mouseleave", () => {
-      projectImage4.classList.toggle("view");
-    });
-
-    hoverElement5.addEventListener("mouseenter", () => {
-      projectImage5.classList.toggle("view");
-    });
-
-    hoverElement5.addEventListener("mouseleave", () => {
-      projectImage5.classList.toggle("view");
-    });
-
-    hoverElement6.addEventListener("mouseenter", () => {
-      projectImage6.classList.toggle("view");
-    });
-
-    hoverElement6.addEventListener("mouseleave", () => {
-      projectImage6.classList.toggle("view");
-    });
-
     const links = [
       { class: ".p1p", url: "/ubica" },
-      { class: ".p2p", url: "/commentary-tool" },
-      { class: ".p3p", url: "/family-fitness" },
-      { class: ".p4", url: "/challem" },
-      { class: ".p5", url: "/twintig" },
-      { class: ".p6", url: "/squad-page" },
+      { class: ".p2p", url: "/family-fitness" },
+      { class: ".p3p", url: "/challem" },
     ];
 
     links.forEach((link) => {
@@ -173,11 +141,11 @@
             <p class="tag">Website</p>
             <p class="tag">Design</p>
           </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+          <p class="date2 allRight-gsap">07-04-2022</p>
         </li>
       </a>
 
-      <a class="p2p" href="/commentary-tool">
+      <!-- <a class="p2p" href="/commentary-tool">
         <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -191,10 +159,10 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
+      </a> -->
 
-      <a class="p3p" href="/family-fitness">
-        <li class="third">
+      <a class="p2p" href="/family-fitness">
+        <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
               Family fitness <img src={arrow} alt="" />
@@ -204,12 +172,12 @@
             <p class="tag">Website</p>
             <p class="tag">video</p>
           </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+          <p class="date2 allRight-gsap">24-01-2023</p>
         </li>
       </a>
 
-      <a class="p4" href="/challem">
-        <li class="fourth">
+      <a class="p3p" href="/challem">
+        <li class="third">
           <div class="clip">
             <p class="allProjects-gsap">
               Challem <img src={arrow} alt="" />
@@ -218,11 +186,11 @@
           <div class="tags">
             <p class="tag">Website</p>
           </div>
-          <p class="date2 allRight-gsap">10-11-2019</p>
+          <p class="date2 allRight-gsap">10-03-2019</p>
         </li>
       </a>
 
-      <a class="p5" href="/twintig">
+      <!-- <a class="p5" href="/twintig">
         <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -251,16 +219,13 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
+      </a> -->
     </ul>
     <div class="image-wrapper">
-      <img class="project-image project-image" src={markk} alt="" />
+      <img class="project-image project-image" src={arrow} alt="" />
       <img class="project-image project-image1 view" src={highTea} alt="" />
-      <img class="project-image project-image2 view" src={commentary} alt="" />
-      <img class="project-image project-image3 view" src={fitness} alt="" />
-      <img class="project-image project-image4 view" src={challem} alt="" />
-      <img class="project-image project-image5 view" src={twintig} alt="" />
-      <img class="project-image project-image6 view" src={squad} alt="" />
+      <img class="project-image project-image2 view" src={fitness} alt="" />
+      <img class="project-image project-image3 view" src={challem} alt="" />
       <div class="image-overlay" />
     </div>
   </div>
@@ -310,7 +275,7 @@
     text-decoration: none;
     list-style: none;
     font-size: 3vw;
-    border-top: solid 1px var(--gunMetal);
+    /* border-top: solid 1px var(--gunMetal); */
     padding: 1px;
     padding: 1% 2%;
     transition: 0.3s;

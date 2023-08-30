@@ -287,7 +287,7 @@
         <img src={markk} alt="Markk Agency" />
       </a>
     </div>
-    <div class="case p4 high">
+    <!-- <div class="case p4 high">
       <div class="subscripts">
         <div class="subscript" href="">Twintig Utrecht</div>
         <div class="subscript" href="">2022</div>
@@ -312,7 +312,7 @@
         </p>
         <img src={commentary} alt="Commentary tool" />
       </a>
-    </div>
+    </div> -->
     <div class="case p6 high">
       <div class="subscripts">
         <div class="subscript" href="">Ubica Utrecht</div>

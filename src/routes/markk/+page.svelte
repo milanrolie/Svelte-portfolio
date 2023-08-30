@@ -116,7 +116,7 @@
     <h1 class="words">Markk agency</h1>
   </div>
   <div class="image">
-    <p class="date">23-10-2020</p>
+    <!-- <p class="date">23-10-2020</p> -->
     <div class="img-clip">
       <img
         class="first-project-image"
@@ -288,6 +288,7 @@
     object-fit: cover;
     z-index: 2;
     border-radius: 1em;
+    height: 100%;
   }
 
 

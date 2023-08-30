@@ -36,10 +36,10 @@
       </ul>
     </div>
     <div class="right-content">
-      <ul class="stagger">
+      <!-- <ul class="stagger">
         <li>Nog iets leuks?</li>
         <li>Komt nog wel?</li>
-      </ul>
+      </ul> -->
     </div>
     <div class="big-mailto stagger">
       <a class="big-mail-text" href="mailto: contact@studiorolie.com"
@@ -59,10 +59,9 @@
       </a>
     </div>
     <ul class="socials stagger">
-      <li><a href="https://www.instagram.com/milanrolie/">Instagram</a></li>
-      <li>Behance</li>
-      <li>LinkedIn</li>
-      <li>Facebook</li>
+      <li><a href="https://www.instagram.com/studiorolie/">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/milan-rolie-778150151//">LinkedIn</a></li>
+      <li><a href="https://github.com/milanrolie">GitHub</a></li>
     </ul>
   </div>
 </footer>

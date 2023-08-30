@@ -73,14 +73,14 @@
 
     const hoverElement1 = document.querySelector(".first");
     const projectImage1 = document.querySelector(".project-image1");
-    // const hoverElement2 = document.querySelector(".second");
-    // const projectImage2 = document.querySelector(".project-image2");
+    const hoverElement2 = document.querySelector(".second");
+    const projectImage2 = document.querySelector(".project-image2");
     const hoverElement3 = document.querySelector(".third");
     const projectImage3 = document.querySelector(".project-image3");
     const hoverElement4 = document.querySelector(".fourth");
     const projectImage4 = document.querySelector(".project-image4");
-    const hoverElement5 = document.querySelector(".fifth");
-    const projectImage5 = document.querySelector(".project-image5");
+    // const hoverElement5 = document.querySelector(".fifth");
+    // const projectImage5 = document.querySelector(".project-image5");
     const hoverElement6 = document.querySelector(".sixt");
     const projectImage6 = document.querySelector(".project-image6");
 
@@ -92,13 +92,13 @@
       projectImage1.classList.toggle("view");
     });
 
-    // hoverElement2.addEventListener("mouseenter", () => {
-    //   projectImage2.classList.toggle("view");
-    // });
+    hoverElement2.addEventListener("mouseenter", () => {
+      projectImage2.classList.toggle("view");
+    });
 
-    // hoverElement2.addEventListener("mouseleave", () => {
-    //   projectImage2.classList.toggle("view");
-    // });
+    hoverElement2.addEventListener("mouseleave", () => {
+      projectImage2.classList.toggle("view");
+    });
 
     hoverElement3.addEventListener("mouseenter", () => {
       projectImage3.classList.toggle("view");
@@ -116,13 +116,13 @@
       projectImage4.classList.toggle("view");
     });
 
-    hoverElement5.addEventListener("mouseenter", () => {
-      projectImage5.classList.toggle("view");
-    });
+    // hoverElement5.addEventListener("mouseenter", () => {
+    //   projectImage5.classList.toggle("view");
+    // });
 
-    hoverElement5.addEventListener("mouseleave", () => {
-      projectImage5.classList.toggle("view");
-    });
+    // hoverElement5.addEventListener("mouseleave", () => {
+    //   projectImage5.classList.toggle("view");
+    // });
 
     hoverElement6.addEventListener("mouseenter", () => {
       projectImage6.classList.toggle("view");
@@ -138,10 +138,10 @@
       { class: ".p3", url: "/markk" },
       { class: ".p4", url: "/ubica" },
       // { class: ".p5", url: "/commentary-tool" },
-      { class: ".p6", url: "/family-fitness" },
-      { class: ".p7", url: "/challem" },
-      { class: ".p8", url: "/twintig" },
-      { class: ".p9", url: "/squad-page" },
+      // { class: ".p5", url: "/family-fitness" },
+      { class: ".p6", url: "/challem" },
+      // { class: ".p8", url: "/twintig" },
+      // { class: ".p9", url: "/squad-page" },
     ];
 
     links.forEach((link) => {
@@ -186,7 +186,7 @@
         </li>
       </a>
       <a class="p2" href="/ink">
-        <li class="first">
+        <li class="second">
           <div class="clip">
             <p class="allProjects-gsap">
               Ink football <img src={arrow} alt="" />
@@ -201,7 +201,7 @@
         </li>
       </a>
       <a class="p3" href="/markk">
-        <li class="first">
+        <li class="third">
           <div class="clip">
             <p class="allProjects-gsap">
               Markk agency <img src={arrow} alt="" />
@@ -217,7 +217,7 @@
         </li>
       </a>
       <a class="p4" href="/ubica">
-        <li class="first">
+        <li class="fourth">
           <div class="clip">
             <p class="allProjects-gsap">
               Grand café Ubica <img src={arrow} alt="" />
@@ -246,8 +246,8 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a> -->
-      <a class="p6" href="/family-fitness">
-        <li class="third">
+      <!-- <a class="p5" href="/family-fitness">
+        <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
               Family fitness <img src={arrow} alt="" />
@@ -259,9 +259,9 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
-      <a class="p7" href="/challem">
-        <li class="fourth">
+      </a> -->
+      <a class="p6" href="/challem">
+        <li class="sixt">
           <div class="clip">
             <p class="allProjects-gsap">
               Challem <img src={arrow} alt="" />
@@ -273,7 +273,7 @@
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
       </a>
-      <a class="p8" href="/twintig">
+      <!-- <a class="p8" href="/twintig">
         <li class="fifth">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -286,8 +286,8 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
-      <a class="p9" href="/squad-page">
+      </a> -->
+      <!-- <a class="p9" href="/squad-page">
         <li class="sixt">
           <div class="clip">
             <p class="allProjects-gsap">
@@ -301,22 +301,22 @@
           </div>
           <p class="date2 allRight-gsap">10-11-2019</p>
         </li>
-      </a>
+      </a> -->
     </ul>
     <div class="image-wrapper">
-      <img class="project-image project-image" src={markk} alt="" />
+      <img class="project-image project-image" src={arrow} alt="" />
 
-      <img class="project-image project-image1 view" src={highTea} alt="" />
+      <img class="project-image project-image1 view" src={grrr} alt="" />
 
-      <img class="project-image project-image2 view" src={commentary} alt="" />
+      <img class="project-image project-image2 view" src={legends} alt="" />
 
-      <img class="project-image project-image3 view" src={fitness} alt="" />
+      <img class="project-image project-image3 view" src={markk} alt="" />
 
-      <img class="project-image project-image4 view" src={challem} alt="" />
+      <img class="project-image project-image4 view" src={highTea} alt="" />
 
-      <img class="project-image project-image5 view" src={twintig} alt="" />
+      <img class="project-image project-image5 view" src={fitness} alt="" />
 
-      <img class="project-image project-image6 view" src={squad} alt="" />
+      <img class="project-image project-image6 view" src={challem} alt="" />
       <div class="image-overlay" />
     </div>
   </div>
